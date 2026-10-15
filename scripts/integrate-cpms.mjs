@@ -13,7 +13,7 @@ import { newsPages } from './cpms-news-pages.mjs';
 import { resolveEditorialLinks } from './cpms-links.mjs';
 import { buildBrandStyles, uniformSiteShell } from './cpms-branding.mjs';
 import { campaignContent } from './cpms-campaign-page.mjs';
-import { locationNotice } from './cpms-contact-details.mjs';
+import { schoolLocationHtml } from './cpms-contact-details.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const legacy = '/Users/macbookpro/Documents/BACKEND APPS/MY LOCA/cpms';
@@ -625,7 +625,7 @@ async function contact(doc) {
   const feedback=one(doc,'#form-messages');feedback.attribs.role='status';feedback.attribs['aria-live']='polite';
   const frame=one(doc,'.contact-map2 iframe');frame.attribs.src='https://maps.google.com/maps?q=Vedoko%2C%20Cotonou%2C%20Benin&z=13&output=embed';frame.attribs.title='Quartier Vèdoko à Cotonou — localisation indicative';frame.attribs.loading='lazy';
   const addressRow=one(doc,'.contact-address-section'),parent=addressRow.parent;
-  const notice=documentFrom(locationNotice()).children[0];notice.parent=parent;
+  const notice=documentFrom(`<div class="inner-part"><p class="mb-30 cpms-contact-location">${schoolLocationHtml}</p></div>`).children[0];notice.parent=parent;
   parent.children.splice(parent.children.indexOf(addressRow)+1,0,notice);
 }
 
