@@ -10,5 +10,4 @@ verification/*.jpg
 public/cpms/originals/
 
 # Images recadrées générées par sharp (155 Mo)
-public/cpms/slots/
 
