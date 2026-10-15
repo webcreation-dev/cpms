@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit",
     "sync:template": "node scripts/sync-template.mjs",
     "verify:template": "node scripts/verify-template.mjs",
+    "verify:media": "node scripts/verify-media.mjs",
     "content:import": "node scripts/integrate-cpms.mjs"
   },
   "dependencies": {

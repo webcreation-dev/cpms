@@ -118,13 +118,13 @@ async function fitPhoto(sourceUrl, oldSource, { contain = false } = {}) {
   const key = `${sourceUrl}:${size.width}x${size.height}:${contain}`;
   if (cropCache.has(key)) return cropCache.get(key);
   const from = copiedMedia.get(sourceUrl)?.file ?? join(publicRoot, decodeURIComponent(sourceUrl.replace(/^\//, '')));
-  const name = createHash('sha256').update(key).digest('hex').slice(0, 18) + '.png';
+  const name = createHash('sha256').update(key).digest('hex').slice(0, 18) + '.webp';
   const destination = join(publicRoot, 'cpms/slots', name);
   await mkdir(dirname(destination), { recursive: true });
   await sharp(from).rotate().resize(size.width, size.height, {
     fit: contain ? 'contain' : 'cover', position: contain ? 'left' : 'attention',
     background: { r: 255, g: 255, b: 255, alpha: contain ? 0 : 1 },
-  }).png().toFile(destination);
+  }).webp({ quality: 80, lossless: contain }).toFile(destination);
   const result = '/cpms/slots/' + name;
   cropCache.set(key, result);
   assetAudit.push({ source: from, originalSlot: oldSource, output: result, width: size.width, height: size.height, fit: contain ? 'contain' : 'cover' });
@@ -335,9 +335,9 @@ async function partners(doc) {
     else {
       // Intitulé d'un programme documenté, pas création d'un logo officiel.
       const dimensions=await sharp(join(publicRoot,img.attribs.src)).metadata();
-      const file=`programme-${i%6}.png`;
+      const file=`programme-${i%6}.webp`;
       const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${dimensions.width}" height="${dimensions.height}"><text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="${Math.min(17,dimensions.height*.45)}" font-weight="600" fill="#485066">${safe(labelText)}</text></svg>`;
-      await sharp(Buffer.from(svg)).png().toFile(join(publicRoot,'cpms/slots',file));
+      await sharp(Buffer.from(svg)).webp({lossless:true}).toFile(join(publicRoot,'cpms/slots',file));
       img.attribs.src='/cpms/slots/'+file;img.attribs.alt=labelText+' — programme du groupe JUNIA';
     }
     const a=one(card,'a');if(a){a.attribs.href='/partenaires';a.attribs.title=labelText;}
@@ -444,9 +444,9 @@ async function about(doc) {
   ];
   const overlays=[];
   for(const photo of collagePhotos)overlays.push({input:await sharp(copiedMedia.get(photo.url).file).resize(photo.width,photo.height,{fit:'cover',position:'attention'}).png().toBuffer(),left:photo.left,top:photo.top});
-  const collageFile=join(publicRoot,'cpms/slots/about-educavo-cpms.png');
-  await sharp(originalCollage).composite(overlays).toFile(collageFile);
-  Object.assign(one(intro,'.img-part img').attribs,{src:'/cpms/slots/about-educavo-cpms.png',alt:'Les étudiants du CPMS, en cours et en travaux pratiques',width:String(collageSize.width),height:String(collageSize.height)});
+  const collageFile=join(publicRoot,'cpms/slots/about-educavo-cpms.webp');
+  await sharp(originalCollage).composite(overlays).webp({quality:90}).toFile(collageFile);
+  Object.assign(one(intro,'.img-part img').attribs,{src:'/cpms/slots/about-educavo-cpms.webp',alt:'Les étudiants du CPMS, en cours et en travaux pratiques',width:String(collageSize.width),height:String(collageSize.height)});
 
   const counter=nativeBlock('#rs-counter');
   counter.attribs.class=counter.attribs.class.replace('pt-100','pt-0').replace('md-pt-70','md-pt-0')+' pb-100 md-pb-70';
