@@ -1,0 +1,807 @@
+{
+  "source": "Export WordPress CPMS du 16 août 2026",
+  "records": 54,
+  "generatedRoutes": 117,
+  "copiedMedia": 398,
+  "removedSpamLinks": 7,
+  "excludedIds": [
+    154,
+    40921,
+    40979
+  ],
+  "missing": [],
+  "assets": [
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/09/cpms-300x300-1.png",
+      "originalSlot": "assets/images/pre-logo.png",
+      "output": "/cpms/slots/94d2602cdf3048f7eb.png",
+      "width": 130,
+      "height": 130,
+      "fit": "contain"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/09/cpms-300x300-1.png",
+      "originalSlot": "assets/images/logo-dark.png",
+      "output": "/cpms/slots/0b9210c509a05a53f1.png",
+      "width": 725,
+      "height": 121,
+      "fit": "contain"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-Jardin-1.jpg",
+      "originalSlot": "assets/images/gallery/1.jpg",
+      "output": "/cpms/slots/2a17219062e0064b4a.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-en-salle-1-scaled.jpg",
+      "originalSlot": "assets/images/gallery/2.jpg",
+      "output": "/cpms/slots/9f9c9615e161cebe7c.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/journees-orientation-e1774627334169.jpeg",
+      "originalSlot": "assets/images/gallery/3.jpg",
+      "output": "/cpms/slots/bef2a54182e2c45b2e.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/conference-amour.jpeg",
+      "originalSlot": "assets/images/gallery/4.jpg",
+      "output": "/cpms/slots/67789cb12e3cc30870.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/journees-porte-ouverte-e1774627535722.jpeg",
+      "originalSlot": "assets/images/gallery/5.jpg",
+      "output": "/cpms/slots/7be9f3daf7e96b04d9.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/immersion-a-ouidah.jpeg",
+      "originalSlot": "assets/images/gallery/6.jpg",
+      "output": "/cpms/slots/d4fd49b62ab33c2f06.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-en-salle-1-scaled.jpg",
+      "originalSlot": "assets/images/donor/1.jpg",
+      "output": "/cpms/slots/7c274f3ca5d4ccf9d2.png",
+      "width": 424,
+      "height": 270,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-en-salle-1-scaled.jpg",
+      "originalSlot": "assets/images/services/1.jpg",
+      "output": "/cpms/slots/fa3f3c23bb5a6c8d22.png",
+      "width": 480,
+      "height": 285,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-Jardin-1.jpg",
+      "originalSlot": "assets/images/services/1.jpg",
+      "output": "/cpms/slots/953ea679f43e74b5ed.png",
+      "width": 480,
+      "height": 285,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/09/Facade-HEI.jpg",
+      "originalSlot": "assets/images/services/1.jpg",
+      "output": "/cpms/slots/30407db6407aaec552.png",
+      "width": 480,
+      "height": 285,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/match-basket.jpeg",
+      "originalSlot": "assets/images/services/1.jpg",
+      "output": "/cpms/slots/9f05dd176abce768c9.png",
+      "width": 480,
+      "height": 285,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/02/jpo-2.jpeg",
+      "originalSlot": "assets/images/about/style2/grid1.jpg",
+      "output": "/cpms/slots/783a06fa3514b8aa5b.png",
+      "width": 355,
+      "height": 355,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Bibliotheque-1-1.jpg",
+      "originalSlot": "assets/images/about/style2/grid2.jpg",
+      "output": "/cpms/slots/d946a01addc8e329d0.png",
+      "width": 355,
+      "height": 355,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2024/07/cropped-Bibliotheque2.jpg",
+      "originalSlot": "assets/images/degrees/1.jpg",
+      "output": "/cpms/slots/07fb534c2a1cb05c99.png",
+      "width": 393,
+      "height": 390,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/09/Facade-HEI.jpg",
+      "originalSlot": "assets/images/degrees/2.jpg",
+      "output": "/cpms/slots/e4a3a172829e33ea13.png",
+      "width": 393,
+      "height": 390,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-en-salle-1-scaled.jpg",
+      "originalSlot": "assets/images/degrees/3.jpg",
+      "output": "/cpms/slots/d9cd581190a4413000.png",
+      "width": 393,
+      "height": 390,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Salle-de-TP-1-1024x732.jpg",
+      "originalSlot": "assets/images/degrees/4.jpg",
+      "output": "/cpms/slots/4cfaf36f58cbd88f17.png",
+      "width": 393,
+      "height": 390,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-Jardin-1.jpg",
+      "originalSlot": "assets/images/degrees/5.jpg",
+      "output": "/cpms/slots/37f898c70bc96e0499.png",
+      "width": 393,
+      "height": 390,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/02/ouidah/od-5.jpeg",
+      "originalSlot": "assets/images/event/single.jpg",
+      "output": "/cpms/slots/5e9d2f9eac8ea3ea5c.png",
+      "width": 530,
+      "height": 546,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/12/WhatsApp-Image-2025-11-28-at-17.07.25.jpeg",
+      "originalSlot": "assets/images/testimonial/style2/1.jpg",
+      "output": "/cpms/slots/d50bec33175032c94e.png",
+      "width": 209,
+      "height": 170,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/09/temoignage_1.jpg",
+      "originalSlot": "assets/images/testimonial/style2/2.jpg",
+      "output": "/cpms/slots/c2f0533ce0a35849f7.png",
+      "width": 209,
+      "height": 170,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/branding/junia.png",
+      "originalSlot": "assets/images/partner/1.png",
+      "output": "/cpms/slots/03a2e6991e4afe3d79.png",
+      "width": 163,
+      "height": 38,
+      "fit": "contain"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/branding/junia.png",
+      "originalSlot": "assets/images/partner/2.png",
+      "output": "/cpms/slots/095507af3076c7f6a7.png",
+      "width": 196,
+      "height": 41,
+      "fit": "contain"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/branding/ecpi.webp",
+      "originalSlot": "assets/images/partner/3.png",
+      "output": "/cpms/slots/2962b87afb14e689b8.png",
+      "width": 191,
+      "height": 40,
+      "fit": "contain"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/journees-orientation-e1774627334169.jpeg",
+      "originalSlot": "assets/images/blog/style2/1.jpg",
+      "output": "/cpms/slots/c0705e45a0a192f37a.png",
+      "width": 395,
+      "height": 250,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/conference-amour.jpeg",
+      "originalSlot": "assets/images/blog/style2/2.jpg",
+      "output": "/cpms/slots/119b687b54ff7c7154.png",
+      "width": 395,
+      "height": 250,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/journees-porte-ouverte-e1774627535722.jpeg",
+      "originalSlot": "assets/images/blog/style2/3.jpg",
+      "output": "/cpms/slots/e84db3465f3d21a8f6.png",
+      "width": 395,
+      "height": 250,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/immersion-a-ouidah.jpeg",
+      "originalSlot": "assets/images/blog/style2/2.jpg",
+      "output": "/cpms/slots/db75fd79dc15c0418b.png",
+      "width": 395,
+      "height": 250,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etdts-Escaliers-2.jpg",
+      "originalSlot": "assets/images/breadcrumbs/2.jpg",
+      "output": "/cpms/slots/b7a4390aa3fe1f6d84.png",
+      "width": 1920,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-Jardin-1.jpg",
+      "originalSlot": "assets/images/about/history.png",
+      "output": "/cpms/slots/ad642bb34d7739edb9.png",
+      "width": 530,
+      "height": 550,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/match-basket.jpeg",
+      "originalSlot": "assets/images/blog/style2/5.jpg",
+      "output": "/cpms/slots/65091877722b23eadf.png",
+      "width": 395,
+      "height": 250,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/journees-orientation-e1774627334169.jpeg",
+      "originalSlot": "assets/images/blog/inner/1.jpg",
+      "output": "/cpms/slots/847f3daf2ce5514597.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/conference-amour.jpeg",
+      "originalSlot": "assets/images/blog/inner/2.jpg",
+      "output": "/cpms/slots/debbc4aeee8485807b.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/journees-porte-ouverte-e1774627535722.jpeg",
+      "originalSlot": "assets/images/blog/inner/3.jpg",
+      "output": "/cpms/slots/2a0f9686fa7c1b97f7.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/immersion-a-ouidah.jpeg",
+      "originalSlot": "assets/images/blog/inner/4.jpg",
+      "output": "/cpms/slots/e54fca7dde406ba6dc.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/match-basket.jpeg",
+      "originalSlot": "assets/images/blog/inner/5.jpg",
+      "output": "/cpms/slots/f8436900286ab77e8e.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/journees-recreatives.jpeg",
+      "originalSlot": "assets/images/blog/inner/6.jpg",
+      "output": "/cpms/slots/7a9372fa42ee059a9f.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/IMG-8-scaled.jpg",
+      "originalSlot": "assets/images/blog/inner/7.jpg",
+      "output": "/cpms/slots/32e28c92df9309c80a.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/10/visite-directrice-campus-france.jpeg",
+      "originalSlot": "assets/images/blog/inner/8.jpg",
+      "output": "/cpms/slots/a637875e3972bf94f1.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/10/octobre-rose.jpg",
+      "originalSlot": "assets/images/blog/inner/1.jpg",
+      "output": "/cpms/slots/ef56b044dd97e84002.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2024/03/Match1-1024x768.jpg",
+      "originalSlot": "assets/images/blog/inner/2.jpg",
+      "output": "/cpms/slots/8fb77acd8eff241f4f.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/02/conferance-campus-ouvert.jpeg",
+      "originalSlot": "assets/images/blog/inner/3.jpg",
+      "output": "/cpms/slots/9e5677fa4fab081bf4.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/01/files/journee_cpms_1.jpeg",
+      "originalSlot": "assets/images/blog/inner/4.jpg",
+      "output": "/cpms/slots/8fb45369c154dfb1ee.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-Jardin-1.jpg",
+      "originalSlot": "assets/images/blog/inner/5.jpg",
+      "output": "/cpms/slots/5894ca344b8f2ee06c.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2023/02/Image-042.jpg",
+      "originalSlot": "assets/images/blog/inner/6.jpg",
+      "output": "/cpms/slots/5d5021eb2eb82aae69.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2024/07/5ans_annif-723x1024.jpg",
+      "originalSlot": "assets/images/blog/inner/8.jpg",
+      "output": "/cpms/slots/6c2fdcf202f25a7df8.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2024/04/PHOTO-2024-03-15-07-38-28.jpg",
+      "originalSlot": "assets/images/blog/inner/2.jpg",
+      "output": "/cpms/slots/20419e61de7079cf3b.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2024/04/PHOTO-2024-04-20-21-31-55.jpg",
+      "originalSlot": "assets/images/blog/inner/3.jpg",
+      "output": "/cpms/slots/71148e81f9778be56b.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2024/03/Rencontre-Professeurs.jpg",
+      "originalSlot": "assets/images/blog/inner/5.jpg",
+      "output": "/cpms/slots/2bd7e7f90ef22d7681.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2023/10/Entretien1.jpg",
+      "originalSlot": "assets/images/blog/inner/7.jpg",
+      "output": "/cpms/slots/ba2823d56e45639bc7.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2023/08/renforcement_des_capacites.png",
+      "originalSlot": "assets/images/blog/inner/8.jpg",
+      "output": "/cpms/slots/60b76f2cdbfa52cb3e.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2023/07/Photo-Terrain-2.jpg",
+      "originalSlot": "assets/images/blog/inner/1.jpg",
+      "output": "/cpms/slots/7f7b62f06e4def7e9f.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2023/07/img1.jpg",
+      "originalSlot": "assets/images/blog/inner/2.jpg",
+      "output": "/cpms/slots/80173ba3bb02cea9c5.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2023/02/001.jpg",
+      "originalSlot": "assets/images/blog/inner/4.jpg",
+      "output": "/cpms/slots/70df54b3081acaa550.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/01/delegation-lille.jpeg",
+      "originalSlot": "assets/images/blog/inner/5.jpg",
+      "output": "/cpms/slots/38aaf685b93d53d682.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/12/DSC_0090.jpg",
+      "originalSlot": "assets/images/blog/inner/6.jpg",
+      "output": "/cpms/slots/fe369240f9f4b57d67.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/12/WhatsApp-Image-2025-11-28-at-17.07.25.jpeg",
+      "originalSlot": "assets/images/blog/inner/1.jpg",
+      "output": "/cpms/slots/79b5a944675b12bae6.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/09/temoignage_1.jpg",
+      "originalSlot": "assets/images/blog/inner/2.jpg",
+      "output": "/cpms/slots/5f4d725d5b973d4f8b.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/cpms_testimony2.jpg",
+      "originalSlot": "assets/images/blog/inner/3.jpg",
+      "output": "/cpms/slots/eb45a3eefd5bca3d2b.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/12/WhatsApp-Image-2025-11-28-at-17.07.24-1-1.jpeg",
+      "originalSlot": "assets/images/blog/inner/4.jpg",
+      "output": "/cpms/slots/34c5a5935219db7fb0.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/temoignage1.jpeg",
+      "originalSlot": "assets/images/blog/inner/5.jpg",
+      "output": "/cpms/slots/7c95eb85a5ba5b1519.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/cpms_testimony3-2.jpg",
+      "originalSlot": "assets/images/blog/inner/8.jpg",
+      "output": "/cpms/slots/93751ede4692a7ce22.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/conference-amour.jpeg",
+      "originalSlot": "assets/images/event/1.jpg",
+      "output": "/cpms/slots/090be8ffcb8bfdf0ca.png",
+      "width": 1024,
+      "height": 577,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/journees-porte-ouverte-e1774627535722.jpeg",
+      "originalSlot": "assets/images/event/2.jpg",
+      "output": "/cpms/slots/c08794126456064b0d.png",
+      "width": 1024,
+      "height": 577,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/journees-recreatives.jpeg",
+      "originalSlot": "assets/images/event/3.jpg",
+      "output": "/cpms/slots/c58b60da3ceabef07c.png",
+      "width": 1024,
+      "height": 577,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/immersion-a-ouidah.jpeg",
+      "originalSlot": "assets/images/event/4.jpg",
+      "output": "/cpms/slots/1d401bd460eb4677d5.png",
+      "width": 1024,
+      "height": 577,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/match-basket.jpeg",
+      "originalSlot": "assets/images/event/5.jpg",
+      "output": "/cpms/slots/dc531e90ba5b5c8d31.png",
+      "width": 1024,
+      "height": 577,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/IMG-8-scaled.jpg",
+      "originalSlot": "assets/images/event/6.jpg",
+      "output": "/cpms/slots/191995a355785b777c.png",
+      "width": 1024,
+      "height": 578,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/journees-orientation-e1774627334169.jpeg",
+      "originalSlot": "assets/images/event/7.jpg",
+      "output": "/cpms/slots/2f661b5539bb3735bb.png",
+      "width": 1024,
+      "height": 578,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/10/visite-directrice-campus-france.jpeg",
+      "originalSlot": "assets/images/event/8.jpg",
+      "output": "/cpms/slots/6976a122ee759b012a.png",
+      "width": 1024,
+      "height": 578,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/10/octobre-rose.jpg",
+      "originalSlot": "assets/images/event/9.jpg",
+      "output": "/cpms/slots/7c9dc460300e2a2990.png",
+      "width": 1024,
+      "height": 578,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/journees-recreatives.jpeg",
+      "originalSlot": "/cpms/slots/7be9f3daf7e96b04d9.png",
+      "output": "/cpms/slots/199ca332f9dfb46b03.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/match-basket.jpeg",
+      "originalSlot": "assets/images/gallery/1.jpg",
+      "output": "/cpms/slots/c4e906736080ae224d.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/01/IMG-8-scaled.jpg",
+      "originalSlot": "assets/images/gallery/2.jpg",
+      "output": "/cpms/slots/debec96f872ea26995.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/10/visite-directrice-campus-france.jpeg",
+      "originalSlot": "assets/images/gallery/4.jpg",
+      "output": "/cpms/slots/5f158a9a5e8c309184.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2025/10/octobre-rose.jpg",
+      "originalSlot": "assets/images/gallery/5.jpg",
+      "output": "/cpms/slots/dc4b68836f4bf496b2.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etdts-Escaliers-2.jpg",
+      "originalSlot": "assets/images/gallery/6.jpg",
+      "output": "/cpms/slots/4d9b71ff29f786aa84.png",
+      "width": 500,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etdts-Escaliers-2.jpg",
+      "originalSlot": "assets/images/courses/1.jpg",
+      "output": "/cpms/slots/ab2b809400020ecb77.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/09/Facade-HEI.jpg",
+      "originalSlot": "assets/images/courses/2.jpg",
+      "output": "/cpms/slots/945df7bb511723a4c6.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-en-salle-1-scaled.jpg",
+      "originalSlot": "assets/images/courses/3.jpg",
+      "output": "/cpms/slots/7f5411dd9830f0ea78.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-Jardin-1.jpg",
+      "originalSlot": "assets/images/courses/4.jpg",
+      "output": "/cpms/slots/6004515ed5bf4bac43.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/medical.png",
+      "originalSlot": "assets/images/courses/1.jpg",
+      "output": "/cpms/slots/a10ae53d7ffdc9217b.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/ai.png",
+      "originalSlot": "assets/images/courses/2.jpg",
+      "output": "/cpms/slots/1f3fbdc8f9c5369da3.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/computer.png",
+      "originalSlot": "assets/images/courses/3.jpg",
+      "output": "/cpms/slots/f9d9a4b3de48256420.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/mechanic.png",
+      "originalSlot": "assets/images/courses/4.jpg",
+      "output": "/cpms/slots/c5b29dd5afdeefce8b.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/architect.png",
+      "originalSlot": "assets/images/courses/5.jpg",
+      "output": "/cpms/slots/ef9b28f2e54cab6d36.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/chemist.png",
+      "originalSlot": "assets/images/courses/6.jpg",
+      "output": "/cpms/slots/6eb965f91a914f87f7.png",
+      "width": 330,
+      "height": 210,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Salle-de-cours-3-1024x731.jpg",
+      "originalSlot": "assets/images/breadcrumbs/2.jpg",
+      "output": "/cpms/slots/d8bfff9448e2fb0bc5.png",
+      "width": 1920,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Salle-de-cours-3-1024x731.jpg",
+      "originalSlot": "assets/images/about/about-video-bg2.png",
+      "output": "/cpms/slots/71645e61cfab6b7ca1.png",
+      "width": 620,
+      "height": 490,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/junia_france.jpg",
+      "originalSlot": "assets/images/breadcrumbs/2.jpg",
+      "output": "/cpms/slots/8e5cfc4bf84ce47c88.png",
+      "width": 1920,
+      "height": 500,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/10/medical.png",
+      "originalSlot": "assets/images/blog/inner/1.jpg",
+      "output": "/cpms/slots/a1455d69d2350d8023.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/09/Facade-HEI.jpg",
+      "originalSlot": "assets/images/blog/inner/1.jpg",
+      "output": "/cpms/slots/fc179527dbfefe653e.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etdts-Escaliers-2.jpg",
+      "originalSlot": "assets/images/blog/inner/1.jpg",
+      "output": "/cpms/slots/ff1a40380d635ecd10.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2026/03/Etudiants-en-salle-1-scaled.jpg",
+      "originalSlot": "assets/images/blog/inner/1.jpg",
+      "output": "/cpms/slots/307089e32a386c0d99.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    },
+    {
+      "source": "/Users/macbookpro/Downloads/cpms/cpms-next/public/cpms/originals/2022/09/partner_cpms.jpg",
+      "originalSlot": "assets/images/blog/inner/1.jpg",
+      "output": "/cpms/slots/598363b524671b00ca.png",
+      "width": 1240,
+      "height": 699,
+      "fit": "cover"
+    }
+  ],
+  "unconfirmedStatistics": false,
+  "homeStatistics": [
+    {
+      "value": 172,
+      "prefix": "+",
+      "label": "Ayant voyagé"
+    },
+    {
+      "value": 163,
+      "label": "Ayant formé"
+    },
+    {
+      "value": 9,
+      "label": "Cursus béninois"
+    }
+  ]
+}

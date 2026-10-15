@@ -1,0 +1,18 @@
+/* Contenu des cycles dans le modèle Educavo course-single : palette du site,
+   tableaux financiers et ajustement des libellés des onglets existants. */
+.cpms-course-page [id] { scroll-margin-top:160px; }
+.cpms-course-page .rs-breadcrumbs .breadcrumbs-img img { filter:brightness(.45); }
+.cpms-course-page .intro-section .intro-tabs .tab-btns .tab-btn { height:100%; padding-left:12px; padding-right:12px; }
+.cpms-course-page .intro-section .intro-tabs .tab-btns .tab-btn.active,
+.cpms-course-page .intro-section .intro-tabs .tab-btns .tab-btn:hover { background:#21a7d0; border-color:#21a7d0; }
+.cpms-course-page .intro-section .intro-tabs .tab-btns { display:flex; }
+.cpms-course-page .intro-section .video-column .course-features-info ul li i { color:#21a7d0; }
+.cpms-course-page .intro-section .course-overview figure img { width:100%; height:auto; }
+.cpms-course-page .intro-section figcaption { font-size:13px; color:#626262; padding-top:8px; }
+.cpms-course-page .cpms-course-table { margin:0; color:#505050; min-width:620px; font-size:14px; }
+.cpms-course-page .cpms-course-table th,
+.cpms-course-page .cpms-course-table td { padding:12px 14px; vertical-align:middle; }
+.cpms-course-page .cpms-course-table thead { background:#273c66; color:white; }
+.cpms-course-page .cpms-course-table tbody th { font-weight:500; }
+.cpms-course-page .cpms-course-table.table-striped tbody tr:nth-of-type(odd) { background:#f3f8f9; }
+.cpms-course-page .cpms-course-table-wrap:focus-visible { outline:2px solid #21a7d0; outline-offset:3px; }

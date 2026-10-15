@@ -1,0 +1,272 @@
+[
+  {
+    "source": "/politique-de-confidentialite",
+    "destination": "/confidentialite",
+    "permanent": true
+  },
+  {
+    "source": "/2022/09/06/lenseignement-au-cp-marie-stella",
+    "destination": "/articles/77-lenseignement-au-cp-marie-stella",
+    "permanent": true
+  },
+  {
+    "source": "/2022/09/06/les-informations-cles-a-connaitre",
+    "destination": "/cycle-ingenieur",
+    "permanent": true
+  },
+  {
+    "source": "/2022/09/06/cycle-preparatoire",
+    "destination": "/cycle-preparatoire",
+    "permanent": true
+  },
+  {
+    "source": "/2022/09/06/evenements",
+    "destination": "/articles/110-evenements",
+    "permanent": true
+  },
+  {
+    "source": "/inscription",
+    "destination": "/admissions",
+    "permanent": true
+  },
+  {
+    "source": "/contactez-nous",
+    "destination": "/contact",
+    "permanent": true
+  },
+  {
+    "source": "/2022/10/10/qui-sommes-nous",
+    "destination": "/qui-sommes-nous",
+    "permanent": true
+  },
+  {
+    "source": "/2022/10/13/partenariat-cpms-et-junia",
+    "destination": "/qui-sommes-nous",
+    "permanent": true
+  },
+  {
+    "source": "/inscrivez-vous",
+    "destination": "/admissions",
+    "permanent": true
+  },
+  {
+    "source": "/quelques-domaines-de-profesionnalisation-en-cycle-ingenieur",
+    "destination": "/domaines",
+    "permanent": true
+  },
+  {
+    "source": "/inscriptions-fermees",
+    "destination": "/articles/371-inscriptions-fermees",
+    "permanent": true
+  },
+  {
+    "source": "/2022/10/13/tonon-ricardo-aout-2021",
+    "destination": "/articles/251-tonon-ricardo-aout-2021",
+    "permanent": true
+  },
+  {
+    "source": "/2022/10/13/china-josee-marie-aout-2022",
+    "destination": "/articles/255-china-josee-marie-aout-2022",
+    "permanent": true
+  },
+  {
+    "source": "/2025/01/17/delegation-lille-cpms",
+    "destination": "/articles/408-delegation-lille-cpms",
+    "permanent": true
+  },
+  {
+    "source": "/2023/02/07/salon-des-etudes-en-france-cas-de-junia-cpms",
+    "destination": "/articles/416-salon-des-etudes-en-france-cas-de-junia-cpms",
+    "permanent": true
+  },
+  {
+    "source": "/2023/05/04/journees-recreatives-au-cpms",
+    "destination": "/articles/473-journees-recreatives-au-cpms",
+    "permanent": true
+  },
+  {
+    "source": "/2023/07/21/insertion-et-adaptation-des-etudiants-apres-le-cycle-preparatoire-marie-stella-cpms",
+    "destination": "/articles/483-insertion-et-adaptation-des-etudiants-apres-le-cycle-preparatoire-marie-stella-cpms",
+    "permanent": true
+  },
+  {
+    "source": "/2023/07/25/les-etudiants-du-cpms-cloturent-lannee-scolaire-2022-2023-en-beaute",
+    "destination": "/articles/503-les-etudiants-du-cpms-cloturent-lannee-scolaire-2022-2023-en-beaute",
+    "permanent": true
+  },
+  {
+    "source": "/2023/07/25/da-matha-josue-ancien-etudiant-2e-promotion-a-dakar",
+    "destination": "/articles/544-da-matha-josue-ancien-etudiant-2e-promotion-a-dakar",
+    "permanent": true
+  },
+  {
+    "source": "/2023/07/25/donou-awadji-mahouna-serge-ancien-etudiant-2e-promotion-au-maroc",
+    "destination": "/articles/546-donou-awadji-mahouna-serge-ancien-etudiant-2e-promotion-au-maroc",
+    "permanent": true
+  },
+  {
+    "source": "/2023/08/24/rentree-academique-2023-2024-le-cpms-renforce-la-capacite-de-ses-enseignants",
+    "destination": "/articles/583-rentree-academique-2023-2024-le-cpms-renforce-la-capacite-de-ses-enseignants",
+    "permanent": true
+  },
+  {
+    "source": "/2023/10/26/seance-dentretien-entre-directrice-generale-et-les-etudiants",
+    "destination": "/articles/601-seance-dentretien-entre-directrice-generale-et-les-etudiants",
+    "permanent": true
+  },
+  {
+    "source": "/2024/01/12/merci-au-cpms",
+    "destination": "/articles/651-merci-au-cpms",
+    "permanent": true
+  },
+  {
+    "source": "/2024/01/12/le-cpmps-represente-au-salon-des-etudes-en-france",
+    "destination": "/articles/654-le-cpmps-represente-au-salon-des-etudes-en-france",
+    "permanent": true
+  },
+  {
+    "source": "/2024/03/20/journees-recreatives-cpms-edition-2023-2024",
+    "destination": "/articles/657-journees-recreatives-cpms-edition-2023-2024",
+    "permanent": true
+  },
+  {
+    "source": "/2024/03/19/visite-annuelle-dechanges-du-partenaire-junia",
+    "destination": "/articles/659-visite-annuelle-dechanges-du-partenaire-junia",
+    "permanent": true
+  },
+  {
+    "source": "/2024/03/19/da-matha-josue-temoigne-des-competences-du-cpms",
+    "destination": "/articles/667-da-matha-josue-temoigne-des-competences-du-cpms",
+    "permanent": true
+  },
+  {
+    "source": "/2025/03/20/journees-recreatives-cpms-edition-2023-2024",
+    "destination": "/articles/700-journees-recreatives-cpms-edition-2023-2024",
+    "permanent": true
+  },
+  {
+    "source": "/2024/04/23/une-surprise-oui-une-belle-surprise-pour-notre-professeur-de-mathematiques",
+    "destination": "/articles/762-une-surprise-oui-une-belle-surprise-pour-notre-professeur-de-mathematiques",
+    "permanent": true
+  },
+  {
+    "source": "/2024/04/29/le-cpms-encourage-les-etudiants-a-donner-le-meilleur-deux-memes",
+    "destination": "/articles/774-le-cpms-encourage-les-etudiants-a-donner-le-meilleur-deux-memes",
+    "permanent": true
+  },
+  {
+    "source": "/2024/06/28/complexe-scolaire-sainte-marie-stella-journees-recreatives-au-profit-des-apprenants",
+    "destination": "/articles/790-complexe-scolaire-sainte-marie-stella-journees-recreatives-au-profit-des-apprenants",
+    "permanent": true
+  },
+  {
+    "source": "/2024/07/13/journee-porte-ouvertes-le-cpms-fete-ses-5-ans-danniversaire",
+    "destination": "/articles/799-journee-porte-ouvertes-le-cpms-fete-ses-5-ans-danniversaire",
+    "permanent": true
+  },
+  {
+    "source": "/2024/07/19/suarez-adjava-ancien-etudiant-3e-promotion-en-france",
+    "destination": "/articles/819-suarez-adjava-ancien-etudiant-3e-promotion-en-france",
+    "permanent": true
+  },
+  {
+    "source": "/2023/02/07/visite-du-partenaire-junia-au-cpms-represente-par-la-directrice-du-developpement-international-junia-mme-cynthia-zoubir-le-26-janvier-2023",
+    "destination": "/articles/865-visite-du-partenaire-junia-au-cpms-represente-par-la-directrice-du-developpement-international-junia-mme-cynthia-zoubir-le-26-janvier-2023",
+    "permanent": true
+  },
+  {
+    "source": "/2025/01/18/alliance-junia-lille-cpms",
+    "destination": "/articles/867-alliance-junia-lille-cpms",
+    "permanent": true
+  },
+  {
+    "source": "/2025/01/17/visite-junia",
+    "destination": "/articles/868-visite-junia",
+    "permanent": true
+  },
+  {
+    "source": "/2025/01/29/journee-recreatives-2024-2025",
+    "destination": "/articles/869-journee-recreatives-2024-2025",
+    "permanent": true
+  },
+  {
+    "source": "/2025/02/14/conference-campus-coeur-ouvert",
+    "destination": "/articles/870-conference-campus-coeur-ouvert",
+    "permanent": true
+  },
+  {
+    "source": "/2025/10/24/octobre-rose-cpms",
+    "destination": "/articles/40804-octobre-rose-cpms",
+    "permanent": true
+  },
+  {
+    "source": "/2025/10/24/visite-campus-france",
+    "destination": "/articles/40805-visite-campus-france",
+    "permanent": true
+  },
+  {
+    "source": "/2025/12/16/merveille-togbe",
+    "destination": "/articles/40808-merveille-togbe",
+    "permanent": true
+  },
+  {
+    "source": "/2025/12/16/adjovi-axelle",
+    "destination": "/articles/40809-adjovi-axelle",
+    "permanent": true
+  },
+  {
+    "source": "/2025/12/16/adekpedjou-maessarath-abedje",
+    "destination": "/articles/40810-adekpedjou-maessarath-abedje",
+    "permanent": true
+  },
+  {
+    "source": "/2025/12/16/duval-ohounvide",
+    "destination": "/articles/40811-duval-ohounvide",
+    "permanent": true
+  },
+  {
+    "source": "/2026/01/15/evenements-roadmap",
+    "destination": "/articles/40814-evenements-roadmap",
+    "permanent": true
+  },
+  {
+    "source": "/2026/01/28/journee-recreatives-cpms",
+    "destination": "/articles/40815-journee-recreatives-cpms",
+    "permanent": true
+  },
+  {
+    "source": "/2026/01/28/match-basketball-cpms-2025-2026",
+    "destination": "/articles/40816-match-basketball-cpms-2025-2026",
+    "permanent": true
+  },
+  {
+    "source": "/2026/01/29/immersion-culturelle-ouidah-cpms-2025-2026",
+    "destination": "/articles/40817-immersion-culturelle-ouidah-cpms-2025-2026",
+    "permanent": true
+  },
+  {
+    "source": "/2026/01/30/portes-ouvertes-soiree-royale-cpms-2025-2026",
+    "destination": "/articles/40818-portes-ouvertes-soiree-royale-cpms-2025-2026",
+    "permanent": true
+  },
+  {
+    "source": "/2026/03/12/journee-orientation-etudiants",
+    "destination": "/articles/40819-journee-orientation-etudiants",
+    "permanent": true
+  },
+  {
+    "source": "/2026/03/12/conference-amour-chantage-reseaux-sociaux",
+    "destination": "/articles/40820-conference-amour-chantage-reseaux-sociaux",
+    "permanent": true
+  },
+  {
+    "source": "/presentation",
+    "destination": "/qui-sommes-nous",
+    "permanent": true
+  },
+  {
+    "source": "/partenaires",
+    "destination": "/qui-sommes-nous#ecoles-partenaires",
+    "permanent": true
+  }
+]

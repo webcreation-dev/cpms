@@ -1,0 +1,3768 @@
+{
+  "origin": "http://127.0.0.1:3003",
+  "pages": [
+    {
+      "path": "/blog-post-right.html",
+      "status": 200,
+      "bytes": 188693
+    },
+    {
+      "path": "/about2.html",
+      "status": 200,
+      "bytes": 200088
+    },
+    {
+      "path": "/blog-post-left.html",
+      "status": 200,
+      "bytes": 188081
+    },
+    {
+      "path": "/blog-left.html",
+      "status": 200,
+      "bytes": 229886
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 235335
+    },
+    {
+      "path": "/about.html",
+      "status": 200,
+      "bytes": 246556
+    },
+    {
+      "path": "/contact.html",
+      "status": 200,
+      "bytes": 167641
+    },
+    {
+      "path": "/cart.html",
+      "status": 200,
+      "bytes": 162773
+    },
+    {
+      "path": "/blog-single.html",
+      "status": 200,
+      "bytes": 176576
+    },
+    {
+      "path": "/blog-right.html",
+      "status": 200,
+      "bytes": 228299
+    },
+    {
+      "path": "/blog.html",
+      "status": 200,
+      "bytes": 219493
+    },
+    {
+      "path": "/checkout.html",
+      "status": 200,
+      "bytes": 219272
+    },
+    {
+      "path": "/contact4.html",
+      "status": 200,
+      "bytes": 166688
+    },
+    {
+      "path": "/course2.html",
+      "status": 200,
+      "bytes": 189258
+    },
+    {
+      "path": "/contact3.html",
+      "status": 200,
+      "bytes": 167812
+    },
+    {
+      "path": "/contact2.html",
+      "status": 200,
+      "bytes": 182353
+    },
+    {
+      "path": "/course-single.html",
+      "status": 200,
+      "bytes": 264744
+    },
+    {
+      "path": "/course.html",
+      "status": 200,
+      "bytes": 232189
+    },
+    {
+      "path": "/error.html",
+      "status": 200,
+      "bytes": 96372
+    },
+    {
+      "path": "/course6.html",
+      "status": 200,
+      "bytes": 189080
+    },
+    {
+      "path": "/course3.html",
+      "status": 200,
+      "bytes": 186866
+    },
+    {
+      "path": "/course5.html",
+      "status": 200,
+      "bytes": 187988
+    },
+    {
+      "path": "/events-style1.html",
+      "status": 200,
+      "bytes": 201497
+    },
+    {
+      "path": "/course4.html",
+      "status": 200,
+      "bytes": 183743
+    },
+    {
+      "path": "/events-style2.html",
+      "status": 200,
+      "bytes": 185356
+    },
+    {
+      "path": "/gallery-style2.html",
+      "status": 200,
+      "bytes": 174415
+    },
+    {
+      "path": "/events-style3.html",
+      "status": 200,
+      "bytes": 175832
+    },
+    {
+      "path": "/faq.html",
+      "status": 200,
+      "bytes": 184289
+    },
+    {
+      "path": "/gallery-style3.html",
+      "status": 200,
+      "bytes": 167333
+    },
+    {
+      "path": "/gallery-style1.html",
+      "status": 200,
+      "bytes": 167115
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "bytes": 288514
+    },
+    {
+      "path": "/index10.html",
+      "status": 200,
+      "bytes": 210149
+    },
+    {
+      "path": "/index14.html",
+      "status": 200,
+      "bytes": 229840
+    },
+    {
+      "path": "/index11.html",
+      "status": 200,
+      "bytes": 305154
+    },
+    {
+      "path": "/index12.html",
+      "status": 200,
+      "bytes": 318980
+    },
+    {
+      "path": "/index13.html",
+      "status": 200,
+      "bytes": 245221
+    },
+    {
+      "path": "/index15.html",
+      "status": 200,
+      "bytes": 254818
+    },
+    {
+      "path": "/index3.html",
+      "status": 200,
+      "bytes": 235357
+    },
+    {
+      "path": "/index5.html",
+      "status": 200,
+      "bytes": 236882
+    },
+    {
+      "path": "/index6.html",
+      "status": 200,
+      "bytes": 270248
+    },
+    {
+      "path": "/index2.html",
+      "status": 200,
+      "bytes": 287672
+    },
+    {
+      "path": "/index4.html",
+      "status": 200,
+      "bytes": 270986
+    },
+    {
+      "path": "/index7.html",
+      "status": 200,
+      "bytes": 254867
+    },
+    {
+      "path": "/login.html",
+      "status": 200,
+      "bytes": 152875
+    },
+    {
+      "path": "/register.html",
+      "status": 200,
+      "bytes": 163697
+    },
+    {
+      "path": "/index9.html",
+      "status": 200,
+      "bytes": 243500
+    },
+    {
+      "path": "/shop-single.html",
+      "status": 200,
+      "bytes": 175020
+    },
+    {
+      "path": "/index8.html",
+      "status": 200,
+      "bytes": 323522
+    },
+    {
+      "path": "/shop.html",
+      "status": 200,
+      "bytes": 179542
+    },
+    {
+      "path": "/team-single.html",
+      "status": 200,
+      "bytes": 172206
+    },
+    {
+      "path": "/team.html",
+      "status": 200,
+      "bytes": 172680
+    },
+    {
+      "path": "/team2.html",
+      "status": 200,
+      "bytes": 173904
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/css/animate.css",
+      "status": 200,
+      "bytes": 74602,
+      "identical": true
+    },
+    {
+      "path": "/assets/css/font-awesome.min.css",
+      "status": 200,
+      "bytes": 30983,
+      "identical": true
+    },
+    {
+      "path": "/assets/css/bootstrap.min.css",
+      "status": 200,
+      "bytes": 159521,
+      "identical": true
+    },
+    {
+      "path": "/assets/css/magnific-popup.css",
+      "status": 200,
+      "bytes": 7306,
+      "identical": true
+    },
+    {
+      "path": "/assets/css/off-canvas.css",
+      "status": 200,
+      "bytes": 5949,
+      "identical": true
+    },
+    {
+      "path": "/assets/css/owl.carousel.css",
+      "status": 200,
+      "bytes": 4089,
+      "identical": true
+    },
+    {
+      "path": "/assets/css/responsive.css",
+      "status": 200,
+      "bytes": 118559,
+      "identical": true
+    },
+    {
+      "path": "/assets/css/rsmenu-main.css",
+      "status": 200,
+      "bytes": 16847,
+      "identical": true
+    },
+    {
+      "path": "/assets/css/slick.css",
+      "status": 200,
+      "bytes": 1846,
+      "identical": true
+    },
+    {
+      "path": "/assets/css/rs-spacing.css",
+      "status": 200,
+      "bytes": 253197,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/Flaticon.eot%3F",
+      "status": 200,
+      "bytes": 35774,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/Flaticon.woff",
+      "status": 200,
+      "bytes": 22408,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/Flaticon.woff2",
+      "status": 200,
+      "bytes": 18900,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/Flaticon.eot",
+      "status": 200,
+      "bytes": 35774,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/Flaticon.ttf",
+      "status": 200,
+      "bytes": 35596,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/fontawesome-webfont.eot%3F",
+      "status": 200,
+      "bytes": 165742,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/fontawesome-webfont.eot%3Fv%3D4.7.0",
+      "status": 200,
+      "bytes": 165742,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/flaticon.css",
+      "status": 200,
+      "bytes": 5407,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/fontawesome-webfont.woff2%3Fv%3D4.7.0",
+      "status": 200,
+      "bytes": 77160,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/fontawesome-webfont.svg%3Fv%3D4.7.0",
+      "status": 200,
+      "bytes": 447058,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/fontawesome-webfont.woff%3Fv%3D4.7.0",
+      "status": 200,
+      "bytes": 98024,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/fontawesome-webfont.ttf%3Fv%3D4.7.0",
+      "status": 200,
+      "bytes": 165548,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/linea-basic-10.eot%3F",
+      "status": 200,
+      "bytes": 21478,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/linea-basic-10.eot",
+      "status": 200,
+      "bytes": 21478,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/linea-basic-10.woff",
+      "status": 200,
+      "bytes": 12260,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/about-video-bg-orange.png",
+      "status": 200,
+      "bytes": 72908,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/about-video-bg2.png",
+      "status": 200,
+      "bytes": 382585,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/linea-fonts.css",
+      "status": 200,
+      "bytes": 8216,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/about2orange.png",
+      "status": 200,
+      "bytes": 425784,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/about3.png",
+      "status": 200,
+      "bytes": 463007,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/about51.png",
+      "status": 200,
+      "bytes": 451547,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/book1.png",
+      "status": 200,
+      "bytes": 25678,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/linea-basic-10.ttf",
+      "status": 200,
+      "bytes": 21284,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/ceo.png",
+      "status": 200,
+      "bytes": 28247,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/linea-basic-10.svg",
+      "status": 200,
+      "bytes": 48016,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/dot-shape.png",
+      "status": 200,
+      "bytes": 6530,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/history.png",
+      "status": 200,
+      "bytes": 475300,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home11/about.png",
+      "status": 200,
+      "bytes": 356425,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home13/shape-2.png",
+      "status": 200,
+      "bytes": 2803,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home13/shape.png",
+      "status": 200,
+      "bytes": 2991,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home13/about.png",
+      "status": 200,
+      "bytes": 417483,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home5/about-circle-bg.png",
+      "status": 200,
+      "bytes": 10048,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home5/about-main.png",
+      "status": 200,
+      "bytes": 262284,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home5/small-circle-shape.png",
+      "status": 200,
+      "bytes": 1445,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home6/line/1.png",
+      "status": 200,
+      "bytes": 1808,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home6/line/2.png",
+      "status": 200,
+      "bytes": 1808,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home5/about-deep-bg.png",
+      "status": 200,
+      "bytes": 66377,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home8/1.jpg",
+      "status": 200,
+      "bytes": 26871,
+      "identical": true
+    },
+    {
+      "path": "/assets/fonts/Flaticon.svg",
+      "status": 200,
+      "bytes": 267749,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home8/2.jpg",
+      "status": 200,
+      "bytes": 35903,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home7/about.png",
+      "status": 200,
+      "bytes": 349306,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/icon/1.png",
+      "status": 200,
+      "bytes": 1841,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/icon/2.png",
+      "status": 200,
+      "bytes": 1666,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home8/3.png",
+      "status": 200,
+      "bytes": 370231,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/icon/3.png",
+      "status": 200,
+      "bytes": 1806,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/home9/about.png",
+      "status": 200,
+      "bytes": 757013,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/icon-shape.png",
+      "status": 200,
+      "bytes": 34880,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/image-center-circle.png",
+      "status": 200,
+      "bytes": 8085,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/one.png",
+      "status": 200,
+      "bytes": 3895,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/sign.png",
+      "status": 200,
+      "bytes": 4828,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/style2/grid1.jpg",
+      "status": 200,
+      "bytes": 32806,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/style2/grid2.jpg",
+      "status": 200,
+      "bytes": 32016,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/style3/icons/1.png",
+      "status": 200,
+      "bytes": 7232,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/style3/icons/2.png",
+      "status": 200,
+      "bytes": 6862,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/tab2.jpg",
+      "status": 200,
+      "bytes": 191529,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/tab3.jpg",
+      "status": 200,
+      "bytes": 188838,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/three.png",
+      "status": 200,
+      "bytes": 3902,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/two.png",
+      "status": 200,
+      "bytes": 3786,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/style3/icons/3.png",
+      "status": 200,
+      "bytes": 7166,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/about/tab1.jpg",
+      "status": 200,
+      "bytes": 218288,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/banner-circle.png",
+      "status": 200,
+      "bytes": 6214,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/banner-dots.png",
+      "status": 200,
+      "bytes": 10776,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/5.png",
+      "status": 200,
+      "bytes": 430772,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/banner-line.png",
+      "status": 200,
+      "bytes": 3946,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/bnr3-top.png",
+      "status": 200,
+      "bytes": 85381,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/bottom-shape.png",
+      "status": 200,
+      "bytes": 20452,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home1.jpg",
+      "status": 200,
+      "bytes": 154422,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home11/banner.jpg",
+      "status": 200,
+      "bytes": 148231,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home11/shape/1.png",
+      "status": 200,
+      "bytes": 2596,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home11/shape/2.png",
+      "status": 200,
+      "bytes": 2634,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home11/shape/3.png",
+      "status": 200,
+      "bytes": 1952,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home11/shape/4.png",
+      "status": 200,
+      "bytes": 3393,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home12/1.png",
+      "status": 200,
+      "bytes": 93741,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home12/banner-home12.jpg",
+      "status": 200,
+      "bytes": 19449,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home12/dotted-shape.png",
+      "status": 200,
+      "bytes": 5671,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home13/banner.jpg",
+      "status": 200,
+      "bytes": 47572,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home12/intro-box.png",
+      "status": 200,
+      "bytes": 31958,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home13/circle-img.png",
+      "status": 200,
+      "bytes": 9217,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home13/s33.png",
+      "status": 200,
+      "bytes": 5133,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home13/squre-2.png",
+      "status": 200,
+      "bytes": 1809,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home13/img-layer.png",
+      "status": 200,
+      "bytes": 525848,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home13/squre-3.png",
+      "status": 200,
+      "bytes": 1773,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home14/border.png",
+      "status": 200,
+      "bytes": 11476,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home15/1.png",
+      "status": 200,
+      "bytes": 141416,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home15/2.png",
+      "status": 200,
+      "bytes": 7577,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home14/img.png",
+      "status": 200,
+      "bytes": 223263,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home15/banner-1.jpg",
+      "status": 200,
+      "bytes": 35205,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home15/icon-1.png",
+      "status": 200,
+      "bytes": 1038,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home15/icon-2.png",
+      "status": 200,
+      "bytes": 1164,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home15/icon-3.png",
+      "status": 200,
+      "bytes": 1404,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home15/online-learn.png",
+      "status": 200,
+      "bytes": 6228,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home3.jpg",
+      "status": 200,
+      "bytes": 30377,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home4.jpg",
+      "status": 200,
+      "bytes": 247868,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home6/spine-sm.png",
+      "status": 200,
+      "bytes": 1307,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home6/bg.png",
+      "status": 200,
+      "bytes": 25591,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home6/spine.png",
+      "status": 200,
+      "bytes": 1604,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home7/icon/1.png",
+      "status": 200,
+      "bytes": 1920,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home7/banner-bg.jpg",
+      "status": 200,
+      "bytes": 29837,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home7/icon/2.png",
+      "status": 200,
+      "bytes": 1835,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/left-shape.png",
+      "status": 200,
+      "bytes": 18724,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/right-shape.png",
+      "status": 200,
+      "bytes": 27058,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home9.jpg",
+      "status": 200,
+      "bytes": 212413,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/about-bg.jpg",
+      "status": 200,
+      "bytes": 164624,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/about-intro-bg.jpg",
+      "status": 200,
+      "bytes": 16453,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/bg1.png",
+      "status": 200,
+      "bytes": 20853,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/bg2.jpg",
+      "status": 200,
+      "bytes": 35705,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/bg3.png",
+      "status": 200,
+      "bytes": 26826,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/course-contact-bg.jpg",
+      "status": 200,
+      "bytes": 20953,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/course-shape-bg.jpg",
+      "status": 200,
+      "bytes": 26293,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/footer-bg.png",
+      "status": 200,
+      "bytes": 16012,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/footer-bg2.jpg",
+      "status": 200,
+      "bytes": 67615,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home-8-bg.jpg",
+      "status": 200,
+      "bytes": 76501,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home11-news.jpg",
+      "status": 200,
+      "bytes": 20172,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home12/dotted.png",
+      "status": 200,
+      "bytes": 6946,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home12/event-bg.jpg",
+      "status": 200,
+      "bytes": 24406,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home12/services-bg.jpg",
+      "status": 200,
+      "bytes": 22510,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home12/testi-bg.jpg",
+      "status": 200,
+      "bytes": 24372,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/banner/home7/img-1.png",
+      "status": 200,
+      "bytes": 4866792,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home12/why-learn-bg.jpg",
+      "status": 200,
+      "bytes": 31220,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home13/counter-bg.jpg",
+      "status": 200,
+      "bytes": 27641,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home13/footer.jpg",
+      "status": 200,
+      "bytes": 24014,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home13/logo-bg.jpg",
+      "status": 200,
+      "bytes": 14091,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home13/subscribe-bg.jpg",
+      "status": 200,
+      "bytes": 11922,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home14/cta.jpg",
+      "status": 200,
+      "bytes": 3957,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home6/bg.png",
+      "status": 200,
+      "bytes": 39678,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home6/icon/1.png",
+      "status": 200,
+      "bytes": 37580,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home6/icon/2.png",
+      "status": 200,
+      "bytes": 52404,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home6/icon/3.png",
+      "status": 200,
+      "bytes": 41546,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home7/bg.png",
+      "status": 200,
+      "bytes": 76411,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/home8-bg2.jpg",
+      "status": 200,
+      "bytes": 19051,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/main-home.jpg",
+      "status": 200,
+      "bytes": 91153,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/newslatter-bg15.jpg",
+      "status": 200,
+      "bytes": 6868,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/newsletter-bg.jpg",
+      "status": 200,
+      "bytes": 7353,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/newsletter-bg2.jpg",
+      "status": 200,
+      "bytes": 42177,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/pattern1.png",
+      "status": 200,
+      "bytes": 12989,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/testi-bg.jpg",
+      "status": 200,
+      "bytes": 53622,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/video-bg-15.jpg",
+      "status": 200,
+      "bytes": 77303,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/bg/video-text-bg15.jpg",
+      "status": 200,
+      "bytes": 12307,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/1.jpg",
+      "status": 200,
+      "bytes": 18466,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/2.jpg",
+      "status": 200,
+      "bytes": 21712,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/3.jpg",
+      "status": 200,
+      "bytes": 23689,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/4.jpg",
+      "status": 200,
+      "bytes": 35561,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/5.jpg",
+      "status": 200,
+      "bytes": 41456,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/6.jpg",
+      "status": 200,
+      "bytes": 31758,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/inner/2.jpg",
+      "status": 200,
+      "bytes": 115143,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/inner/1.jpg",
+      "status": 200,
+      "bytes": 143041,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/inner/3.jpg",
+      "status": 200,
+      "bytes": 155329,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/inner/4.jpg",
+      "status": 200,
+      "bytes": 155329,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/inner/5.jpg",
+      "status": 200,
+      "bytes": 115143,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/inner/6.jpg",
+      "status": 200,
+      "bytes": 143041,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/inner/7.jpg",
+      "status": 200,
+      "bytes": 139251,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/inner/8.jpg",
+      "status": 200,
+      "bytes": 146663,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style10/1.jpg",
+      "status": 200,
+      "bytes": 123226,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style10/2.jpg",
+      "status": 200,
+      "bytes": 174145,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style10/3.jpg",
+      "status": 200,
+      "bytes": 139086,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style10/4.jpg",
+      "status": 200,
+      "bytes": 165536,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style2/1.jpg",
+      "status": 200,
+      "bytes": 29337,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style2/2.jpg",
+      "status": 200,
+      "bytes": 31546,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style2/3.jpg",
+      "status": 200,
+      "bytes": 30728,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style2/4.jpg",
+      "status": 200,
+      "bytes": 24492,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style2/5.jpg",
+      "status": 200,
+      "bytes": 30962,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style2/6.jpg",
+      "status": 200,
+      "bytes": 38443,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style3/1.jpg",
+      "status": 200,
+      "bytes": 11746,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style3/2.jpg",
+      "status": 200,
+      "bytes": 11746,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style8/1.jpg",
+      "status": 200,
+      "bytes": 19054,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style8/2.jpg",
+      "status": 200,
+      "bytes": 26564,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style9/1.jpg",
+      "status": 200,
+      "bytes": 21197,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style9/2.jpg",
+      "status": 200,
+      "bytes": 25977,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style9/3.jpg",
+      "status": 200,
+      "bytes": 26398,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style9/4.jpg",
+      "status": 200,
+      "bytes": 21496,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style9/5.jpg",
+      "status": 200,
+      "bytes": 22849,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/blog/style9/6.jpg",
+      "status": 200,
+      "bytes": 24018,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/breadcrumbs/1.jpg",
+      "status": 200,
+      "bytes": 21453,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/breadcrumbs/2.jpg",
+      "status": 200,
+      "bytes": 105941,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/breadcrumbs/4.jpg",
+      "status": 200,
+      "bytes": 105941,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/breadcrumbs/5.jpg",
+      "status": 200,
+      "bytes": 147327,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/breadcrumbs/6.jpg",
+      "status": 200,
+      "bytes": 116086,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/call-action/join-us.png",
+      "status": 200,
+      "bytes": 523754,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home11/1.jpg",
+      "status": 200,
+      "bytes": 90153,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home11/icons/1.png",
+      "status": 200,
+      "bytes": 2532,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home11/icons/2.png",
+      "status": 200,
+      "bytes": 1960,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home11/icons/3.png",
+      "status": 200,
+      "bytes": 2976,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home11/icons/4.png",
+      "status": 200,
+      "bytes": 2447,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home11/icons/5.png",
+      "status": 200,
+      "bytes": 2581,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home11/icons/6.png",
+      "status": 200,
+      "bytes": 2368,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home9/2.jpg",
+      "status": 200,
+      "bytes": 62137,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home9/1.jpg",
+      "status": 200,
+      "bytes": 91974,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/icons/1.png",
+      "status": 200,
+      "bytes": 1987,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/home9/3.jpg",
+      "status": 200,
+      "bytes": 77114,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/icons/2.png",
+      "status": 200,
+      "bytes": 1853,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/icons/3.png",
+      "status": 200,
+      "bytes": 2016,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/icons/4.png",
+      "status": 200,
+      "bytes": 2125,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/icons/5.png",
+      "status": 200,
+      "bytes": 1973,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/icons/6.png",
+      "status": 200,
+      "bytes": 2293,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/icons/7.png",
+      "status": 200,
+      "bytes": 2167,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/icons/8.png",
+      "status": 200,
+      "bytes": 1804,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/icons/9.png",
+      "status": 200,
+      "bytes": 4141,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/1.jpg",
+      "status": 200,
+      "bytes": 105554,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/2.jpg",
+      "status": 200,
+      "bytes": 113705,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/3.jpg",
+      "status": 200,
+      "bytes": 96126,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/4.jpg",
+      "status": 200,
+      "bytes": 98968,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/5.jpg",
+      "status": 200,
+      "bytes": 202338,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/6.jpg",
+      "status": 200,
+      "bytes": 127660,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/icon/1.png",
+      "status": 200,
+      "bytes": 3907,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/icon/2.png",
+      "status": 200,
+      "bytes": 4996,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/icon/3.png",
+      "status": 200,
+      "bytes": 3168,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/icon/4.png",
+      "status": 200,
+      "bytes": 4720,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/icon/5.png",
+      "status": 200,
+      "bytes": 2046,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/style1/1.png",
+      "status": 200,
+      "bytes": 4720,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/main-home/icon/6.png",
+      "status": 200,
+      "bytes": 11087,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/style1/2.png",
+      "status": 200,
+      "bytes": 2046,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/style1/3.png",
+      "status": 200,
+      "bytes": 3168,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/style1/4.png",
+      "status": 200,
+      "bytes": 11087,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/style1/5.png",
+      "status": 200,
+      "bytes": 4996,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/categories/style1/6.png",
+      "status": 200,
+      "bytes": 3907,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/choose/home12/1.png",
+      "status": 200,
+      "bytes": 113650,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/choose/home12/icon/1.png",
+      "status": 200,
+      "bytes": 7601,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/choose/home12/icon/2.png",
+      "status": 200,
+      "bytes": 4857,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/choose/home12/icon/3.png",
+      "status": 200,
+      "bytes": 4859,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/choose/icons/1.png",
+      "status": 200,
+      "bytes": 2081,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/choose/icons/2.png",
+      "status": 200,
+      "bytes": 2374,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/choose/icons/3.png",
+      "status": 200,
+      "bytes": 2004,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/choose/icons/4.png",
+      "status": 200,
+      "bytes": 1992,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/contact/contact4.png",
+      "status": 200,
+      "bytes": 190665,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/choose/why.png",
+      "status": 200,
+      "bytes": 530005,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/contact/2.png",
+      "status": 200,
+      "bytes": 308833,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/contact/icon/2.png",
+      "status": 200,
+      "bytes": 3377,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/contact/icon/3.png",
+      "status": 200,
+      "bytes": 2658,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/contact/icon/1.png",
+      "status": 200,
+      "bytes": 2949,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/counter/bg1.png",
+      "status": 200,
+      "bytes": 57857,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/counter/bg2.png",
+      "status": 200,
+      "bytes": 38810,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/counter/bg3.png",
+      "status": 200,
+      "bytes": 51870,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/1.jpg",
+      "status": 200,
+      "bytes": 15695,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/10.jpg",
+      "status": 200,
+      "bytes": 17627,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/2.jpg",
+      "status": 200,
+      "bytes": 22146,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/3.jpg",
+      "status": 200,
+      "bytes": 16006,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/4.jpg",
+      "status": 200,
+      "bytes": 20196,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/5.jpg",
+      "status": 200,
+      "bytes": 23559,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/6.jpg",
+      "status": 200,
+      "bytes": 16006,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/7.jpg",
+      "status": 200,
+      "bytes": 18609,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/8.jpg",
+      "status": 200,
+      "bytes": 17627,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/9.jpg",
+      "status": 200,
+      "bytes": 16585,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home11/1.jpg",
+      "status": 200,
+      "bytes": 30058,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home12/1.jpg",
+      "status": 200,
+      "bytes": 28966,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home12/2.jpg",
+      "status": 200,
+      "bytes": 21602,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home12/3.jpg",
+      "status": 200,
+      "bytes": 33938,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home12/4.jpg",
+      "status": 200,
+      "bytes": 27309,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home12/5.jpg",
+      "status": 200,
+      "bytes": 25757,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home12/6.jpg",
+      "status": 200,
+      "bytes": 34073,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home13/1.jpg",
+      "status": 200,
+      "bytes": 73291,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home13/2.jpg",
+      "status": 200,
+      "bytes": 75685,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home13/3.jpg",
+      "status": 200,
+      "bytes": 76531,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home13/4.jpg",
+      "status": 200,
+      "bytes": 73775,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home13/5.jpg",
+      "status": 200,
+      "bytes": 81760,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home13/6.jpg",
+      "status": 200,
+      "bytes": 74352,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home13/avatar.png",
+      "status": 200,
+      "bytes": 1528,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home14/1.jpg",
+      "status": 200,
+      "bytes": 98588,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home14/4.jpg",
+      "status": 200,
+      "bytes": 80925,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home14/2.jpg",
+      "status": 200,
+      "bytes": 72395,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home14/3.jpg",
+      "status": 200,
+      "bytes": 82849,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home14/5.jpg",
+      "status": 200,
+      "bytes": 51786,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home14/6.jpg",
+      "status": 200,
+      "bytes": 87939,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home6/style1/1.png",
+      "status": 200,
+      "bytes": 136690,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home6/style1/2.png",
+      "status": 200,
+      "bytes": 147899,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home6/style1/3.png",
+      "status": 200,
+      "bytes": 123384,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home6/style1/4.png",
+      "status": 200,
+      "bytes": 150754,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home6/style1/5.png",
+      "status": 200,
+      "bytes": 116973,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home6/style1/6.png",
+      "status": 200,
+      "bytes": 142321,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home7/1.png",
+      "status": 200,
+      "bytes": 201994,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home7/2.png",
+      "status": 200,
+      "bytes": 160599,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home7/3.png",
+      "status": 200,
+      "bytes": 142899,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home7/4.png",
+      "status": 200,
+      "bytes": 8881,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home8/1.jpg",
+      "status": 200,
+      "bytes": 155230,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home8/2.jpg",
+      "status": 200,
+      "bytes": 144040,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home8/3.jpg",
+      "status": 200,
+      "bytes": 98697,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home8/4.jpg",
+      "status": 200,
+      "bytes": 142562,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home8/5.jpg",
+      "status": 200,
+      "bytes": 149472,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/home8/6.jpg",
+      "status": 200,
+      "bytes": 97799,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/main-home/1.jpg",
+      "status": 200,
+      "bytes": 63744,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/main-home/2.jpg",
+      "status": 200,
+      "bytes": 98588,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style2/1.png",
+      "status": 200,
+      "bytes": 29930,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style2/2.png",
+      "status": 200,
+      "bytes": 49000,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style2/3.png",
+      "status": 200,
+      "bytes": 28565,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style2/4.png",
+      "status": 200,
+      "bytes": 35077,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style2/6.png",
+      "status": 200,
+      "bytes": 40936,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style2/5.png",
+      "status": 200,
+      "bytes": 32247,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style4/1.jpg",
+      "status": 200,
+      "bytes": 40812,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style4/2.jpg",
+      "status": 200,
+      "bytes": 30817,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style4/3.jpg",
+      "status": 200,
+      "bytes": 31397,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style4/4.jpg",
+      "status": 200,
+      "bytes": 45444,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style4/5.jpg",
+      "status": 200,
+      "bytes": 28079,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style4/6.jpg",
+      "status": 200,
+      "bytes": 31393,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style5/1.jpg",
+      "status": 200,
+      "bytes": 92685,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style5/2.jpg",
+      "status": 200,
+      "bytes": 79681,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style5/3.jpg",
+      "status": 200,
+      "bytes": 81122,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style5/4.jpg",
+      "status": 200,
+      "bytes": 79681,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style5/5.jpg",
+      "status": 200,
+      "bytes": 93376,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style5/6.jpg",
+      "status": 200,
+      "bytes": 51371,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style5/7.jpg",
+      "status": 200,
+      "bytes": 80699,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/courses/style5/8.jpg",
+      "status": 200,
+      "bytes": 96974,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/covid-19.jpg",
+      "status": 200,
+      "bytes": 165636,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/cta-bg.jpg",
+      "status": 200,
+      "bytes": 50457,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/cta-bg2.jpg",
+      "status": 200,
+      "bytes": 118335,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/home1.jpg",
+      "status": 200,
+      "bytes": 193231,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/home11.jpg",
+      "status": 200,
+      "bytes": 55176,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/home7/1.png",
+      "status": 200,
+      "bytes": 90961,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/home7/2.png",
+      "status": 200,
+      "bytes": 114826,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/main-home.jpg",
+      "status": 200,
+      "bytes": 24772,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/style2/left-bg.jpg",
+      "status": 200,
+      "bytes": 39808,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/style2/left-bg2.png",
+      "status": 200,
+      "bytes": 567533,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/style2/right-bg.jpg",
+      "status": 200,
+      "bytes": 38015,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/style2/right-bg2.png",
+      "status": 200,
+      "bytes": 9346,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/style3/2.png",
+      "status": 200,
+      "bytes": 105108,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/cta/style3/1-2.png",
+      "status": 200,
+      "bytes": 125573,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/dark-logo.png",
+      "status": 200,
+      "bytes": 16359,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/degrees/1.jpg",
+      "status": 200,
+      "bytes": 37490,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/degrees/2.jpg",
+      "status": 200,
+      "bytes": 33016,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/degrees/3.jpg",
+      "status": 200,
+      "bytes": 35910,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/degrees/4.jpg",
+      "status": 200,
+      "bytes": 33876,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/degrees/5.jpg",
+      "status": 200,
+      "bytes": 26900,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/donor/1.jpg",
+      "status": 200,
+      "bytes": 24876,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/download/apple.png",
+      "status": 200,
+      "bytes": 43906,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/download/m-app.png",
+      "status": 200,
+      "bytes": 224668,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/download/play.png",
+      "status": 200,
+      "bytes": 45424,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/1.jpg",
+      "status": 200,
+      "bytes": 96160,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/2.jpg",
+      "status": 200,
+      "bytes": 80074,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/3.jpg",
+      "status": 200,
+      "bytes": 115594,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/4.jpg",
+      "status": 200,
+      "bytes": 81256,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/5.jpg",
+      "status": 200,
+      "bytes": 80061,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/6.jpg",
+      "status": 200,
+      "bytes": 96598,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/7.jpg",
+      "status": 200,
+      "bytes": 86461,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/8.jpg",
+      "status": 200,
+      "bytes": 126477,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/9.jpg",
+      "status": 200,
+      "bytes": 106091,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/home12/1.jpg",
+      "status": 200,
+      "bytes": 140422,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/home12/2.jpg",
+      "status": 200,
+      "bytes": 107702,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/home12/3.jpg",
+      "status": 200,
+      "bytes": 97899,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/home12/5.jpg",
+      "status": 200,
+      "bytes": 82416,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/home12/4.jpg",
+      "status": 200,
+      "bytes": 118998,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/single.jpg",
+      "status": 200,
+      "bytes": 68703,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/style3/1.jpg",
+      "status": 200,
+      "bytes": 54213,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/style3/2.jpg",
+      "status": 200,
+      "bytes": 52690,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/style3/3.jpg",
+      "status": 200,
+      "bytes": 52690,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/style3/4.jpg",
+      "status": 200,
+      "bytes": 45594,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/style3/5.jpg",
+      "status": 200,
+      "bytes": 45453,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/event/style3/6.jpg",
+      "status": 200,
+      "bytes": 56621,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/facilities/icon/1.png",
+      "status": 200,
+      "bytes": 3002,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/facilities/icon/2.png",
+      "status": 200,
+      "bytes": 3484,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/facilities/icon/3.png",
+      "status": 200,
+      "bytes": 3267,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/facilities/bg-1.png",
+      "status": 200,
+      "bytes": 796553,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/faq/1.jpg",
+      "status": 200,
+      "bytes": 195600,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/fav-orange.png",
+      "status": 200,
+      "bytes": 10038,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/fav.png",
+      "status": 200,
+      "bytes": 24963,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/icon/1.png",
+      "status": 200,
+      "bytes": 8553,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/icon/2.png",
+      "status": 200,
+      "bytes": 5574,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/icon/3.png",
+      "status": 200,
+      "bytes": 6125,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/icon/4.png",
+      "status": 200,
+      "bytes": 3168,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style2/1.png",
+      "status": 200,
+      "bytes": 6198,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style2/2.png",
+      "status": 200,
+      "bytes": 8732,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style2/3.png",
+      "status": 200,
+      "bytes": 6040,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style2/4.png",
+      "status": 200,
+      "bytes": 5650,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style3/bg/1.png",
+      "status": 200,
+      "bytes": 7675,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style3/bg/2.png",
+      "status": 200,
+      "bytes": 7784,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style3/bg/3.png",
+      "status": 200,
+      "bytes": 7735,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style3/bg/4.png",
+      "status": 200,
+      "bytes": 7607,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style3/icons/1.png",
+      "status": 200,
+      "bytes": 10574,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style3/icons/2.png",
+      "status": 200,
+      "bytes": 9817,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style3/icons/3.png",
+      "status": 200,
+      "bytes": 11086,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/features/style3/icons/4.png",
+      "status": 200,
+      "bytes": 11151,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/footer/1.jpg",
+      "status": 200,
+      "bytes": 37391,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/footer/2.jpg",
+      "status": 200,
+      "bytes": 29526,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/1.jpg",
+      "status": 200,
+      "bytes": 50752,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/10.jpg",
+      "status": 200,
+      "bytes": 40089,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/11.jpg",
+      "status": 200,
+      "bytes": 43657,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/12.jpg",
+      "status": 200,
+      "bytes": 35811,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/2.jpg",
+      "status": 200,
+      "bytes": 42880,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/3.jpg",
+      "status": 200,
+      "bytes": 44419,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/4.jpg",
+      "status": 200,
+      "bytes": 48306,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/5.jpg",
+      "status": 200,
+      "bytes": 41774,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/6.jpg",
+      "status": 200,
+      "bytes": 45771,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/7.jpg",
+      "status": 200,
+      "bytes": 46804,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/8.jpg",
+      "status": 200,
+      "bytes": 36443,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/9.jpg",
+      "status": 200,
+      "bytes": 55956,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/home11/1.jpg",
+      "status": 200,
+      "bytes": 33748,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/home11/2.jpg",
+      "status": 200,
+      "bytes": 36462,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/home11/3.jpg",
+      "status": 200,
+      "bytes": 32942,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/home8/3.jpg",
+      "status": 200,
+      "bytes": 166104,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/home8/2.jpg",
+      "status": 200,
+      "bytes": 200890,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/home8/1.jpg",
+      "status": 200,
+      "bytes": 237460,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/home8/4.jpg",
+      "status": 200,
+      "bytes": 121417,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/home8/5.jpg",
+      "status": 200,
+      "bytes": 155230,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/gallery/home8/6.jpg",
+      "status": 200,
+      "bytes": 233523,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/line.png",
+      "status": 200,
+      "bytes": 1652,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/lite-logo.png",
+      "status": 200,
+      "bytes": 10824,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo-15.png",
+      "status": 200,
+      "bytes": 4402,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo-dark.png",
+      "status": 200,
+      "bytes": 15388,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo-dark2.png",
+      "status": 200,
+      "bytes": 15388,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo-green.png",
+      "status": 200,
+      "bytes": 11495,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo-dark3.png",
+      "status": 200,
+      "bytes": 11391,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo-light2.png",
+      "status": 200,
+      "bytes": 10627,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo-yellow.png",
+      "status": 200,
+      "bytes": 10916,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo3.png",
+      "status": 200,
+      "bytes": 13489,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo-yellow2.png",
+      "status": 200,
+      "bytes": 11084,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/logo.png",
+      "status": 200,
+      "bytes": 14068,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/map.jpg",
+      "status": 200,
+      "bytes": 21155,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/newsletter.png",
+      "status": 200,
+      "bytes": 4322,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/newsletter2.png",
+      "status": 200,
+      "bytes": 6934,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/1.png",
+      "status": 200,
+      "bytes": 2769,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/2.png",
+      "status": 200,
+      "bytes": 3341,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/3.png",
+      "status": 200,
+      "bytes": 3262,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/4.png",
+      "status": 200,
+      "bytes": 2985,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/6.png",
+      "status": 200,
+      "bytes": 3315,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/5.png",
+      "status": 200,
+      "bytes": 3690,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style2/1.png",
+      "status": 200,
+      "bytes": 3284,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style2/2.png",
+      "status": 200,
+      "bytes": 3741,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style2/4.png",
+      "status": 200,
+      "bytes": 3991,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style2/3.png",
+      "status": 200,
+      "bytes": 3668,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style3/1.png",
+      "status": 200,
+      "bytes": 9261,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style3/3.png",
+      "status": 200,
+      "bytes": 7125,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style3/2.png",
+      "status": 200,
+      "bytes": 21590,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style3/4.png",
+      "status": 200,
+      "bytes": 10534,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style3/5.png",
+      "status": 200,
+      "bytes": 9482,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style4/1.png",
+      "status": 200,
+      "bytes": 4236,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style4/2.png",
+      "status": 200,
+      "bytes": 4468,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style4/3.png",
+      "status": 200,
+      "bytes": 3823,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style4/5.png",
+      "status": 200,
+      "bytes": 3925,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/partner/style4/4.png",
+      "status": 200,
+      "bytes": 4468,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/paypal.png",
+      "status": 200,
+      "bytes": 2104,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/pre-logo.png",
+      "status": 200,
+      "bytes": 6658,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/pre-logo1.png",
+      "status": 200,
+      "bytes": 7017,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/publication/1.jpg",
+      "status": 200,
+      "bytes": 74362,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/publication/5.jpg",
+      "status": 200,
+      "bytes": 58981,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/publication/3.jpg",
+      "status": 200,
+      "bytes": 41541,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/publication/4.jpg",
+      "status": 200,
+      "bytes": 42383,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/publication/2.jpg",
+      "status": 200,
+      "bytes": 69946,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/publication/6.jpg",
+      "status": 200,
+      "bytes": 47697,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/1.jpg",
+      "status": 200,
+      "bytes": 36283,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home12/1.png",
+      "status": 200,
+      "bytes": 28033,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home12/2.png",
+      "status": 200,
+      "bytes": 40770,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home12/3.png",
+      "status": 200,
+      "bytes": 18124,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home6/icon/1.png",
+      "status": 200,
+      "bytes": 14954,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home6/icon/2.png",
+      "status": 200,
+      "bytes": 18674,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home6/icon/3.png",
+      "status": 200,
+      "bytes": 11619,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home6/icon/4.png",
+      "status": 200,
+      "bytes": 14913,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home7/bg/1.png",
+      "status": 200,
+      "bytes": 27043,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home7/bg/2.png",
+      "status": 200,
+      "bytes": 36690,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home7/bg/3.png",
+      "status": 200,
+      "bytes": 26608,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home7/bg/4.png",
+      "status": 200,
+      "bytes": 29721,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home7/icon/1.png",
+      "status": 200,
+      "bytes": 2126,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home7/icon/2.png",
+      "status": 200,
+      "bytes": 1480,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home7/icon/4.png",
+      "status": 200,
+      "bytes": 1286,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/home7/icon/3.png",
+      "status": 200,
+      "bytes": 1683,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/icons/1.png",
+      "status": 200,
+      "bytes": 2216,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/icons/3.png",
+      "status": 200,
+      "bytes": 2237,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/services/icons/2.png",
+      "status": 200,
+      "bytes": 2091,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shape/circle-shape.png",
+      "status": 200,
+      "bytes": 5010,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shop/10.jpg",
+      "status": 200,
+      "bytes": 41541,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shop/1.jpg",
+      "status": 200,
+      "bytes": 33616,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shape/radius-circle-shape.png",
+      "status": 200,
+      "bytes": 32464,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shop/11.jpg",
+      "status": 200,
+      "bytes": 69946,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shop/2.jpg",
+      "status": 200,
+      "bytes": 42643,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shop/4.jpg",
+      "status": 200,
+      "bytes": 35751,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shop/7.jpg",
+      "status": 200,
+      "bytes": 47697,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shop/5.jpg",
+      "status": 200,
+      "bytes": 58451,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/shop/9.jpg",
+      "status": 200,
+      "bytes": 42383,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/slider/h2-1.jpg",
+      "status": 200,
+      "bytes": 125259,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/slider/h2-2.jpg",
+      "status": 200,
+      "bytes": 175143,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/slider/home8/1.png",
+      "status": 200,
+      "bytes": 996371,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/slider/home8/2.png",
+      "status": 200,
+      "bytes": 724760,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/slider/main-home/1.jpg",
+      "status": 200,
+      "bytes": 187394,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/slider/main-home/2.jpg",
+      "status": 200,
+      "bytes": 152741,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/subject/icons/1.png",
+      "status": 200,
+      "bytes": 21360,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/subject/icons/2.png",
+      "status": 200,
+      "bytes": 23236,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/subject/icons/3.png",
+      "status": 200,
+      "bytes": 24776,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/subject/icons/4.png",
+      "status": 200,
+      "bytes": 24853,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/subject/icons/5.png",
+      "status": 200,
+      "bytes": 16275,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/subject/icons/6.png",
+      "status": 200,
+      "bytes": 22562,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/1.jpg",
+      "status": 200,
+      "bytes": 31309,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/2.jpg",
+      "status": 200,
+      "bytes": 33415,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/3.jpg",
+      "status": 200,
+      "bytes": 30470,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/icon/1.png",
+      "status": 200,
+      "bytes": 27594,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/icon/2.png",
+      "status": 200,
+      "bytes": 28497,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/icon/3.png",
+      "status": 200,
+      "bytes": 21566,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/icon/4.png",
+      "status": 200,
+      "bytes": 25764,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/icon/5.png",
+      "status": 200,
+      "bytes": 23293,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/icon/6.png",
+      "status": 200,
+      "bytes": 19207,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style1/1.jpg",
+      "status": 200,
+      "bytes": 48484,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style1/2.jpg",
+      "status": 200,
+      "bytes": 38335,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style1/3.jpg",
+      "status": 200,
+      "bytes": 32724,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style1/4.jpg",
+      "status": 200,
+      "bytes": 45312,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style1/5.jpg",
+      "status": 200,
+      "bytes": 45423,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style1/6.jpg",
+      "status": 200,
+      "bytes": 34115,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style2/1.jpg",
+      "status": 200,
+      "bytes": 45123,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style2/2.jpg",
+      "status": 200,
+      "bytes": 32676,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style2/3.jpg",
+      "status": 200,
+      "bytes": 51202,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style2/4.jpg",
+      "status": 200,
+      "bytes": 37525,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style2/5.jpg",
+      "status": 200,
+      "bytes": 49781,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/team/style2/6.jpg",
+      "status": 200,
+      "bytes": 55867,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/cloud-pattern.png",
+      "status": 200,
+      "bytes": 12241,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/home11/1.png",
+      "status": 200,
+      "bytes": 38226,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/home11/2.png",
+      "status": 200,
+      "bytes": 39970,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/home12/2.jpg",
+      "status": 200,
+      "bytes": 37239,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/home12/1.jpg",
+      "status": 200,
+      "bytes": 40769,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/home12/3.jpg",
+      "status": 200,
+      "bytes": 36161,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/home12/4.jpg",
+      "status": 200,
+      "bytes": 40769,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/home12/quote.png",
+      "status": 200,
+      "bytes": 700,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/main-home/test-2.png",
+      "status": 200,
+      "bytes": 3663,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style10/1.png",
+      "status": 200,
+      "bytes": 5456,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style10/2.png",
+      "status": 200,
+      "bytes": 6004,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style10/3.png",
+      "status": 200,
+      "bytes": 5856,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style10/quote.png",
+      "status": 200,
+      "bytes": 1133,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style11/1.jpg",
+      "status": 200,
+      "bytes": 37527,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style11/2.jpg",
+      "status": 200,
+      "bytes": 47562,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style11/3.jpg",
+      "status": 200,
+      "bytes": 29424,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style11/arrow.png",
+      "status": 200,
+      "bytes": 1492,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style2/1.jpg",
+      "status": 200,
+      "bytes": 10085,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style2/2.jpg",
+      "status": 200,
+      "bytes": 12551,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/1.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/10.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/2.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/3.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/4.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/5.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/6.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/7.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/8.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style3/9.png",
+      "status": 200,
+      "bytes": 5664,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style4/1.png",
+      "status": 200,
+      "bytes": 24619,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style4/3.png",
+      "status": 200,
+      "bytes": 28390,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style4/2.png",
+      "status": 200,
+      "bytes": 21947,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style5/1.png",
+      "status": 200,
+      "bytes": 11478,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style4/4.png",
+      "status": 200,
+      "bytes": 21947,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style5/2.png",
+      "status": 200,
+      "bytes": 12231,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style5/3.png",
+      "status": 200,
+      "bytes": 11521,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style5/4.png",
+      "status": 200,
+      "bytes": 12231,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style5/quote.png",
+      "status": 200,
+      "bytes": 2088,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style5/quote2.png",
+      "status": 200,
+      "bytes": 3425,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style6/1.png",
+      "status": 200,
+      "bytes": 135505,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style7/1.png",
+      "status": 200,
+      "bytes": 25908,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style7/2.png",
+      "status": 200,
+      "bytes": 36746,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style8/1.png",
+      "status": 200,
+      "bytes": 35203,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style8/2.png",
+      "status": 200,
+      "bytes": 28435,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style8/3.png",
+      "status": 200,
+      "bytes": 31538,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style8/4.png",
+      "status": 200,
+      "bytes": 33846,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style9/2.png",
+      "status": 200,
+      "bytes": 3670,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/video/1.jpg",
+      "status": 200,
+      "bytes": 20157,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/video/2.png",
+      "status": 200,
+      "bytes": 31864,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/video/3.png",
+      "status": 200,
+      "bytes": 49042,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/video/4.png",
+      "status": 200,
+      "bytes": 37229,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/testimonial/style9/1.png",
+      "status": 200,
+      "bytes": 403102,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/video/bg.png",
+      "status": 200,
+      "bytes": 112181,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/video/video2.jpg",
+      "status": 200,
+      "bytes": 158293,
+      "identical": true
+    },
+    {
+      "path": "/assets/images/white-newsletter3.png",
+      "status": 200,
+      "bytes": 5087,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/contact.form.js",
+      "status": 200,
+      "bytes": 1831,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/imagesloaded.pkgd.min.js",
+      "status": 200,
+      "bytes": 5559,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/jquery.counterup.min.js",
+      "status": 200,
+      "bytes": 1067,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/isotope.pkgd.min.js",
+      "status": 200,
+      "bytes": 35313,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/bootstrap.min.js",
+      "status": 200,
+      "bytes": 60016,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/jquery.magnific-popup.min.js",
+      "status": 200,
+      "bytes": 20233,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/jquery.nav.js",
+      "status": 200,
+      "bytes": 6989,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/main.js",
+      "status": 200,
+      "bytes": 11704,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/modernizr-2.8.3.min.js",
+      "status": 200,
+      "bytes": 15518,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/jquery.mb.YTPlayer.min.js",
+      "status": 200,
+      "bytes": 53954,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/owl.carousel.min.js",
+      "status": 200,
+      "bytes": 42772,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/parallax-effect.min.js",
+      "status": 200,
+      "bytes": 17314,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/plugins.js",
+      "status": 200,
+      "bytes": 2827,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/rsmenu-main.js",
+      "status": 200,
+      "bytes": 4526,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/skill.bars.jquery.js",
+      "status": 200,
+      "bytes": 2128,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/jquery.min.js",
+      "status": 200,
+      "bytes": 84344,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/tilt.jquery.min.js",
+      "status": 200,
+      "bytes": 5640,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/waypoints.min.js",
+      "status": 200,
+      "bytes": 8044,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/slick.min.js",
+      "status": 200,
+      "bytes": 41971,
+      "identical": true
+    },
+    {
+      "path": "/assets/js/wow.min.js",
+      "status": 200,
+      "bytes": 8441,
+      "identical": true
+    },
+    {
+      "path": "/style.css",
+      "status": 200,
+      "bytes": 405538,
+      "identical": true
+    }
+  ],
+  "failures": [],
+  "notFound": 404,
+  "demoContact": 503
+}

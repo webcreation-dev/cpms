@@ -1,0 +1,24 @@
+/* Les mises en page viennent d'about2 et index3. Seulement l'intégration
+   du tableau demandé, la palette bleue et les liens d'ancre de cette page. */
+.cpms-about-page [id] { scroll-margin-top: 160px; }
+.cpms-about-page .rs-breadcrumbs .breadcrumbs-img img { filter: brightness(.45); }
+.cpms-about-page .rs-about .histort-part .single-history a:hover,
+.cpms-about-page .rs-about .histort-part .single-history a.active { background: #21a7d0; }
+.cpms-about-page .cpms-about-table-wrap { background: #fff; }
+.cpms-about-page .cpms-about-table { margin-bottom: 0; color: #505050; }
+.cpms-about-page .cpms-about-table thead { background: #273c66; color: #fff; }
+.cpms-about-page .cpms-about-table th,
+.cpms-about-page .cpms-about-table td { padding: 14px 24px; vertical-align: middle; }
+.cpms-about-page .cpms-about-table tbody th { font-weight: 500; }
+.cpms-about-page .cpms-about-table th:first-child { width: 52%; }
+.cpms-about-page .cpms-about-table th:not(:first-child),
+.cpms-about-page .cpms-about-table td { text-align: center; }
+.cpms-about-page .cpms-about-table.table-striped tbody tr:nth-of-type(odd) { background: #f3f8f9; }
+.cpms-about-page .cpms-partner-history { margin-bottom: 20px; }
+.cpms-about-page .cpms-partner-history summary { color: #273c66; cursor: pointer; }
+.cpms-about-page .cpms-partner-history p { margin: 12px 0 0; }
+.cpms-about-page #parcours .partition-bg-wrap.home2::before { background-image: var(--cpms-video-photo); }
+@media (max-width: 575px) {
+  .cpms-about-page .cpms-about-table th,
+  .cpms-about-page .cpms-about-table td { padding: 12px 9px; font-size: 13px; }
+}

@@ -1,0 +1,12 @@
+/* Contact4, FAQ et erreur Educavo : reprendre les accents bleus du site. */
+.cpms-contact-page .contact-address-section .contact-info .icon-part i { color: #0066B3; border-color: #e6f5fa; }
+.cpms-contact-page .contact-address-section .contact-info .content-part { min-width: 0; }
+.cpms-contact-page .contact-page-section .contact-address-section .contact-info.contact-mail .content-part .info-title,
+.cpms-contact-page .contact-page-section .contact-address-section .contact-info.contact-phone .content-part .info-title { font-size: 17px; line-height: 1.6; overflow-wrap: anywhere; }
+.cpms-contact-page .contact-address-section .contact-info a:hover { color: #0066B3; }
+.cpms-contact-page .rs-quick-contact .btn-send { background: #0066B3 !important; }
+.cpms-error-page .error-text .readon { background: #0066B3; }
+@media (max-width: 767px) {
+  .cpms-error-page .error-code::after { max-width: 90vw; }
+  .cpms-error-page .error-text { padding: 0 20px; }
+}

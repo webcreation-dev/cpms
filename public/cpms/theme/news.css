@@ -1,0 +1,25 @@
+/* Même mise en page Educavo ; accents bleus communs aux pages CPMS. */
+.cpms-news-page .rs-inner-blog .widget-area .widget-title::before { background: #0066B3; }
+.cpms-news-page .cpms-post-content img { max-width: 100%; height: auto; }
+.cpms-news-page .cpms-post-content iframe,
+.cpms-news-page .cpms-post-content video { max-width: 100%; }
+.cpms-news-page .cpms-post-content { overflow-wrap: anywhere; }
+.cpms-news-page .cpms-post-content table { display: block; max-width: 100%; overflow-x: auto; }
+.cpms-news-page .cpms-article-gallery .gallery-img { overflow: hidden; }
+.cpms-news-page .cpms-article-gallery .gallery-img a { display: block; }
+.cpms-news-page .cpms-article-gallery .gallery-img img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .3s ease; }
+.cpms-news-page .cpms-article-gallery .image-popup:hover img { transform: scale(1.04); }
+.cpms-news-page .cpms-article-gallery .image-popup:focus-visible { outline: 3px solid #0066B3; outline-offset: 3px; }
+.cpms-news-page .cpms-article-gallery figcaption { padding-top: 10px; font-size: 14px; line-height: 1.5; }
+/* Rentrée : texte courant, liste numérotée et calendrier compact du thème. */
+.cpms-campaign-page .cpms-post-content { font-size: 16px; line-height: 1.85; font-weight: 400; }
+.cpms-campaign-page .cpms-post-content p { margin-bottom: 20px; }
+.cpms-campaign-page .cpms-post-content h3 { margin-top: 36px; font-size: 23px; line-height: 1.4; font-weight: 600; }
+.cpms-campaign-page .cpms-campaign-documents { padding-left: 24px; margin-bottom: 24px; }
+.cpms-campaign-page .cpms-campaign-documents li { padding-left: 5px; margin-bottom: 10px; }
+.cpms-campaign-page .cpms-post-content .cpms-campaign-calendar { display: table; width: 100%; margin-bottom: 24px; font-size: 15px; line-height: 1.65; }
+.cpms-campaign-page .cpms-campaign-calendar th,
+.cpms-campaign-page .cpms-campaign-calendar td { padding: 14px; vertical-align: top; }
+.cpms-campaign-page .cpms-campaign-calendar thead { background: #0066B3; color: #fff; }
+.cpms-campaign-page .cpms-campaign-calendar tbody tr:nth-child(even) { background: #f3f8f9; }
+.cpms-campaign-page .cpms-campaign-calendar td { font-weight: 400; }

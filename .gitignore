@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
+verification/*.jpg
+
+# Médias copiés depuis l'archive WordPress locale (357 Mo)
+public/cpms/originals/
+
+# Images recadrées générées par sharp (155 Mo)
+public/cpms/slots/
+

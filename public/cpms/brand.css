@@ -1,0 +1,79 @@
+/* Couleurs officielles CPMS, sans modifier les mises en page Educavo. */
+:root { --cpms-primary: #0066B3; --cpms-secondary: #FFCF03; }
+.cpms-site .cpms-header .topbar-area,
+.cpms-site .cpms-header .menu-area.sticky { background-color: var(--cpms-primary) !important; }
+.cpms-site .cpms-header .topbar-area .apply-btn,
+.cpms-site .cpms-admissions-actions > .cpms-brochure,
+.cpms-site .rs-newsletter .newsletter-form button {
+  background: var(--cpms-secondary) !important; color: #111 !important;
+}
+.cpms-site .cpms-header .topbar-area .apply-btn:hover,
+.cpms-site .cpms-admissions-actions > .cpms-brochure:hover,
+.cpms-site .rs-newsletter .newsletter-form button:hover { filter: brightness(.95); }
+/* Deux boutons distincts, côte à côte, comme dans la référence fournie. */
+.cpms-site .full-width-header.cpms-header .rs-header .topbar-area .topbar-right { padding: 10px 0; gap: 12px; }
+.cpms-site .full-width-header.cpms-header .rs-header .topbar-area .topbar-right .cpms-top-button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 12px 18px; border-radius: 7px;
+  font-size: 13px; line-height: 20px; font-weight: 600; white-space: nowrap;
+  text-decoration: none; transition: filter .2s ease;
+}
+.cpms-site .full-width-header.cpms-header .rs-header .topbar-area .topbar-right .apply-btn {
+  background: var(--cpms-secondary) !important; color: var(--cpms-primary) !important;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.cpms-site .full-width-header.cpms-header .rs-header .topbar-area .topbar-right .cpms-brochure-button { background: #fff; color: var(--cpms-primary); }
+.cpms-site .cpms-top-button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.cpms-site .rs-newsletter.style1 .newsletter-wrap { background: #171F32; }
+.cpms-site .rs-newsletter.style1 .content-part .sec-title { display: flex; align-items: center; text-align: left; }
+.cpms-site .rs-newsletter.style1 .content-part .sec-title .title { font-size: 28px; line-height: 1.3; }
+.cpms-site .rs-newsletter.style1 .title-icon { flex-shrink: 0; margin-bottom: 0 !important; }
+.cpms-site .rs-newsletter.style1 .title-icon img { filter: brightness(0) invert(1); }
+.cpms-site .full-width-header.cpms-header.header-style2 .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li > a { color: #fff !important; }
+.cpms-site .full-width-header.cpms-header.header-style2 .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li.current-menu-item > a,
+.cpms-site .full-width-header.cpms-header.header-style2 .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li > a:hover,
+.cpms-site .full-width-header.cpms-header.header-style2 .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li > a:focus-visible { color: var(--cpms-secondary) !important; }
+.cpms-site .rs-footer .site-map li::before { background: var(--cpms-secondary); }
+.cpms-site .rs-footer .site-map li a:hover,
+.cpms-site .rs-footer .address-widget a:hover { color: var(--cpms-secondary) !important; }
+.cpms-site .rs-footer .footer-social li a { background: var(--cpms-secondary); color: var(--cpms-primary); }
+.cpms-site .rs-footer .footer-social li a:hover { background: #fff; color: var(--cpms-primary); }
+.cpms-site .rs-footer .footer_social li a:hover { color: var(--cpms-secondary); }
+.cpms-site .rs-footer.home9-style.main-home {
+  background-color: #273c66;
+  background-image: url('/assets/images/bg/footer-bg.png');
+  background-size: cover;
+}
+.cpms-site .rs-footer.home9-style.main-home .footer-top .footer-logo .cpms-footer-brand { display: inline-flex; align-items: center; }
+.cpms-site .rs-footer.home9-style.main-home .footer-top .widget-title::before,
+.cpms-site .rs-footer.home9-style.main-home .footer-top .site-map li::before,
+.cpms-site .rs-footer.home9-style.main-home .footer-bottom .copy-right-menu li::before { background: var(--cpms-secondary); }
+.cpms-site .rs-footer.home9-style.main-home .footer-top .address-widget li i::before,
+.cpms-site .rs-footer.home9-style.main-home .footer-top .recent-post .post-date i,
+.cpms-site .rs-footer.home9-style.main-home .footer-top .footer_social li a:hover { color: var(--cpms-secondary); }
+.cpms-site .rs-footer.home9-style.main-home a:hover,
+.cpms-site .rs-footer.home9-style.main-home a:focus-visible { color: var(--cpms-secondary) !important; }
+.cpms-site .cpms-header .topbar-area .topbar-contact a:hover { color: var(--cpms-secondary) !important; }
+.cpms-site .rs-footer .recent-post .post-img img { width: 70px; height: 60px; object-fit: cover; }
+.cpms-site .rs-footer .address-widget .desc small { display: block; margin-bottom: 8px; color: #fff; }
+.cpms-site .rs-footer .address-widget .desc > a { display: block; }
+.cpms-site .cpms-location-note { border-left: 4px solid var(--cpms-primary); padding: 28px 30px; }
+.cpms-site .cpms-location-note h3 { margin-top: 0; color: var(--cpms-primary); font-size: 23px; font-weight: 600; }
+.cpms-site .cpms-location-note h3 i { margin-right: 8px; }
+.cpms-site .cpms-location-note p { font-weight: 400; line-height: 1.85; margin-bottom: 14px; }
+.cpms-site .cpms-location-note p:last-child { margin-bottom: 0; }
+.cpms-site .cpms-location-note a { overflow-wrap: anywhere; }
+@media (max-width: 575px) {
+  .cpms-site .cpms-location-note { padding: 22px 20px; }
+}
+.cpms-site #scrollUp { background: var(--cpms-primary); }
+.cpms-site .loader .loader-container::before { border-top-color: var(--cpms-primary); border-bottom-color: var(--cpms-secondary); }
+.cpms-site .loader .loader-icon img { width: 80px; height: 80px; object-fit: contain; }
+@media (max-width: 991px) {
+  .cpms-site .full-width-header.cpms-header.header-style2 .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li > a { color: #111 !important; }
+  .cpms-site .full-width-header.cpms-header.header-style2 .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li.current-menu-item > a { color: var(--cpms-primary) !important; }
+}
+/* Première diapositive : photo choisie par le CPMS, cadrage natif Educavo. */
+.cpms-site .rs-slider.style1 .slider-content.slide1 {
+  background-image: url('/cpms/originals/2024/07/cropped-Bibliotheque2-1536x640.jpg');
+}

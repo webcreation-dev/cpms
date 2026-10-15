@@ -1,0 +1,30 @@
+{
+  "name": "cpms-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3003",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1 --port 3003",
+    "typecheck": "tsc --noEmit",
+    "sync:template": "node scripts/sync-template.mjs",
+    "verify:template": "node scripts/verify-template.mjs",
+    "content:import": "node scripts/integrate-cpms.mjs"
+  },
+  "dependencies": {
+    "domhandler": "6.0.1",
+    "domutils": "4.0.2",
+    "html-react-parser": "latest",
+    "htmlparser2": "12.0.0",
+    "next": "16.4.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

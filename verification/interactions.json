@@ -1,0 +1,22 @@
+{
+  "activeSlideBefore": "slider-content slide1",
+  "categoriesOpen": true,
+  "categoriesClosed": true,
+  "sidePanelOpen": true,
+  "sidePanelClosed": true,
+  "searchOpen": true,
+  "searchClosed": true,
+  "activeSlideAfter": "slider-content slide2",
+  "mobileMenuOpen": true,
+  "mobileSubmenuOpen": true,
+  "mobileSubmenuClosed": true,
+  "mobileMenuClosed": true,
+  "aboutMissionTab": true,
+  "aboutHistoryTab": true,
+  "courseCurriculumTab": true,
+  "courseInstructorTab": true,
+  "courseOverviewTab": true,
+  "faqAccordion": true,
+  "logoReturnsToHome": true,
+  "homeReinitialized": true
+}
