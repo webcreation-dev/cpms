@@ -38,6 +38,11 @@ function localUrl(value: string): string {
 function contentOptions(editorial: boolean): HTMLReactParserOptions { return {
   replace(node) {
     if (!(node instanceof Element)) return;
+    if (editorial && node.attribs.id === 'scrollUp') {
+      return <button id="esims-scroll-top" className="esims-scroll-top" type="button" aria-label="Revenir en haut de la page" title="Revenir en haut" hidden>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5m-6 6 6-6 6 6" /></svg>
+      </button>;
+    }
     if (editorial && node.name === 'li' && node.parent instanceof Element &&
         node.parent.attribs.class?.split(/\s+/).includes('nav-menu') &&
         node.parent.children.filter(child=>child instanceof Element && child.name==='li').some((child,index)=>child===node && index!==2)) {

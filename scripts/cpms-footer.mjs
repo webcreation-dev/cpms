@@ -18,7 +18,15 @@ export function cpmsFooter(footer,records,safe,logo){
   contents(details[1],'<a href="tel:+2290149141277">01 49 14 12 77</a><small>Appel uniquement</small><a href="tel:+2290162721072">01 62 72 10 72</a><a href="https://wa.me/2290162721072" target="_blank" rel="noopener noreferrer">Appel ou WhatsApp</a>');
   contents(details[2],'<a href="mailto:contact@cpms.education">contact@cpms.education</a>');
   label(one(columns[2],'.widget-title'),'Nos pages');
-  const pages=[['L’École','/qui-sommes-nous'],['Nos filières','/formations'],['Nos implantations','/nos-implantations'],['Licences professionnelles','/licences-professionnelles'],['Événements','/evenements'],['Témoignages','/temoignages'],['Actualités','/actualites'],['Contact','/contact'],['Questions fréquentes','/faq'],['Inscriptions 2026-2027','/rentree-universitaire']];
+  const pages=[
+    ['L’École','/qui-sommes-nous'],
+    ['Nos filières','/formations'],
+    ['Nos implantations','/nos-implantations'],
+    ['Actualités','/actualites'],
+    ['Contact','/contact'],
+    ['Questions fréquentes','/faq'],
+    ['Inscriptions 2026-2027','/rentree-universitaire'],
+  ];
   contents(one(columns[2],'.site-map'),pages.map(([title,href])=>`<li><a href="${href}">${safe(title)}</a></li>`).join(''));
   label(one(columns[3],'.widget-title'),'Actualités récentes');
   const posts=records.filter(record=>record.type==='post'&&!record.categories.includes('Témoignages')).sort((a,b)=>b.publishedAt.localeCompare(a.publishedAt));

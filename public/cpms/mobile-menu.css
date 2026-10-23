@@ -1,10 +1,11 @@
 /* Navigation mobile ESIMS : typographie Educavo, bleu et jaune institutionnels. */
-.esims-mobile-menu-label, .esims-mobile-menu-backdrop { display: none; }
+.esims-mobile-menu-backdrop { display: none; }
 @media (max-width: 991px) {
+  body.cpms-site { padding-top: 88px; }
   .cpms-site .full-width-header.cpms-header .topbar-area { display: none !important; }
   .cpms-site .cpms-header .right_menu_togle { display: none !important; }
   .cpms-site .full-width-header.cpms-header {
-    position: sticky; top: 0; z-index: 1000; min-height: 88px !important; background: #fff;
+    position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 1000; min-height: 88px !important; background: #fff;
   }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area,
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area.sticky {
@@ -12,7 +13,7 @@
     min-height: 88px; animation: none !important; box-shadow: 0 1px 0 #dce5ef;
   }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .logo-cat-wrap {
-    height: 88px; width: calc(100% - 105px);
+    height: 88px; width: calc(100% - 65px);
   }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .logo-part .cpms-brand img {
     width: 50px !important; height: 50px !important;
@@ -23,12 +24,13 @@
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu-toggle {
     display: inline-flex !important; position: relative; z-index: 1003; float: right;
     align-items: center; justify-content: center; gap: 9px;
-    height: 44px !important; min-width: 83px; line-height: 1 !important;
-    margin: 22px 0; padding: 0 11px !important; border: 1px solid #dce5ef;
+    height: 44px !important; width: 44px; min-width: 44px; line-height: 1 !important;
+    margin: 22px 0; padding: 0 !important; border: 1px solid #dce5ef;
     background: #f4f7fa !important; color: #0066B3 !important; border-radius: 3px;
   }
-  .esims-mobile-menu-label { display: inline; font-size: 12px; font-weight: 700; text-transform: none; }
-  .cpms-site .cpms-header .rs-menu-toggle i { font-size: 19px; }
+  .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu-toggle i { font-size: 22px; color: inherit !important; }
+  .cpms-site .full-width-header.cpms-header .rs-header .menu-area .rs-menu-area .main-menu .rs-menu-toggle:not(.rs-menu-toggle-open),
+  .cpms-site .full-width-header.cpms-header .rs-header .menu-area.sticky .rs-menu-area .main-menu .rs-menu-toggle:not(.rs-menu-toggle-open) { color: #0066B3 !important; }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu-toggle-open {
     background: #0066B3 !important; color: #fff !important; border-color: #0066B3;
   }
@@ -55,7 +57,7 @@
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu > li:last-child { border-bottom: 0; }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu > li > a {
     display: block; position: relative; height: auto !important; line-height: 1.4 !important;
-    padding: 16px 48px 16px 14px !important; border-left: 3px solid transparent;
+    padding: 18px 48px 18px 14px !important; border-left: 3px solid transparent;
     border-bottom: 0 !important;
     color: #273c66 !important; font-size: 16px; font-weight: 700; text-transform: none;
   }
@@ -65,11 +67,11 @@
   }
   .cpms-site .cpms-header .nav-menu > li > a::before { display: none !important; }
   .cpms-site .cpms-header .nav-menu > li:not(.menu-item-has-children) > a::after {
-    content: ''; position: absolute; right: 17px; top: 22px; width: 7px; height: 7px;
-    border: solid #0066B3; border-width: 0 1.5px 1.5px 0; transform: rotate(-45deg);
+    content: ''; position: absolute; right: 17px; top: 50%; width: 7px; height: 7px;
+    border: solid #0066B3; border-width: 0 1.5px 1.5px 0; transform: translateY(-50%) rotate(-45deg);
   }
   .cpms-site .cpms-header .nav-menu > li > .rs-menu-parent {
-    top: 5px; right: 4px; width: 44px; height: 44px; line-height: 44px;
+    top: 7px; right: 4px; width: 44px; height: 44px; line-height: 44px;
     border: 0; background: transparent; color: #0066B3; font-size: 22px;
   }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu ul.sub-menu {
@@ -99,12 +101,12 @@
   }
   html.esims-mobile-menu-open { overflow: hidden; }
   .cpms-site .main-content [id] { scroll-margin-top: 110px; }
-  .esims-course-nav { top: 88px; }
+  .esims-course-nav, .esims-news-filters { top: 88px; }
+  .cpms-site.esims-news-hub #news-list { scroll-margin-top: 220px; }
   .cpms-site:is(.esims-preparatory-page, .esims-licence-page) .main-content [id] { scroll-margin-top: 180px; }
 }
 @media (max-width: 359px) {
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .logo-part .cpms-brand { gap: 7px; }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .logo-part .cpms-brand img { width: 42px !important; height: 42px !important; }
   .cpms-site .full-width-header.cpms-header .cpms-brand-copy > span { font-size: 9px; max-width: 142px; }
-  .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu-toggle { min-width: 72px; padding: 0 8px !important; gap: 6px; }
 }

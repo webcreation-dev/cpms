@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { initializeEsimsHome, initializeEsimsTestimonials } from '@/lib/esims-home';
 import { initializeEsimsCourse } from '@/lib/esims-course';
 import { initializeEsimsMobileMenu } from '@/lib/esims-mobile-menu';
+import { initializeEsimsScrollTop } from '@/lib/esims-scroll-top';
 
 type JQueryBridge = {
   (target: Window): { triggerHandler: (event: string) => void };
@@ -63,6 +64,7 @@ async function initialize(scripts: string[]) {
     for (const child of node.childNodes) if (child.nodeType === Node.TEXT_NODE && child.textContent?.includes('Close')) child.textContent = 'Fermer';
   });
   if (document.readyState === "complete") $(window).triggerHandler("load");
+  initializeEsimsScrollTop();
   initializeEsimsMobileMenu();
   if (document.body.classList.contains('esims-news-hub')) {
     // Une catégorie peut s’ouvrir directement sur la liste avant que le

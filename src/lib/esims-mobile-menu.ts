@@ -8,9 +8,6 @@ export function initializeEsimsMobileMenu() {
   const mobile=window.matchMedia('(max-width: 991px)');
   const icon=toggle.querySelector('i');
   if(icon)icon.setAttribute('aria-hidden','true');
-  const label=document.createElement('span');
-  label.className='esims-mobile-menu-label'; label.textContent='Menu';
-  toggle.prepend(label);
   toggle.setAttribute('role','button'); toggle.tabIndex=0;
   toggle.setAttribute('aria-label','Ouvrir le menu');
   nav.id='esims-primary-navigation';
@@ -21,7 +18,7 @@ export function initializeEsimsMobileMenu() {
   backdrop.type='button'; backdrop.className='esims-mobile-menu-backdrop';
   backdrop.setAttribute('aria-label','Fermer le menu'); backdrop.tabIndex=-1; backdrop.hidden=true;
   document.body.append(backdrop);
-  const background=Array.from(document.querySelectorAll<HTMLElement>('.main-content, .rs-footer, #scrollUp'));
+  const background=Array.from(document.querySelectorAll<HTMLElement>('.main-content, .rs-footer, #esims-scroll-top'));
   const initialInert=new Map(background.map(element=>[element,element.inert]));
   const parents=Array.from(nav.querySelectorAll<HTMLElement>('.rs-menu-parent'));
   parents.forEach((parent,index)=>{
@@ -49,7 +46,6 @@ export function initializeEsimsMobileMenu() {
     nav.classList.toggle('rs-menu-close',!open);
     toggle.setAttribute('aria-expanded',String(open));
     toggle.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');
-    label.textContent=open?'Fermer':'Menu';
     if(icon)icon.className=open?'fa fa-times':'fa fa-bars';
     backdrop.hidden=!open;
     background.forEach(element=>{element.inert=open||Boolean(initialInert.get(element));});

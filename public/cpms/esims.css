@@ -17,7 +17,7 @@
 .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu > li > a { height: 108px; line-height: 108px; }
 .cpms-site .full-width-header.cpms-header .rs-header .menu-area > .container { max-width: 1500px; width: 100%; padding: 0 32px; }
 .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu { padding-right: 12px !important; }
-.cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu { gap: 22px; }
+.cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu { gap: 26px; }
 .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu ul.sub-menu li.current-menu-item > a,
 .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu ul.sub-menu li.active > a,
 .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu ul.sub-menu li > a[aria-current="page"],
@@ -226,7 +226,7 @@
 @keyframes esims-photo-enter { from { transform: translateY(100%); } to { transform: translateY(0); } }
 @keyframes esims-photo-leave { from { transform: translateY(0); } to { transform: translateY(-22%); } }
 @media (max-width: 1399px) and (min-width: 992px) {
-  .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu { gap: 18px; }
+  .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu { gap: 22px; }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu > li > a { font-size: 12px; }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area > .container { padding: 0 24px; }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .logo-part .cpms-brand { gap: 10px; }
@@ -240,7 +240,7 @@
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .logo-part .cpms-brand img { width: 52px !important; height: 52px !important; }
   .cpms-site .cpms-brand-copy > span { max-width: 155px; font-size: 10px; }
   .cpms-site .cpms-brand-copy strong { font-size: 25px; }
-  .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu { gap: 13px; }
+  .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu { gap: 16px; }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu > li > a { font-size: 11px; }
 }
 @media (max-width: 991px) {

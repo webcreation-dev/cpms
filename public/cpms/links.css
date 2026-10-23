@@ -1,4 +1,17 @@
 /* Interactions communes, dans les couleurs ESIMS et les composants Educavo. */
+.cpms-site .esims-scroll-top {
+  display: grid; place-items: center; position: fixed; z-index: 500;
+  right: max(20px, env(safe-area-inset-right)); bottom: max(22px, calc(env(safe-area-inset-bottom) + 16px));
+  width: 48px; height: 48px; padding: 0; border: 1px solid #ffffff80; border-bottom: 3px solid #FFCF03;
+  border-radius: 6px; background: #0066B3; color: #fff; cursor: pointer;
+  box-shadow: 0 4px 14px #172b4933; touch-action: manipulation;
+  transition: background-color .18s ease, box-shadow .18s ease;
+}
+.cpms-site .esims-scroll-top[hidden] { display: none; }
+.cpms-site .esims-scroll-top:is(:hover, :focus-visible) { background: #273c66; box-shadow: 0 5px 18px #172b4944; }
+.cpms-site .esims-scroll-top:active { background: #18294f; }
+.cpms-site.esims-mobile-menu-open .esims-scroll-top { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .cpms-site .esims-scroll-top { transition: none; } }
 .cpms-site a:focus-visible,
 .cpms-site button:focus-visible {
   outline: 3px solid #FFCF03 !important;
