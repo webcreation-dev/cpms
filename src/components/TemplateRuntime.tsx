@@ -118,7 +118,7 @@ export function TemplateRuntime({ scripts }: { scripts: string[] }) {
         if (event.target instanceof HTMLFormElement && event.target.classList.contains("newsletter-form")) {
           event.preventDefault();
           const input = event.target.querySelector<HTMLInputElement>('input[type="email"]');
-          input?.setCustomValidity('L’abonnement aux actualités n’est pas encore disponible. Vous pouvez contacter l’ESIMS par email.');
+          input?.setCustomValidity('L’abonnement aux actualités n’est pas encore disponible. Vous pouvez contacter l’EIMS par email.');
           input?.reportValidity();
         }
       });

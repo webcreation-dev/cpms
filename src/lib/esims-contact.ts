@@ -31,7 +31,7 @@ export function initializeEsimsContact() {
     if (!form.reportValidity() || !preview || !draft || !status) return;
     const values = new FormData(form);
     const value = (key: string) => String(values.get(key) ?? '').trim();
-    const subject = `ESIMS — ${topic.selectedOptions[0].textContent} — ${value('campus')}`;
+    const subject = `EIMS — ${topic.selectedOptions[0].textContent} — ${value('campus')}`;
     const details = [
       `Lieu de formation : ${value('campus')}`,
       value('name') ? `Nom : ${value('name')}` : '',

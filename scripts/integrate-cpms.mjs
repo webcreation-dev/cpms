@@ -628,10 +628,10 @@ async function make(name,source,title,adapt,aliases=[]) {
   registry[name]=entry;for(const alias of aliases)registry[alias]={...entry,canonical:'/'+name};
 }
 
-await make('','index3.html','ESIMS — École supérieure d’ingénierie Sainte Marie Stella',homepage,['index3.html','index.html']);
+await make('','index3.html','EIMS — École supérieure d’ingénierie Sainte Marie Stella',homepage,['index3.html','index.html']);
 for(const key of ['', 'index3.html', 'index.html'])registry[key].description='Découvrez l’École supérieure d’ingénierie Sainte Marie Stella : cycle préparatoire au Bénin et au Togo, licences professionnelles au Togo.';
-await make('qui-sommes-nous','about2.html','L’École — ESIMS',about,['about2.html','presentation','partenaires']);
-for (const key of ['qui-sommes-nous', 'about2.html', 'presentation', 'partenaires']) registry[key].description='Découvrez l’ESIMS, ses implantations au Bénin et au Togo, ses parcours scientifiques et ses écoles partenaires.';
+await make('qui-sommes-nous','about2.html','L’École — EIMS',about,['about2.html','presentation','partenaires']);
+for (const key of ['qui-sommes-nous', 'about2.html', 'presentation', 'partenaires']) registry[key].description='Découvrez l’EIMS, ses implantations au Bénin et au Togo, ses parcours scientifiques et ses écoles partenaires.';
 const blogOriginal=documentFrom(await readFile(join(root,'src/templates/educavo/blog.html'),'utf8'));
 const pageSize=all(blogOriginal,'.rs-inner-blog .blog-item').length;
 const publicNews=preparedRecords.filter(r=>r.type==='post'&&!r.categories.includes('Témoignages')&&![81,85,159,245].includes(r.id)).sort((a,b)=>b.publishedAt.localeCompare(a.publishedAt)).map(r=>records.get(r.id));
@@ -643,7 +643,7 @@ for(const group of newsLayout.groups) {
   }
 }
 for(const [key,entry] of Object.entries(registry)) {
-  if(entry.source==='blog-left.html') entry.description=key.startsWith('evenements')?'Conférences, rencontres et vie étudiante : retrouvez les événements de l’ESIMS.':'Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.';
+  if(entry.source==='blog-left.html') entry.description=key.startsWith('evenements')?'Conférences, rencontres et vie étudiante : retrouvez les événements de l’EIMS.':'Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.';
 }
 await make('recherche','blog.html','CPMS — Recherche',doc=>listing(doc,publicNews.slice(0,pageSize),'Recherche'));
 for(const [base,title,list] of [['temoignages','Témoignages',testimonies]]){
@@ -657,27 +657,27 @@ for(const [base,title,list] of [['temoignages','Témoignages',testimonies]]){
 await make('galerie','gallery-style1.html','CPMS — Galerie',gallery,['gallery-style1.html']);
 await make('contact','contact4.html','Contactez le CPMS',contact,['contact4.html','contact.html']);
 for(const key of ['contact','contact4.html','contact.html']) {
-  registry[key].title='Contact — ESIMS';
-  registry[key].description='Contactez l’ESIMS pour les admissions, le choix de filière et les renseignements pratiques au Bénin et au Togo.';
+  registry[key].title='Contact — EIMS';
+  registry[key].description='Contactez l’EIMS pour les admissions, le choix de filière et les renseignements pratiques au Bénin et au Togo.';
 }
 await make('faq','faq.html','CPMS — Questions fréquentes',faq,['faq.html']);
 await make('erreur','error.html','CPMS — Page introuvable',errorPage,['error.html']);
-await make('formations','course2.html','Nos filières — ESIMS',async doc=>filieresPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),photo:garden,image}));
-registry.formations.description='Les filières de l’ESIMS : cycle préparatoire au Bénin et au Togo, licences professionnelles au Togo.';
+await make('formations','course2.html','Nos filières — EIMS',async doc=>filieresPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),photo:garden,image}));
+registry.formations.description='Les filières de l’EIMS : cycle préparatoire au Bénin et au Togo, licences professionnelles au Togo.';
 const togoPermit=await copyOriginal('/Users/macbookpro/Downloads/Agrément ESIMS Togo.pdf','institution/agrement-esims-togo.pdf');
-await make('nos-implantations','about2.html','Nos implantations — ESIMS',async doc=>implantationsPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),photos:{cotonou:garden,library:homePhotos.aboutSecond},permit:togoPermit,safe}));
-registry['nos-implantations'].description='Découvrez les implantations de l’ESIMS à Cotonou au Bénin et à Lomé au Togo, ainsi que les parcours proposés sur chaque site.';
+await make('nos-implantations','about2.html','Nos implantations — EIMS',async doc=>implantationsPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),photos:{cotonou:garden,library:homePhotos.aboutSecond},permit:togoPermit,safe}));
+registry['nos-implantations'].description='Découvrez les implantations de l’EIMS à Cotonou au Bénin et à Lomé au Togo, ainsi que les parcours proposés sur chaque site.';
 await make('domaines','course2.html','CPMS — Domaines de professionnalisation',doc=>courseGrid(doc,true),['course2.html']);
 await make('cycle-preparatoire','course-single.html','CPMS — Cycle préparatoire',doc=>courseDetail(doc),['course-single.html']);
 for(const key of ['cycle-preparatoire','course-single.html']) {
-  registry[key].title='Cycle préparatoire au Bénin — ESIMS';
-  registry[key].description='Découvrez le cycle préparatoire de l’ESIMS à Cotonou : deux années de formation, le programme, les stages, les projets et les modalités de candidature.';
+  registry[key].title='Cycle préparatoire au Bénin — EIMS';
+  registry[key].description='Découvrez le cycle préparatoire de l’EIMS à Cotonou : deux années de formation, le programme, les stages, les projets et les modalités de candidature.';
 }
 await make('cycle-ingenieur','course-single.html','CPMS — Cycle ingénieur',doc=>courseDetail(doc,true));
-await make('licences-professionnelles','course-single.html','Licences professionnelles au Togo — ESIMS',async doc=>licenceTogoPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),photo:await legacyUrl('/wp-content/uploads/2026/03/Salle-de-TP-1-1024x732.jpg'),permit:togoPermit,safe}));
-await make('cycle-preparatoire-togo','course-single.html','Cycle préparatoire au Togo — ESIMS',async doc=>preparatoryTogoPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),equipmentPhoto,permit:togoPermit,safe}));
-registry['cycle-preparatoire-togo'].description='Découvrez le cycle préparatoire de niveau bac+2 d’ESIMS-Togo à Lomé et contactez l’école pour les modalités d’admission.';
-registry['licences-professionnelles'].description='Découvrez les licences professionnelles d’ESIMS-Togo à Lomé et les neuf spécialités mentionnées dans l’agrément fourni.';
+await make('licences-professionnelles','course-single.html','Licences professionnelles au Togo — EIMS',async doc=>licenceTogoPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),photo:await legacyUrl('/wp-content/uploads/2026/03/Salle-de-TP-1-1024x732.jpg'),permit:togoPermit,safe}));
+await make('cycle-preparatoire-togo','course-single.html','Cycle préparatoire au Togo — EIMS',async doc=>preparatoryTogoPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),equipmentPhoto,permit:togoPermit,safe}));
+registry['cycle-preparatoire-togo'].description='Découvrez le cycle préparatoire de niveau bac+2 d’EIMS-Togo à Lomé et contactez l’école pour les modalités d’admission.';
+registry['licences-professionnelles'].description='Découvrez les licences professionnelles d’EIMS-Togo à Lomé et les neuf spécialités mentionnées dans l’agrément fourni.';
 
 // Les billets utilisent le modèle demandé ; les anciennes pages restent distinctes.
 for(const prepared of preparedRecords){

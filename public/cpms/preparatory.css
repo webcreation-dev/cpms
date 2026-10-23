@@ -1,4 +1,4 @@
-/* Fiches de formation ESIMS : grille et éléments Educavo, organisation inspirée de JUNIA. */
+/* Fiches de formation EIMS : grille et éléments Educavo, organisation inspirée de JUNIA. */
 body:is(.esims-preparatory-page, .esims-licence-page) { overflow-x: clip; }
 :is(.esims-preparatory-page, .esims-licence-page) .esims-course-hero { background: #273c66; color: #fff; padding: 24px 0 45px; }
 .esims-course-breadcrumb { display: flex; gap: 10px; flex-wrap: wrap; color: #dbe4ef; font-size: 12px; margin-bottom: 25px; }

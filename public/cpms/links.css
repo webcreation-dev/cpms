@@ -1,4 +1,4 @@
-/* Interactions communes, dans les couleurs ESIMS et les composants Educavo. */
+/* Interactions communes, dans les couleurs EIMS et les composants Educavo. */
 .cpms-site .esims-scroll-top {
   display: grid; place-items: center; position: fixed; z-index: 500;
   right: max(20px, env(safe-area-inset-right)); bottom: max(22px, calc(env(safe-area-inset-bottom) + 16px));

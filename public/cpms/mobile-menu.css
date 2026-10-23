@@ -1,4 +1,4 @@
-/* Navigation mobile ESIMS : typographie Educavo, bleu et jaune institutionnels. */
+/* Navigation mobile EIMS : typographie Educavo, bleu et jaune institutionnels. */
 .esims-mobile-menu-backdrop { display: none; }
 @media (max-width: 991px) {
   body.cpms-site { padding-top: 88px; }
@@ -45,7 +45,7 @@
     display: none !important;
   }
   .cpms-site .cpms-header .rs-menu > .nav-menu::before {
-    content: 'Explorer l’ESIMS'; display: block; padding: 15px 12px 17px;
+    content: 'Explorer l’EIMS'; display: block; padding: 15px 12px 17px;
     font: 800 22px/1.3 Nunito, sans-serif; color: #18294f;
   }
   .cpms-site .full-width-header.cpms-header .rs-header .menu-area .main-menu .rs-menu > .nav-menu {
