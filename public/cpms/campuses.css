@@ -1,0 +1,108 @@
+/* Nos implantations : cartes JUNIA adaptées aux grilles et couleurs Educavo. */
+body.esims-implantations-page { overflow-x: clip; }
+.esims-implantations-page [id] { scroll-margin-top: 140px; }
+.esims-implantations-page .esims-locations-hero { background: #273c66; padding: 25px 0 55px; color: #fff; }
+.esims-locations-breadcrumb { display: flex; flex-wrap: wrap; gap: 12px; color: #dbe4ef; font-size: 12px; margin-bottom: 35px; }
+.esims-locations-breadcrumb a { color: inherit; }
+.esims-locations-eyebrow { color: #e0e8f3; font-size: 13px; margin-bottom: 13px; }
+.esims-implantations-page .esims-locations-hero h1 { color: #fff; font-size: clamp(35px, 4vw, 52px); line-height: 1.2; margin-bottom: 19px; }
+.esims-locations-hero h1 span { color: #FFCF03; }
+.esims-locations-hero p { max-width: 620px; color: #edf2f8; margin-bottom: 0; line-height: 1.8; }
+.esims-locations-countries { display: flex; justify-content: flex-end; gap: 12px; }
+.esims-locations-countries a { display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 20px 25px; color: #fff; border: 1px solid #ffffff40; font-size: 17px; font-weight: 700; }
+.esims-locations-countries a:hover { border-color: #FFCF03; color: #FFCF03; }
+.esims-locations-countries img, .esims-location-country img, .esims-location-heading img { width: 42px; height: 28px; object-fit: contain; }
+.esims-locations-choice, .esims-location-togo { background: #f4f7fa; }
+.esims-implantations-page .sec-title .sub-title { color: #0066B3; font-size: 13px; line-height: 1.6; letter-spacing: .7px; font-weight: 700; margin-bottom: 13px; }
+.esims-implantations-page .sec-title .title { color: #18294f; font-size: clamp(28px, 3vw, 38px); line-height: 1.25; }
+.esims-implantations-page p { line-height: 1.8; }
+.esims-implantations-page .readon2 { border-radius: 0; font-size: 13px; line-height: 1.6; padding: 13px 21px; max-width: 100%; white-space: normal; }
+.esims-implantations-page .readon2 i { margin-left: 12px; }
+.esims-implantations-page .esims-location-choice { height: 100%; display: flex; flex-direction: column; background: #fff; border: 1px solid #e1e8ef; border-radius: 4px; overflow: hidden; }
+.esims-location-cover { position: relative; display: flex; align-items: flex-end; aspect-ratio: 1.6; padding: 28px; overflow: hidden; background: #0066B3; }
+.esims-location-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.esims-location-cotonou::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent, #142744e6); }
+.esims-location-cover-copy { position: relative; z-index: 1; color: #fff; }
+.esims-location-country { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; margin-bottom: 14px; }
+.esims-location-country img { width: 30px; height: 20px; }
+.esims-location-cover-copy h3 { font: 800 42px/1.1 Nunito, sans-serif; color: #fff; margin-bottom: 17px; }
+.esims-location-discover { display: inline-flex; align-items: center; gap: 20px; font-size: 13px; border-bottom: 1px solid #ffffff90; padding-bottom: 4px; }
+.esims-location-cover:hover .esims-location-photo { transform: scale(1.035); }
+.esims-location-cover:hover .esims-location-discover { color: #FFCF03; border-color: #FFCF03; }
+.esims-location-lome { background: #273c66; }
+.esims-location-lome::before { content: ''; position: absolute; top: -80px; right: -80px; width: 350px; height: 350px; border: 1px solid #ffffff24; border-radius: 50%; box-shadow: 0 0 0 45px #ffffff05, 0 0 0 90px #ffffff05; }
+.esims-location-lome::after { content: ''; position: absolute; width: 120px; height: 5px; top: 35px; left: 28px; background: #FFCF03; }
+.esims-location-graphic { position: absolute; right: 38px; top: 70px; display: flex; flex-direction: column; align-items: center; gap: 16px; color: #ffffff29; }
+.esims-location-graphic i { font-size: 95px; }
+.esims-location-graphic span { letter-spacing: 7px; font-size: 20px; font-weight: 800; }
+.esims-location-choice-content { padding: 27px 30px 30px; display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+.esims-locations-label { color: #0066B3; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+.esims-location-choice-content p { font-size: 15px; margin: 13px 0 22px; }
+.esims-location-choice-content a { margin-top: auto; font-size: 14px; }
+.esims-location-choice-content a i, .esims-location-detail .esims-school-text-link i { margin-left: 8px; }
+.esims-location-visual { position: relative; margin-bottom: 0; }
+.esims-location-visual > img { width: 100%; aspect-ratio: 1.35; object-fit: cover; display: block; border-radius: 4px 4px 0 0; }
+.esims-location-visual figcaption { position: absolute; bottom: 15px; left: 15px; right: 15px; background: #273c66eb; color: #fff; font-size: 12px; padding: 9px 13px; }
+.esims-location-study { background: #f4f7fa; padding: 27px; border-bottom: 3px solid #FFCF03; }
+.esims-location-study h3 { color: #18294f; font-size: 23px; margin: 13px 0; line-height: 1.35; }
+.esims-location-study p { font-size: 15px; }
+.esims-location-heading { display: flex; align-items: center; gap: 13px; color: #273c66; font-weight: 700; margin-bottom: 27px; }
+.esims-locations-lead { font-size: 18px; color: #273c66; }
+.esims-location-address { border-left: 3px solid #FFCF03; background: #f4f7fa; padding: 22px; margin: 25px 0; }
+.esims-location-address h3 { color: #18294f; font-size: 21px; margin: 0 0 14px; line-height: 1.4; }
+.esims-location-address h3 i { color: #0066B3; margin-right: 9px; }
+.esims-location-address p { font-size: 15px; margin-bottom: 0; }
+.esims-location-contacts { list-style: none; margin: 28px 0; padding: 0; }
+.esims-location-contacts li { display: flex; align-items: flex-start; gap: 18px; margin-bottom: 22px; }
+.esims-location-contacts li > i { font-size: 21px; color: #0066B3; width: 23px; padding-top: 4px; }
+.esims-location-contacts span { display: block; color: #667286; font-size: 12px; margin-bottom: 3px; }
+.esims-location-contacts a { font-size: 16px; color: #273c66; font-weight: 600; }
+.esims-location-contacts .esims-location-whatsapp { display: block; color: #0066B3; font-size: 12px; font-weight: 500; text-decoration: underline; text-underline-offset: 3px; margin-top: 5px; }
+.esims-location-togo .esims-location-address { background: #fff; }
+.esims-location-address .readon2 { margin-top: 23px; }
+.esims-location-offers { display: grid; gap: 22px; }
+.esims-location-offers article { background: #fff; border: 1px solid #e1e8ef; border-top: 3px solid #0066B3; padding: 27px; }
+.esims-location-offers article + article { border-top-color: #FFCF03; }
+.esims-location-offers h3 { color: #18294f; font-size: 25px; margin: 12px 0 15px; line-height: 1.35; }
+.esims-location-offers p { font-size: 15px; }
+.esims-location-offers a { font-size: 14px; }
+.esims-location-permit { display: flex; align-items: center; gap: 25px; background: #fff; border: 1px solid #e1e8ef; margin-top: 35px; padding: 24px 30px; }
+.esims-location-permit > i { color: #0066B3; font-size: 32px; }
+.esims-location-permit > div { flex: 1; }
+.esims-location-permit h3 { color: #18294f; font-size: 22px; margin: 0 0 5px; line-height: 1.4; }
+.esims-location-permit p { font-size: 14px; margin: 0; }
+.esims-location-permit a { font-size: 14px; flex-shrink: 0; }
+.esims-location-question { border: 1px solid #dfe7ee; margin-bottom: 15px; }
+.esims-location-question summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; list-style: none; padding: 20px; background: #f4f7fa; color: #273c66; font-size: 15px; font-weight: 600; cursor: pointer; }
+.esims-location-question summary::-webkit-details-marker { display: none; }
+.esims-location-question[open] summary { background: #0066B3; color: #fff; }
+.esims-location-question[open] summary i { transform: rotate(180deg); }
+.esims-location-question > div { padding: 22px; }
+.esims-location-question p { margin: 0; font-size: 15px; }
+.esims-implantations-page a:focus-visible, .esims-implantations-page summary:focus-visible { outline: 3px solid #FFCF03; outline-offset: 4px; }
+@media (max-width: 991px) {
+  .esims-implantations-page [id] { scroll-margin-top: 25px; }
+  .esims-locations-countries { justify-content: flex-start; margin-top: 27px; }
+  .esims-locations-countries a { flex-direction: row; padding: 12px 18px; font-size: 15px; gap: 10px; }
+  .esims-locations-countries img { width: 30px; height: 20px; }
+  .esims-location-permit { flex-wrap: wrap; }
+}
+@media (max-width: 575px) {
+  .esims-locations-eyebrow { font-size: 12px; }
+  .esims-implantations-page .esims-locations-hero { padding-bottom: 35px; }
+  .esims-locations-breadcrumb { margin-bottom: 27px; }
+  .esims-location-cover { aspect-ratio: 1.2; padding: 23px; }
+  .esims-location-cover-copy h3 { font-size: 38px; }
+  .esims-location-choice-content { padding: 25px 22px; }
+  .esims-location-graphic { right: 28px; top: 55px; }
+  .esims-location-graphic i { font-size: 75px; }
+  .esims-location-graphic span { font-size: 15px; }
+  .esims-location-offers article, .esims-location-study { padding: 24px 21px; }
+  .esims-location-address { padding: 20px 18px; }
+  .esims-location-permit { padding: 23px 20px; gap: 18px; }
+  .esims-location-permit > div { flex-basis: 220px; }
+  .esims-location-question summary { font-size: 14px; padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .esims-location-photo { transition: none; }
+}

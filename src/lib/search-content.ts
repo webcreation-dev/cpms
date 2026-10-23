@@ -14,7 +14,7 @@ export function searchTemplate(html: string, query: string) {
   }) : [];
   const suggestions = records.filter(record => record.type === 'post').sort((a,b)=>b.publishedAt.localeCompare(a.publishedAt));
   const selected = [...matches, ...suggestions.filter(record => !matches.some(found => found.id === record.id))];
-  put(doc, '.rs-breadcrumbs h1', words.length ? (matches.length ? `${matches.length} résultat${matches.length > 1 ? 's' : ''}` : 'Aucun résultat') : 'Rechercher au CPMS');
+  put(doc, '.rs-breadcrumbs h1', words.length ? (matches.length ? `${matches.length} résultat${matches.length > 1 ? 's' : ''}` : 'Aucun résultat') : 'Rechercher à l’ESIMS');
   const cards = all(doc,'.rs-inner-blog .blog-item');
   for (const [index,card] of cards.entries()) {
     const record = selected[index % selected.length];
@@ -23,7 +23,7 @@ export function searchTemplate(html: string, query: string) {
     link(one(card,'.blog-title a'),record.shortTitle,record.route);
     const imageLink=one(card,'.blog-img a');if(imageLink)imageLink.attribs.href=record.route;
     put(card,'.blog-desc',record.excerpt);
-    put(card,'.author','CPMS');
+    put(card,'.author','ESIMS');
     put(card,'.blog-date',new Intl.DateTimeFormat('fr-FR',{dateStyle:'long',timeZone:'UTC'}).format(new Date(record.publishedAt.replace(' ','T')+'Z')));
     link(one(card,'.tag-line a'),index<matches.length?'Résultat':'À lire aussi',record.route);
     link(one(card,'.blog-button a'),'Lire la suite',record.route);

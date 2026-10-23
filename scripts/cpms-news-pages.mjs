@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { documentFrom, serialize, text, all, one, contents, label, put, link } from './editorial-dom.mjs';
 import { articleGallery } from './cpms-article-gallery.mjs';
+import { newsListingPage } from './esims-news-page.mjs';
+import { articleReadingPage } from './esims-article-page.mjs';
 
 const remove = node => { if (node?.parent) node.parent.children = node.parent.children.filter(child => child !== node); };
 const slug = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -14,6 +16,7 @@ export function newsPages({ publicNews, homeHtml, safe, date, articleRoute, shor
   const categoryRoute = category => categoryNames.includes(category) ? `/actualites/categories/${slug(category)}` : category === 'Témoignages' ? '/temoignages' : '/formations';
   const groups = [
     { base:'actualites', title:'Actualités', records:publicNews },
+    { base:'evenements', title:'Événements', records:publicNews.filter(record => categories(record).includes('Événements')) },
     ...months.map(month => ({ base:archiveRoute(month).slice(1), title:`Archives : ${new Intl.DateTimeFormat('fr-FR',{month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(`${month}-01T12:00:00Z`))}`, records:publicNews.filter(record => record.published_at.startsWith(month)) })),
     ...categoryNames.map(category => ({ base:categoryRoute(category).slice(1), title:`Catégorie : ${category}`, records:publicNews.filter(record => categories(record).includes(category)) })),
   ];
@@ -55,7 +58,7 @@ export function newsPages({ publicNews, homeHtml, safe, date, articleRoute, shor
     } else contents(one(recent,'ul'),listLinks(publicNews.slice(0,5).map(record=>[shortTitle(record),articleRoute(record)])));
     const [archives,categoryWidget] = all(area,'.widget-archives');
     put(archives,'.widget-title','Archives');
-    contents(one(archives,'ul'),listLinks(groups.slice(1,1+months.length).map(group=>[group.title.replace('Archives : ',''),'/'+group.base])));
+    contents(one(archives,'ul'),listLinks(months.map(month=>{const group=groups.find(group=>group.base===archiveRoute(month).slice(1));return [group.title.replace('Archives : ',''),'/'+group.base];})));
     put(categoryWidget,'.widget-title','Catégories');
     contents(one(categoryWidget,'ul'),listLinks(categoryNames.map(category=>[category,categoryRoute(category)])));
     const meta = all(area,'.recent-posts').at(-1);
@@ -74,17 +77,13 @@ export function newsPages({ publicNews, homeHtml, safe, date, articleRoute, shor
       await fillBlogCard(card,record);
       link(one(card,'.tag-line a'),categories(record)[0],categoryRoute(categories(record)[0]));
     }
-    const pages = Math.ceil(group.records.length/pageSize);
-    if (pages>1) {
-      const pageUrl = number => '/'+group.base+(number===1?'':`/page/${number}`);
-      const navigation = Array.from({length:pages},(_,index)=>`<li${page===index+1?' class="active"':''}><a href="${pageUrl(index+1)}"${page===index+1?' aria-current="page"':''}>${index+1}</a></li>`).join('');
-      const row = cards[0].parent.parent;
-      contents(row,row.children.map(serialize).join('')+`<div class="col-lg-12"><nav class="pagination-area" aria-label="Pages des actualités"><ul class="pagination-part">${page>1?`<li><a href="${pageUrl(page-1)}" aria-label="Page précédente">‹</a></li>`:''}${navigation}${page<pages?`<li><a href="${pageUrl(page+1)}" aria-label="Page suivante">›</a></li>`:''}</ul></nav></div>`);
-    }
-    assert.deepEqual(all(doc,'.blog-title a').map(a=>a.attribs.href),selected.map(articleRoute),'Les articles doivent apparaître une seule fois par page.');
+    newsListingPage(doc, {
+      group,page,pageSize,selected,cards:cards.slice(0,selected.length),safe,date,articleRoute,shortTitle,categoryRoute,
+      counts:{all:publicNews.length,news:publicNews.filter(record=>categories(record).includes('Actualités')).length,events:publicNews.filter(record=>categories(record).includes('Événements')).length},
+    });
   }
 
-  async function article(doc,record) {
+  async function article(doc,record,{redesign=true}={}) {
     shell(doc,'Actualités'); await sidebar(doc);
     const lead = one(doc,'.bs-img img');
     lead.attribs.src=record.photo; lead.attribs.alt=shortTitle(record);
@@ -108,6 +107,7 @@ export function newsPages({ publicNews, homeHtml, safe, date, articleRoute, shor
     following.attribs.href=next?articleRoute(next):'/actualites'; contents(following,`<span class="link-text">${safe(next?shortTitle(next):'Actualités')}</span>`);
     // Les commentaires n'ont pas de service connecté dans cette refonte.
     remove(one(doc,'.comment-area'));
+    if(redesign) articleReadingPage(doc,{record,publicNews,safe,date,articleRoute,shortTitle,categoryRoute});
   }
   return { groups, listing, article };
 }

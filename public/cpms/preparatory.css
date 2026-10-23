@@ -1,0 +1,162 @@
+/* Fiches de formation ESIMS : grille et éléments Educavo, organisation inspirée de JUNIA. */
+body:is(.esims-preparatory-page, .esims-licence-page) { overflow-x: clip; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-hero { background: #273c66; color: #fff; padding: 24px 0 45px; }
+.esims-course-breadcrumb { display: flex; gap: 10px; flex-wrap: wrap; color: #dbe4ef; font-size: 12px; margin-bottom: 25px; }
+.esims-course-breadcrumb a { color: inherit; }
+.esims-course-location { display: flex; align-items: center; gap: 10px; color: #fff; margin-bottom: 18px; font-size: 14px; font-weight: 600; }
+.esims-course-location img { width: 30px; height: 20px; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-hero h1 { font-size: clamp(32px, 3.3vw, 46px); color: #fff; line-height: 1.2; font-weight: 800; margin-bottom: 20px; }
+.esims-course-hero h1 span { display: inline-block; color: #FFCF03; font-size: .76em; margin-top: 12px; }
+.esims-course-hero-copy > p { color: #edf2f8; max-width: 510px; font-size: 16px; line-height: 1.8; }
+.esims-course-hero-actions { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-top: 25px; }
+:is(.esims-preparatory-page, .esims-licence-page) .readon2 { border-radius: 0; padding: 14px 22px; font-size: 14px; line-height: 1.5; }
+:is(.esims-preparatory-page, .esims-licence-page) .readon2 i { margin-left: 10px; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-hero .readon2 { background: #FFCF03; color: #17294f; }
+.esims-course-download { color: #fff; border-bottom: 1px solid #ffffff80; padding-bottom: 4px; font-size: 13px; }
+.esims-course-download:hover { color: #FFCF03; }
+.esims-course-download i { margin-right: 7px; }
+.esims-course-hero-photo { position: relative; margin-left: 20px; overflow: hidden; }
+.esims-course-hero-photo > img { display: block; width: 100%; aspect-ratio: 1.28; object-fit: cover; }
+.esims-course-hero-photo::after { content: ''; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, #14233cc9); pointer-events: none; }
+.esims-course-video { position: absolute; bottom: 22px; left: 22px; right: 15px; display: flex; align-items: center; gap: 13px; color: #fff; z-index: 1; font-size: 14px; font-weight: 600; }
+.esims-course-video > i { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: #FFCF03; color: #17294f; font-size: 15px; }
+.esims-course-video:hover { color: #FFCF03; }
+.esims-course-nav { position: sticky; top: 108px; background: #fff; z-index: 98; box-shadow: 0 5px 18px #273c660d; border-bottom: 1px solid #e2e9f0; }
+.esims-course-nav ul { display: flex; align-items: center; gap: 27px; margin: 0; padding: 0; overflow-x: auto; scrollbar-width: thin; }
+.esims-course-nav a { display: block; color: #536078; padding: 20px 0 17px; border-bottom: 3px solid transparent; white-space: nowrap; font-size: 14px; font-weight: 600; }
+.esims-course-nav a.is-active, .esims-course-nav a:hover { color: #0066B3; border-bottom-color: #FFCF03; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-layout { background: #f4f7fa; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-main { min-width: 0; padding-right: 30px; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-block { background: #fff; padding: 32px; margin-bottom: 28px; border: 1px solid #e8edf3; border-radius: 4px; }
+:is(.esims-preparatory-page, .esims-licence-page) [id] { scroll-margin-top: 200px; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-block .sec-title .sub-title { color: #0066B3; font-size: 12px; font-weight: 700; letter-spacing: .6px; margin-bottom: 11px; line-height: 1.6; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-block .sec-title .title { color: #18294f; font-size: 29px; line-height: 1.3; margin-bottom: 0; }
+.esims-course-block p { line-height: 1.8; }
+.esims-course-lead { font-size: 18px; color: #273c66; }
+.esims-course-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 36px; }
+.esims-course-facts > div { background: #f4f7fa; border-bottom: 3px solid #FFCF03; padding: 18px 14px; }
+.esims-course-facts i { display: block; font-size: 23px; color: #0066B3; margin-bottom: 13px; }
+.esims-course-facts span { display: block; font-size: 12px; color: #626e80; margin-bottom: 4px; }
+.esims-course-facts strong { display: block; font-family: Nunito, sans-serif; color: #18294f; font-size: 19px; line-height: 1.3; }
+.esims-course-detail { margin-top: 24px; border: 1px solid #dfe7ee; border-radius: 3px; overflow: hidden; }
+.esims-course-detail > summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; list-style: none; background: #f4f7fa; color: #273c66; font-weight: 600; font-size: 14px; padding: 17px 19px; cursor: pointer; }
+.esims-course-detail summary::-webkit-details-marker { display: none; }
+.esims-course-detail[open] > summary { background: #0066B3; color: #fff; }
+.esims-course-detail[open] > summary i { transform: rotate(180deg); }
+.esims-course-detail-content { padding: 24px; font-size: 15px; overflow-wrap: anywhere; }
+.esims-course-detail-content h3 { font-size: 23px; line-height: 1.4; }
+.esims-course-detail-content h4 { font-size: 21px; }
+.esims-course-detail-content figure { margin-bottom: 22px; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-detail-content figure img { display: block; width: 100%; height: auto; }
+.esims-course-detail-content .review-list { padding-left: 20px; list-style: disc; }
+.esims-course-detail-content .review-list li { margin-bottom: 9px; }
+.esims-course-resources { margin-top: 30px; padding-top: 25px; border-top: 1px solid #e1e8ef; }
+.esims-course-resources > h3 { font-size: 22px; line-height: 1.4; }
+.esims-course-subjects .table { margin-bottom: 0; color: #505866; font-size: 14px; }
+.esims-course-subjects thead { background: #273c66; color: #fff; }
+.esims-course-subjects th, .esims-course-subjects td { padding: 12px 14px; vertical-align: middle; }
+.esims-course-subjects tbody th { font-weight: 500; }
+.esims-course-subjects th:not(:first-child), .esims-course-subjects td { text-align: center; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-strengths .courses-item { height: 100%; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-strengths .courses-grid { display: flex; flex-direction: column; height: 100%; padding: 0; border: 1px solid #e2e9f0; border-radius: 4px; overflow: hidden; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-strengths .courses-grid .img-part img { width: 100%; aspect-ratio: 1.3; object-fit: cover; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-strengths .courses-grid .content-part { padding: 20px 16px; }
+.esims-course-strengths h3 { font-size: 19px; line-height: 1.35; margin-bottom: 12px; color: #18294f; }
+.esims-course-strengths .content-part p { font-size: 14px; line-height: 1.7; margin: 0; }
+.esims-course-next { padding: 25px; background: #f4f7fa; border-left: 4px solid #FFCF03; }
+.esims-course-next h3 { font-size: 23px; line-height: 1.4; margin: 10px 0 15px; }
+.esims-course-next p { font-size: 15px; }
+.esims-course-label { color: #0066B3; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; }
+.esims-course-partners { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+.esims-course-partners span { background: #fff; border: 1px solid #dbe4ed; color: #273c66; padding: 6px 12px; font-size: 13px; font-weight: 700; }
+.esims-course-experience { padding: 24px; height: 100%; border: 1px solid #e1e8ef; border-top: 3px solid #FFCF03; }
+.esims-course-number { color: #0066B3; font: 800 28px/1.3 Nunito, sans-serif; display: block; margin-bottom: 15px; }
+.esims-course-experience h3 { color: #18294f; font-size: 22px; line-height: 1.35; margin-bottom: 13px; }
+.esims-course-experience p { font-size: 15px; margin-bottom: 0; }
+.esims-course-admission { border-left: 4px solid #FFCF03; padding-left: 24px; }
+.esims-course-admission-actions { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-top: 25px; }
+.esims-course-admission-actions .esims-school-text-link { font-size: 14px; }
+.esims-course-contact { margin-top: 24px; font-size: 14px; }
+:is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar { position: sticky; top: 194px; }
+.esims-course-summary { background: #fff; border: 1px solid #e1e8ef; border-top: 4px solid #0066B3; padding: 27px 24px; box-shadow: 0 9px 25px #273c6608; }
+.esims-course-summary > h2 { color: #18294f; font-size: 24px; line-height: 1.3; margin: 12px 0 20px; }
+:is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar .course-features-info { margin: 0 0 23px; padding: 0; box-shadow: none; }
+:is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar .course-features-info ul li { display: grid; grid-template-columns: 18px 1fr auto; align-items: start; gap: 9px; padding: 13px 0; border-bottom: 1px solid #edf1f6; font-size: 13px; line-height: 1.5; }
+:is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar .course-features-info ul li i { color: #0066B3; margin-top: 4px; }
+:is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar .course-features-info ul li .label { padding: 0; }
+:is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar .course-features-info ul li .value { float: none; padding: 0; color: #273c66; font-weight: 600; text-align: right; }
+:is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar .btn-part { padding: 0; margin: 0; box-shadow: none; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-sidebar .readon2 { display: block; text-align: center; margin-top: 10px; background: #FFCF03; color: #17294f; padding: 13px 10px; font-size: 13px; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-sidebar .esims-course-apply { background: #0066B3; color: #fff; }
+:is(.esims-preparatory-page, .esims-licence-page) .esims-course-sidebar .readon2 > i:first-child { margin: 0 6px 0 0; }
+.esims-course-sidebar-help { margin: 22px 0 0; text-align: center; font-size: 13px; line-height: 1.7; color: #626e80; }
+:is(.esims-preparatory-page, .esims-licence-page) a:focus-visible, :is(.esims-preparatory-page, .esims-licence-page) summary:focus-visible { outline: 3px solid #FFCF03; outline-offset: 4px; }
+@media (max-width: 1199px) and (min-width: 992px) {
+  .esims-course-summary { padding: 23px 17px; }
+  :is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar .course-features-info ul li { font-size: 12px; gap: 6px; }
+}
+@media (min-width: 992px) and (max-height: 800px) {
+  :is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar { position: static; }
+}
+@media (max-width: 991px) {
+  :is(.esims-preparatory-page, .esims-licence-page) .esims-course-hero { padding-bottom: 35px; }
+  .esims-course-hero-photo { margin-left: 0; }
+  .esims-course-hero-photo > img { aspect-ratio: 1.7; }
+  .esims-course-nav { top: 0; }
+  .esims-course-nav ul { gap: 23px; }
+  .esims-course-nav a { padding-top: 15px; padding-bottom: 13px; }
+  :is(.esims-preparatory-page, .esims-licence-page) [id] { scroll-margin-top: 85px; }
+  :is(.esims-preparatory-page, .esims-licence-page) .esims-course-main { padding-right: 15px; }
+  :is(.esims-preparatory-page, .esims-licence-page) .intro-section .esims-course-sidebar { position: static; margin-top: 10px; }
+}
+@media (max-width: 575px) {
+  .esims-course-breadcrumb { font-size: 11px; margin-bottom: 22px; }
+  .esims-course-hero-actions { gap: 20px; }
+  .esims-course-hero-photo > img { aspect-ratio: 1.25; }
+  .esims-course-video { left: 15px; bottom: 15px; font-size: 12px; }
+  :is(.esims-preparatory-page, .esims-licence-page) .esims-course-block { padding: 24px 18px; margin-bottom: 22px; }
+  :is(.esims-preparatory-page, .esims-licence-page) .esims-course-block .sec-title .title { font-size: 26px; }
+  .esims-course-facts { gap: 7px; }
+  .esims-course-facts > div { padding: 14px 9px; }
+  .esims-course-facts strong { font-size: 17px; }
+  .esims-course-facts span { font-size: 11px; }
+  .esims-course-detail-content { padding: 18px 14px; }
+  .esims-course-detail > summary { font-size: 13px; padding: 16px 14px; }
+  .esims-course-subjects th, .esims-course-subjects td { padding: 10px 7px; font-size: 12px; }
+  .esims-course-next { padding: 23px 18px; }
+  .esims-course-admission { padding-left: 17px; }
+  .esims-course-experience { padding: 23px 18px; }
+}
+
+/* Éléments spécifiques à la fiche de Lomé. */
+.esims-course-illustration { margin-bottom: 0; }
+.esims-course-illustration::after { display: none; }
+.esims-course-illustration figcaption { background: #1b2d50; color: #e5edf6; padding: 12px 15px; font-size: 11px; line-height: 1.6; }
+.esims-course-steps { margin-top: 25px; }
+.esims-course-steps .esims-course-experience { padding: 22px 16px; }
+.esims-course-steps .esims-course-label { font-size: 10px; letter-spacing: .3px; }
+.esims-course-steps h3 { font-size: 20px; margin-top: 12px; }
+.esims-course-steps p { font-size: 14px; margin-bottom: 0; }
+.esims-course-followup { margin: 23px 0 0; }
+.esims-course-checklist { padding-left: 21px; list-style: disc; margin: 22px 0; }
+.esims-course-checklist li { margin-bottom: 13px; line-height: 1.8; }
+.esims-course-document { display: flex; align-items: flex-start; gap: 20px; }
+.esims-course-document > i { color: #0066B3; background: #f4f7fa; padding: 18px; font-size: 30px; }
+.esims-course-document h3 { font-size: 22px; line-height: 1.4; }
+@media (max-width: 575px) {
+  .esims-course-document { flex-direction: column; }
+  .esims-course-steps .esims-course-experience { padding: 24px 20px; }
+}
+
+/* Spécialités des licences : cartes dans la grille Educavo. */
+.esims-licence-specialties { margin-top: 28px; }
+.esims-licence-specialty { height: 100%; padding: 23px; border: 1px solid #e1e8ef; border-top: 3px solid #FFCF03; background: #fff; display: flex; flex-direction: column; align-items: flex-start; }
+.esims-licence-specialty > i { width: 48px; height: 48px; display: grid; place-items: center; background: #eef5fb; color: #0066B3; font-size: 23px; margin-bottom: 19px; }
+.esims-licence-specialty h3 { color: #18294f; font-size: 21px; line-height: 1.35; margin-bottom: 20px; }
+.esims-licence-specialty > a { margin-top: auto; font-size: 13px; }
+.esims-licence-specialty:hover { border-color: #0066B3; border-top-color: #FFCF03; }
+.esims-licence-other { margin-top: 30px; }
+.esims-licence-page .course-features-info .value { max-width: 175px; }
+@media (max-width: 1199px) and (min-width: 992px) {
+  .esims-licence-page .course-features-info .value { max-width: 135px; }
+}

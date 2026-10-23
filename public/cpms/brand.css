@@ -14,7 +14,7 @@
 .cpms-site .full-width-header.cpms-header .rs-header .topbar-area .topbar-right { padding: 10px 0; gap: 12px; }
 .cpms-site .full-width-header.cpms-header .rs-header .topbar-area .topbar-right .cpms-top-button {
   display: inline-flex; align-items: center; justify-content: center;
-  min-height: 44px; padding: 12px 18px; border-radius: 7px;
+  min-height: 44px; padding: 12px 18px; border-radius: 0;
   font-size: 13px; line-height: 20px; font-weight: 600; white-space: nowrap;
   text-decoration: none; transition: filter .2s ease;
 }

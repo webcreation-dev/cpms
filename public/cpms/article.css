@@ -1,0 +1,92 @@
+/* Lecture : structure blog-post-left Educavo et palette ESIMS. */
+body.esims-article-page { overflow-x: clip; }
+.esims-article-page [id] { scroll-margin-top: 140px; }
+.esims-article-page .esims-article-hero { background: #273c66; color: #fff; padding: 25px 0 48px; }
+.esims-article-breadcrumb { display: flex; flex-wrap: wrap; gap: 10px; color: #dbe4ef; font-size: 12px; margin-bottom: 30px; }
+.esims-article-breadcrumb a { color: inherit; }
+.esims-article-category { display: inline-block; background: #FFCF03; color: #18294f; font-size: 12px; font-weight: 700; padding: 4px 12px; margin-bottom: 19px; }
+.esims-article-page .esims-article-hero h1 { color: #fff; max-width: 1000px; font-size: clamp(29px, 3.3vw, 43px); line-height: 1.25; margin-bottom: 25px; overflow-wrap: anywhere; }
+.esims-article-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 25px; color: #e3ebf5; font-size: 12px; }
+.esims-article-meta i { margin-right: 7px; }
+.esims-article-meta a { color: #fff; border-bottom: 1px solid #ffffff70; }
+.esims-article-layout { background: #f4f7fa; }
+.esims-article-page .rs-inner-blog .blog-full.esims-article-paper { padding: 0; border: 1px solid #e1e8ef; border-radius: 4px; background: #fff; overflow: hidden; }
+.esims-article-page .esims-article-cover { position: relative; margin: 0; }
+.esims-article-cover img { width: 100%; aspect-ratio: 1.65; object-fit: cover; display: block; }
+.esims-article-cover figcaption { background: #edf2f7; color: #59667b; font-size: 12px; line-height: 1.6; padding: 12px 30px; }
+.esims-article-copy { padding: 35px; }
+.esims-article-page .cpms-post-content { font-size: 16px; line-height: 1.9; color: #4d596c; overflow-wrap: anywhere; }
+.esims-article-page .cpms-post-content p { line-height: 1.9; margin-bottom: 23px; }
+.esims-article-page .cpms-post-content > p:first-child { color: #273c66; font-size: 18px; line-height: 1.75; }
+.esims-article-page .cpms-post-content strong { font-weight: 600; }
+.esims-article-page .cpms-post-content h2, .esims-article-page .cpms-post-content h3, .esims-article-page .cpms-post-content h4 { color: #18294f; font-size: 25px; line-height: 1.35; margin: 33px 0 18px; }
+.esims-article-page .cpms-post-content ul, .esims-article-page .cpms-post-content ol { padding-left: 23px; margin-bottom: 25px; }
+.esims-article-page .cpms-post-content ul { list-style: disc; }
+.esims-article-page .cpms-post-content ol { list-style: decimal; }
+.esims-article-page .cpms-post-content li { margin-bottom: 9px; line-height: 1.85; }
+.esims-article-page .cpms-post-content a { color: #0066B3; text-decoration: underline; text-underline-offset: 3px; }
+.esims-article-page .cpms-post-content blockquote { margin: 28px 0; padding: 24px; background: #f4f7fa; border-left: 4px solid #FFCF03; }
+.esims-article-page .cpms-post-content blockquote p { color: #273c66; font-size: 17px; }
+.esims-article-page .cpms-article-gallery { padding-top: 15px; }
+.esims-article-page .cpms-article-gallery .gallery-img { border-radius: 3px; }
+.esims-article-page .cpms-article-gallery figcaption { color: #69768a; font-size: 12px; }
+.esims-article-back { padding: 24px 35px; border-top: 1px solid #e1e8ef; display: flex; flex-wrap: wrap; gap: 15px 30px; justify-content: space-between; }
+.esims-article-back a { font-size: 13px; }
+.esims-article-back i { margin: 0 7px; }
+.esims-article-toc { background: #fff; padding: 25px; margin-bottom: 24px; border: 1px solid #e1e8ef; border-top: 3px solid #FFCF03; }
+.esims-article-toc h2 { font-size: 20px; color: #18294f; margin: 0 0 19px; }
+.esims-article-toc ol { padding-left: 19px; margin: 0; list-style: decimal; }
+.esims-article-toc li { font-size: 13px; color: #0066B3; margin-bottom: 11px; }
+.esims-article-toc li:last-child { margin-bottom: 0; }
+.esims-article-toc a { color: #536078; line-height: 1.6; }
+.esims-article-toc a:hover { color: #0066B3; }
+.esims-article-mobile-toc { display: none; }
+.esims-article-page .rs-inner-blog .widget-area > div { background: #fff; border: 1px solid #e1e8ef; border-radius: 3px; padding: 25px; margin-bottom: 23px; box-shadow: none; }
+.esims-article-page .rs-inner-blog .widget-area .widget-title { color: #18294f; font-size: 20px; line-height: 1.4; }
+.esims-article-page .rs-inner-blog .widget-area .widget-title::before { background: #FFCF03; }
+.esims-article-page .widget-area li a { font-size: 13px; color: #536078; }
+.esims-article-page .rs-inner-blog .widget-area .show-featured { display: flex; align-items: flex-start; gap: 13px; }
+.esims-article-page .rs-inner-blog .widget-area .show-featured .post-img { flex: 0 0 65px; width: 65px; margin: 0; float: none; }
+.esims-article-page .rs-inner-blog .widget-area .show-featured .post-img img { width: 65px; height: 60px; object-fit: cover; }
+.esims-article-page .rs-inner-blog .widget-area .show-featured .post-desc { flex: 1; min-width: 0; width: auto; padding: 0; float: none; }
+.esims-article-page .rs-inner-blog .widget-area .post-desc a { color: #273c66; font-size: 13px; line-height: 1.5; }
+.esims-article-page .widget-area .date { font-size: 11px; }
+.esims-article-archives summary { color: #0066B3; font-size: 13px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.esims-article-archives summary::-webkit-details-marker { display: none; }
+.esims-article-archives[open] summary { margin-bottom: 18px; }
+.esims-article-archives[open] summary i { transform: rotate(180deg); }
+.esims-article-more .sec-title .sub-title { color: #0066B3; font-size: 13px; margin-bottom: 10px; }
+.esims-article-more .sec-title .title { color: #18294f; font-size: 32px; }
+.esims-article-page .esims-article-more .blog-item { height: 100%; display: flex; flex-direction: column; border: 1px solid #e1e8ef; border-radius: 4px; overflow: hidden; box-shadow: none; }
+.esims-article-related-photo { display: block; }
+.esims-article-related-photo img { width: 100%; aspect-ratio: 1.6; object-fit: cover; }
+.esims-article-page .esims-article-more .blog-content { display: flex; flex-direction: column; align-items: flex-start; flex: 1; padding: 25px; }
+.esims-article-more time { font-size: 11px; color: #6a778b; }
+.esims-article-page .esims-article-more .blog-title { font-size: 22px; line-height: 1.35; margin: 14px 0 22px; }
+.esims-article-more .blog-title a { color: #18294f; }
+.esims-article-more .esims-school-text-link { margin-top: auto; font-size: 13px; }
+.esims-article-page a:focus-visible, .esims-article-page summary:focus-visible { outline: 3px solid #FFCF03; outline-offset: 4px; }
+@media (max-width: 991px) {
+  .esims-article-page [id] { scroll-margin-top: 25px; }
+  .esims-article-sidebar { order: 2; margin-top: 35px; }
+  .esims-article-main { order: 1; }
+  .esims-article-toc { display: none; }
+  .esims-article-mobile-toc { display: block; background: #fff; border: 1px solid #e1e8ef; border-top: 3px solid #FFCF03; margin-bottom: 24px; }
+  .esims-article-mobile-toc summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 18px 21px; color: #273c66; list-style: none; font-size: 15px; font-weight: 600; cursor: pointer; }
+  .esims-article-mobile-toc summary::-webkit-details-marker { display: none; }
+  .esims-article-mobile-toc[open] summary i { transform: rotate(180deg); }
+  .esims-article-mobile-toc ol { list-style: decimal; margin: 0; padding: 0 25px 20px 40px; }
+  .esims-article-mobile-toc li { margin: 10px 0; font-size: 13px; color: #0066B3; }
+  .esims-article-mobile-toc a { color: #536078; }
+}
+@media (max-width: 575px) {
+  .esims-article-page .esims-article-hero { padding-bottom: 33px; }
+  .esims-article-breadcrumb { margin-bottom: 24px; }
+  .esims-article-meta { gap: 12px 17px; font-size: 11px; }
+  .esims-article-copy { padding: 25px 21px; }
+  .esims-article-page .cpms-post-content { font-size: 15px; }
+  .esims-article-page .cpms-post-content h2, .esims-article-page .cpms-post-content h3, .esims-article-page .cpms-post-content h4 { font-size: 23px; }
+  .esims-article-cover figcaption { padding: 11px 21px; }
+  .esims-article-back { padding: 23px 21px; }
+  .esims-article-page .esims-article-more .blog-title { font-size: 21px; }
+}

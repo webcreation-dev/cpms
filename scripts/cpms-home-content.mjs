@@ -3,9 +3,10 @@ export const values = 'Discipline – Courtoisie – Honnêteté – Excellence'
 export const recognition = 'Le CPMS est reconnu et autorisé par l’État béninois. Arrêté année 2021 N°1018/MESRS/DC/SGM/DGES/CT-J/CJ/SA/049SGG21 portant autorisation de création et d’ouverture de l’Établissement privé d’Enseignement Supérieur dénommé « École Supérieure d’Ingénierie Sainte Marie Stella ».';
 export const campaignTitle = 'Inscriptions — année académique 2026–2027';
 export const homeStatistics = [
-  { value: 172, prefix: '+', label: 'Ayant voyagé' },
-  { value: 163, label: 'Ayant formé' },
-  { value: 9, label: 'Cursus béninois' },
+  { value: 172, label: 'Étudiants déjà formés' },
+  { value: 163, label: 'Étudiants ayant voyagé' },
+  { value: 9, label: 'Étudiants poursuivant leur formation d’ingénieur au Bénin' },
+  { value: 4, label: 'Écoles partenaires' },
 ];
 export const documents = [
   'Les bulletins de Première et de Terminale (tous les bulletins).',

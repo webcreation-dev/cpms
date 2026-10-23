@@ -1,0 +1,79 @@
+/* Contact4 et cartes d’orientation JUNIA, dans le thème ESIMS / Educavo. */
+body.esims-contact-page { overflow-x: clip; }
+.esims-contact-page [id] { scroll-margin-top: 140px; }
+.esims-contact-page .esims-contact-hero { background: #273c66; color: #fff; padding: 25px 0 48px; }
+.esims-contact-breadcrumb { display: flex; gap: 11px; color: #dbe4ef; font-size: 12px; margin-bottom: 30px; }
+.esims-contact-breadcrumb a { color: inherit; }
+.esims-contact-eyebrow { color: #e1eaf4; font-size: 13px; margin-bottom: 15px; }
+.esims-contact-page .esims-contact-hero h1 { color: #fff; font-size: clamp(34px, 4vw, 50px); line-height: 1.2; margin: 0 0 22px; }
+.esims-contact-hero h1 span { color: #FFCF03; }
+.esims-contact-page .esims-contact-hero p { color: #e4edf7; line-height: 1.8; max-width: 650px; margin-bottom: 24px; }
+.esims-contact-hero-icon { text-align: center; font-size: 130px; color: #FFCF03; opacity: .9; }
+.esims-contact-page .readon2 { border-radius: 0; font-size: 13px; line-height: 1.6; padding: 13px 22px; white-space: normal; max-width: 100%; }
+.esims-contact-page .readon2 i { margin-left: 13px; }
+.esims-contact-page .esims-contact-hero .readon2 { background: #FFCF03; color: #18294f; }
+.esims-contact-page .sec-title .sub-title { color: #0066B3; font-size: 13px; line-height: 1.6; font-weight: 700; letter-spacing: .5px; margin-bottom: 11px; }
+.esims-contact-page .sec-title .title { color: #18294f; font-size: clamp(27px, 2.8vw, 35px); line-height: 1.3; }
+.esims-contact-page p { color: #586579; line-height: 1.8; font-size: 15px; }
+.esims-contact-topics { background: #f4f7fa; }
+.esims-contact-topic { border: 1px solid #e1e8ef; border-top: 3px solid #FFCF03; background: #fff; padding: 29px; height: 100%; display: flex; flex-direction: column; align-items: flex-start; }
+.esims-contact-topic .icon-part i { display: grid; place-items: center; width: 53px; height: 53px; background: #eef5fb; color: #0066B3; font-size: 25px; margin-bottom: 23px; }
+.esims-contact-topic h3 { color: #18294f; font-size: 24px; line-height: 1.3; margin: 0 0 15px; }
+.esims-contact-topic a { font-size: 13px; margin-top: auto; }
+.esims-contact-topic a.is-selected { color: #18294f; border-bottom-color: #FFCF03; }
+.esims-contact-main { background: #fff; }
+.esims-contact-direct { margin: 30px 0; }
+.esims-contact-channel { display: flex; align-items: flex-start; gap: 18px; padding: 19px 0; border-bottom: 1px solid #e1e8ef; }
+.esims-contact-channel > i { color: #0066B3; font-size: 22px; width: 25px; padding-top: 4px; }
+.esims-contact-channel span { display: block; color: #738095; font-size: 12px; margin-bottom: 5px; }
+.esims-contact-channel a { color: #273c66; font-size: 17px; font-weight: 600; overflow-wrap: anywhere; }
+.esims-contact-channel .esims-contact-whatsapp { display: block; color: #0066B3; font-size: 12px; font-weight: 500; margin-top: 5px; text-decoration: underline; text-underline-offset: 3px; }
+.esims-contact-address { border-left: 3px solid #FFCF03; padding: 22px; background: #f4f7fa; margin-top: 25px; }
+.esims-contact-country { display: flex; align-items: center; gap: 10px; color: #536078; font-size: 12px; font-weight: 600; margin-bottom: 15px; }
+.esims-contact-country img { width: 30px; height: 20px; }
+.esims-contact-address h3 { color: #18294f; font-size: 22px; line-height: 1.4; margin: 0 0 14px; }
+.esims-contact-address p { margin-bottom: 0; }
+.esims-contact-page .cpms-contact-location { font-family: inherit; font-size: 15px; line-height: 1.8; font-weight: 400; }
+.esims-contact-lome { border-left-color: #0066B3; }
+.esims-contact-lome a { display: inline-block; margin-top: 20px; font-size: 13px; }
+.esims-contact-page .rs-quick-contact.esims-contact-composer { border: 1px solid #e1e8ef; border-top: 3px solid #0066B3; background: #fff; padding: 32px; box-shadow: 0 8px 30px #273c6608; }
+.esims-contact-composer label { display: block; color: #273c66; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.esims-contact-composer label span { font-weight: 400; color: #7a8698; font-size: 11px; }
+.esims-contact-composer input, .esims-contact-composer select, .esims-contact-composer textarea { width: 100%; min-width: 0; border: 1px solid #dce5ee; background: #f7f9fc; color: #354560; border-radius: 0; font: 14px/1.6 Rubik, sans-serif; padding: 12px 13px; }
+.esims-contact-composer textarea { resize: vertical; min-height: 150px; }
+.esims-contact-composer input::placeholder, .esims-contact-composer textarea::placeholder { color: #8893a4; }
+.esims-contact-composer .readon2 { border: 0; cursor: pointer; }
+.esims-contact-page .esims-contact-composer .readon2 { background: #0066B3; color: #fff; }
+.esims-contact-page .esims-contact-composer .readon2:hover { background: #273c66; color: #fff; }
+.esims-contact-page .esims-contact-direct-email { margin: 18px 0 0; font-size: 12px; }
+.esims-contact-direct-email a { color: #0066B3; text-decoration: underline; }
+.esims-contact-page .esims-contact-topic-feedback:empty { display: none; }
+.esims-contact-page .esims-contact-topic-feedback { color: #0066B3; padding: 10px 13px; background: #eef5fb; font-size: 12px; }
+.esims-contact-preview { margin-top: 25px; padding: 20px; background: #f4f7fa; border-left: 3px solid #FFCF03; }
+.esims-contact-preview[hidden] { display: none !important; }
+.esims-contact-page .esims-contact-preview p { font-size: 13px; }
+.esims-contact-preview p:last-child { margin: 15px 0 0; font-size: 12px; }
+.esims-contact-faq { background: #f4f7fa; }
+.esims-contact-faq details { border: 1px solid #e1e8ef; background: #fff; margin-bottom: 15px; }
+.esims-contact-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; list-style: none; padding: 20px; color: #273c66; font-size: 14px; font-weight: 600; cursor: pointer; }
+.esims-contact-faq summary::-webkit-details-marker { display: none; }
+.esims-contact-faq details[open] summary { background: #0066B3; color: #fff; }
+.esims-contact-faq details[open] summary i { transform: rotate(180deg); }
+.esims-contact-faq details > div { padding: 22px; }
+.esims-contact-faq p { margin: 0; }
+.esims-contact-page a:focus-visible, .esims-contact-page button:focus-visible, .esims-contact-page input:focus-visible, .esims-contact-page select:focus-visible, .esims-contact-page textarea:focus-visible, .esims-contact-page summary:focus-visible { outline: 3px solid #FFCF03; outline-offset: 3px; }
+@media (max-width: 991px) {
+  .esims-contact-page [id] { scroll-margin-top: 25px; }
+  .esims-contact-hero-icon { display: none; }
+  .esims-contact-topic { padding: 24px 21px; }
+  .esims-contact-topic h3 { font-size: 21px; }
+}
+@media (max-width: 575px) {
+  .esims-contact-page .esims-contact-hero { padding-bottom: 35px; }
+  .esims-contact-eyebrow { font-size: 12px; }
+  .esims-contact-topic .icon-part i { margin-bottom: 18px; }
+  .esims-contact-page .rs-quick-contact.esims-contact-composer { padding: 26px 20px; }
+  .esims-contact-address { padding: 22px 19px; }
+  .esims-contact-preview { padding: 18px 15px; }
+  .esims-contact-channel a { font-size: 16px; }
+}

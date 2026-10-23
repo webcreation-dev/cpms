@@ -1,0 +1,34 @@
+/* Interactions communes, dans les couleurs ESIMS et les composants Educavo. */
+.cpms-site a:focus-visible,
+.cpms-site button:focus-visible {
+  outline: 3px solid #FFCF03 !important;
+  outline-offset: 4px !important;
+}
+.cpms-site .main-content a[data-esims-link="text"] {
+  border-bottom: 0;
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+.cpms-site .main-content a[data-esims-link="text"]:is(:hover, :focus-visible) {
+  color: inherit !important;
+  text-decoration-color: #FFCF03 !important;
+  text-decoration-thickness: 3px;
+}
+.cpms-site .main-content a.readon2:is(:hover, :focus-visible) {
+  background: #273c66 !important;
+  border-color: #273c66 !important;
+  color: #fff !important;
+  box-shadow: 0 3px 0 #FFCF03;
+}
+.cpms-site .pagination-area .active > a,
+.cpms-site .pagination-area a[aria-current="page"] {
+  background: #0066B3 !important;
+  border-color: #0066B3 !important;
+  color: #fff !important;
+}
+.cpms-site .pagination-area a:is(:hover, :focus-visible) {
+  background: #FFCF03 !important;
+  border-color: #FFCF03 !important;
+  color: #18294f !important;
+}

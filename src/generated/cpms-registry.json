@@ -2,8 +2,8 @@
   "": {
     "file": ".html",
     "source": "index3.html",
-    "title": "CPMS — Cycle Préparatoire Sainte Marie Stella",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "ESIMS — École supérieure d’ingénierie Sainte Marie Stella",
+    "description": "Découvrez l’École supérieure d’ingénierie Sainte Marie Stella : cycle préparatoire au Bénin et au Togo, licences professionnelles au Togo.",
     "aliases": [
       "index3.html",
       "index.html"
@@ -12,8 +12,8 @@
   "index3.html": {
     "file": ".html",
     "source": "index3.html",
-    "title": "CPMS — Cycle Préparatoire Sainte Marie Stella",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "ESIMS — École supérieure d’ingénierie Sainte Marie Stella",
+    "description": "Découvrez l’École supérieure d’ingénierie Sainte Marie Stella : cycle préparatoire au Bénin et au Togo, licences professionnelles au Togo.",
     "aliases": [
       "index3.html",
       "index.html"
@@ -23,8 +23,8 @@
   "index.html": {
     "file": ".html",
     "source": "index3.html",
-    "title": "CPMS — Cycle Préparatoire Sainte Marie Stella",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "ESIMS — École supérieure d’ingénierie Sainte Marie Stella",
+    "description": "Découvrez l’École supérieure d’ingénierie Sainte Marie Stella : cycle préparatoire au Bénin et au Togo, licences professionnelles au Togo.",
     "aliases": [
       "index3.html",
       "index.html"
@@ -34,8 +34,8 @@
   "qui-sommes-nous": {
     "file": "qui-sommes-nous.html",
     "source": "about2.html",
-    "title": "Qui sommes-nous — CPMS",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "L’École — ESIMS",
+    "description": "Découvrez l’ESIMS, ses implantations au Bénin et au Togo, ses parcours scientifiques et ses écoles partenaires.",
     "aliases": [
       "about2.html",
       "presentation",
@@ -45,8 +45,8 @@
   "about2.html": {
     "file": "qui-sommes-nous.html",
     "source": "about2.html",
-    "title": "Qui sommes-nous — CPMS",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "L’École — ESIMS",
+    "description": "Découvrez l’ESIMS, ses implantations au Bénin et au Togo, ses parcours scientifiques et ses écoles partenaires.",
     "aliases": [
       "about2.html",
       "presentation",
@@ -57,8 +57,8 @@
   "presentation": {
     "file": "qui-sommes-nous.html",
     "source": "about2.html",
-    "title": "Qui sommes-nous — CPMS",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "L’École — ESIMS",
+    "description": "Découvrez l’ESIMS, ses implantations au Bénin et au Togo, ses parcours scientifiques et ses écoles partenaires.",
     "aliases": [
       "about2.html",
       "presentation",
@@ -69,8 +69,8 @@
   "partenaires": {
     "file": "qui-sommes-nous.html",
     "source": "about2.html",
-    "title": "Qui sommes-nous — CPMS",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "L’École — ESIMS",
+    "description": "Découvrez l’ESIMS, ses implantations au Bénin et au Togo, ses parcours scientifiques et ses écoles partenaires.",
     "aliases": [
       "about2.html",
       "presentation",
@@ -81,8 +81,8 @@
   "actualites": {
     "file": "actualites.html",
     "source": "blog-left.html",
-    "title": "CPMS — Actualités",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "ESIMS — Actualités",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
     "aliases": [
       "blog-left.html",
       "blog.html"
@@ -91,8 +91,8 @@
   "blog-left.html": {
     "file": "actualites.html",
     "source": "blog-left.html",
-    "title": "CPMS — Actualités",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "ESIMS — Actualités",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
     "aliases": [
       "blog-left.html",
       "blog.html"
@@ -102,8 +102,8 @@
   "blog.html": {
     "file": "actualites.html",
     "source": "blog-left.html",
-    "title": "CPMS — Actualités",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "ESIMS — Actualités",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
     "aliases": [
       "blog-left.html",
       "blog.html"
@@ -113,229 +113,243 @@
   "actualites/page/2": {
     "file": "actualites--page--2.html",
     "source": "blog-left.html",
-    "title": "CPMS — Actualités — page 2",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "ESIMS — Actualités — page 2",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
     "aliases": []
   },
   "actualites/page/3": {
     "file": "actualites--page--3.html",
     "source": "blog-left.html",
-    "title": "CPMS — Actualités — page 3",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "ESIMS — Actualités — page 3",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
     "aliases": []
   },
   "actualites/page/4": {
     "file": "actualites--page--4.html",
     "source": "blog-left.html",
-    "title": "CPMS — Actualités — page 4",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2026/03": {
-    "file": "actualites--archives--2026--03.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : mars 2026",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2026/01": {
-    "file": "actualites--archives--2026--01.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : janvier 2026",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2025/10": {
-    "file": "actualites--archives--2025--10.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : octobre 2025",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2025/03": {
-    "file": "actualites--archives--2025--03.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : mars 2025",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2025/02": {
-    "file": "actualites--archives--2025--02.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : février 2025",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2025/01": {
-    "file": "actualites--archives--2025--01.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : janvier 2025",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2024/07": {
-    "file": "actualites--archives--2024--07.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : juillet 2024",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2024/06": {
-    "file": "actualites--archives--2024--06.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : juin 2024",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2024/04": {
-    "file": "actualites--archives--2024--04.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : avril 2024",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2024/03": {
-    "file": "actualites--archives--2024--03.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : mars 2024",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2024/01": {
-    "file": "actualites--archives--2024--01.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : janvier 2024",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2023/10": {
-    "file": "actualites--archives--2023--10.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : octobre 2023",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2023/08": {
-    "file": "actualites--archives--2023--08.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : août 2023",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2023/07": {
-    "file": "actualites--archives--2023--07.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : juillet 2023",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2023/05": {
-    "file": "actualites--archives--2023--05.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : mai 2023",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2023/02": {
-    "file": "actualites--archives--2023--02.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : février 2023",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/archives/2022/09": {
-    "file": "actualites--archives--2022--09.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Archives : septembre 2022",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/categories/actualites": {
-    "file": "actualites--categories--actualites.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Catégorie : Actualités",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/categories/evenements": {
-    "file": "actualites--categories--evenements.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Catégorie : Événements",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/categories/evenements/page/2": {
-    "file": "actualites--categories--evenements--page--2.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Catégorie : Événements — page 2",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/categories/evenements/page/3": {
-    "file": "actualites--categories--evenements--page--3.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Catégorie : Événements — page 3",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/categories/non-classes": {
-    "file": "actualites--categories--non-classes.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Catégorie : Non classés",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "actualites/categories/sectioninfo": {
-    "file": "actualites--categories--sectioninfo.html",
-    "source": "blog-left.html",
-    "title": "CPMS — Catégorie : SectionInfo",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "recherche": {
-    "file": "recherche.html",
-    "source": "blog.html",
-    "title": "CPMS — Recherche",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "temoignages": {
-    "file": "temoignages.html",
-    "source": "blog.html",
-    "title": "CPMS — Témoignages",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
-    "aliases": []
-  },
-  "temoignages/page/2": {
-    "file": "temoignages--page--2.html",
-    "source": "blog.html",
-    "title": "CPMS — Témoignages — page 2",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "ESIMS — Actualités — page 4",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
     "aliases": []
   },
   "evenements": {
     "file": "evenements.html",
-    "source": "events-style1.html",
-    "title": "CPMS — Événements",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "source": "blog-left.html",
+    "title": "ESIMS — Événements",
+    "description": "Conférences, rencontres et vie étudiante : retrouvez les événements de l’ESIMS.",
     "aliases": [
       "events-style1.html"
     ]
   },
   "events-style1.html": {
     "file": "evenements.html",
-    "source": "events-style1.html",
-    "title": "CPMS — Événements",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "source": "blog-left.html",
+    "title": "ESIMS — Événements",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
     "aliases": [
       "events-style1.html"
     ],
     "canonical": "/evenements"
   },
+  "evenements/page/2": {
+    "file": "evenements--page--2.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Événements — page 2",
+    "description": "Conférences, rencontres et vie étudiante : retrouvez les événements de l’ESIMS.",
+    "aliases": []
+  },
+  "evenements/page/3": {
+    "file": "evenements--page--3.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Événements — page 3",
+    "description": "Conférences, rencontres et vie étudiante : retrouvez les événements de l’ESIMS.",
+    "aliases": []
+  },
+  "actualites/archives/2026/03": {
+    "file": "actualites--archives--2026--03.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : mars 2026",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2026/01": {
+    "file": "actualites--archives--2026--01.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : janvier 2026",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2025/10": {
+    "file": "actualites--archives--2025--10.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : octobre 2025",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2025/03": {
+    "file": "actualites--archives--2025--03.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : mars 2025",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2025/02": {
+    "file": "actualites--archives--2025--02.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : février 2025",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2025/01": {
+    "file": "actualites--archives--2025--01.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : janvier 2025",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2024/07": {
+    "file": "actualites--archives--2024--07.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : juillet 2024",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2024/06": {
+    "file": "actualites--archives--2024--06.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : juin 2024",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2024/04": {
+    "file": "actualites--archives--2024--04.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : avril 2024",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2024/03": {
+    "file": "actualites--archives--2024--03.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : mars 2024",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2024/01": {
+    "file": "actualites--archives--2024--01.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : janvier 2024",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2023/10": {
+    "file": "actualites--archives--2023--10.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : octobre 2023",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2023/08": {
+    "file": "actualites--archives--2023--08.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : août 2023",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2023/07": {
+    "file": "actualites--archives--2023--07.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : juillet 2023",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2023/05": {
+    "file": "actualites--archives--2023--05.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : mai 2023",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2023/02": {
+    "file": "actualites--archives--2023--02.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : février 2023",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/archives/2022/09": {
+    "file": "actualites--archives--2022--09.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Archives : septembre 2022",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/categories/actualites": {
+    "file": "actualites--categories--actualites.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Catégorie : Actualités",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/categories/evenements": {
+    "file": "actualites--categories--evenements.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Catégorie : Événements",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/categories/evenements/page/2": {
+    "file": "actualites--categories--evenements--page--2.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Catégorie : Événements — page 2",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/categories/evenements/page/3": {
+    "file": "actualites--categories--evenements--page--3.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Catégorie : Événements — page 3",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/categories/non-classes": {
+    "file": "actualites--categories--non-classes.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Catégorie : Non classés",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "actualites/categories/sectioninfo": {
+    "file": "actualites--categories--sectioninfo.html",
+    "source": "blog-left.html",
+    "title": "ESIMS — Catégorie : SectionInfo",
+    "description": "Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.",
+    "aliases": []
+  },
+  "recherche": {
+    "file": "recherche.html",
+    "source": "blog.html",
+    "title": "ESIMS — Recherche",
+    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "aliases": []
+  },
+  "temoignages": {
+    "file": "temoignages.html",
+    "source": "blog.html",
+    "title": "ESIMS — Témoignages",
+    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "aliases": []
+  },
+  "temoignages/page/2": {
+    "file": "temoignages--page--2.html",
+    "source": "blog.html",
+    "title": "ESIMS — Témoignages — page 2",
+    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "aliases": []
+  },
   "galerie": {
     "file": "galerie.html",
     "source": "gallery-style1.html",
-    "title": "CPMS — Galerie",
+    "title": "ESIMS — Galerie",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "gallery-style1.html"
@@ -344,7 +358,7 @@
   "gallery-style1.html": {
     "file": "galerie.html",
     "source": "gallery-style1.html",
-    "title": "CPMS — Galerie",
+    "title": "ESIMS — Galerie",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "gallery-style1.html"
@@ -354,8 +368,8 @@
   "contact": {
     "file": "contact.html",
     "source": "contact4.html",
-    "title": "Contactez le CPMS",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "Contact — ESIMS",
+    "description": "Contactez l’ESIMS pour les admissions, le choix de filière et les renseignements pratiques au Bénin et au Togo.",
     "aliases": [
       "contact4.html",
       "contact.html"
@@ -364,8 +378,8 @@
   "contact4.html": {
     "file": "contact.html",
     "source": "contact4.html",
-    "title": "Contactez le CPMS",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "Contact — ESIMS",
+    "description": "Contactez l’ESIMS pour les admissions, le choix de filière et les renseignements pratiques au Bénin et au Togo.",
     "aliases": [
       "contact4.html",
       "contact.html"
@@ -375,8 +389,8 @@
   "contact.html": {
     "file": "contact.html",
     "source": "contact4.html",
-    "title": "Contactez le CPMS",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "Contact — ESIMS",
+    "description": "Contactez l’ESIMS pour les admissions, le choix de filière et les renseignements pratiques au Bénin et au Togo.",
     "aliases": [
       "contact4.html",
       "contact.html"
@@ -386,7 +400,7 @@
   "faq": {
     "file": "faq.html",
     "source": "faq.html",
-    "title": "CPMS — Questions fréquentes",
+    "title": "ESIMS — Questions fréquentes",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "faq.html"
@@ -395,7 +409,7 @@
   "faq.html": {
     "file": "faq.html",
     "source": "faq.html",
-    "title": "CPMS — Questions fréquentes",
+    "title": "ESIMS — Questions fréquentes",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "faq.html"
@@ -405,7 +419,7 @@
   "erreur": {
     "file": "erreur.html",
     "source": "error.html",
-    "title": "CPMS — Page introuvable",
+    "title": "ESIMS — Page introuvable",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "error.html"
@@ -414,7 +428,7 @@
   "error.html": {
     "file": "erreur.html",
     "source": "error.html",
-    "title": "CPMS — Page introuvable",
+    "title": "ESIMS — Page introuvable",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "error.html"
@@ -424,14 +438,21 @@
   "formations": {
     "file": "formations.html",
     "source": "course2.html",
-    "title": "CPMS — Formations",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "Nos filières — ESIMS",
+    "description": "Les filières de l’ESIMS : cycle préparatoire au Bénin et au Togo, licences professionnelles au Togo.",
+    "aliases": []
+  },
+  "nos-implantations": {
+    "file": "nos-implantations.html",
+    "source": "about2.html",
+    "title": "Nos implantations — ESIMS",
+    "description": "Découvrez les implantations de l’ESIMS à Cotonou au Bénin et à Lomé au Togo, ainsi que les parcours proposés sur chaque site.",
     "aliases": []
   },
   "domaines": {
     "file": "domaines.html",
     "source": "course2.html",
-    "title": "CPMS — Domaines de professionnalisation",
+    "title": "ESIMS — Domaines de professionnalisation",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "course2.html"
@@ -440,7 +461,7 @@
   "course2.html": {
     "file": "domaines.html",
     "source": "course2.html",
-    "title": "CPMS — Domaines de professionnalisation",
+    "title": "ESIMS — Domaines de professionnalisation",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "course2.html"
@@ -450,8 +471,8 @@
   "cycle-preparatoire": {
     "file": "cycle-preparatoire.html",
     "source": "course-single.html",
-    "title": "CPMS — Cycle préparatoire",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "Cycle préparatoire au Bénin — ESIMS",
+    "description": "Découvrez le cycle préparatoire de l’ESIMS à Cotonou : deux années de formation, le programme, les stages, les projets et les modalités de candidature.",
     "aliases": [
       "course-single.html"
     ]
@@ -459,8 +480,8 @@
   "course-single.html": {
     "file": "cycle-preparatoire.html",
     "source": "course-single.html",
-    "title": "CPMS — Cycle préparatoire",
-    "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "title": "Cycle préparatoire au Bénin — ESIMS",
+    "description": "Découvrez le cycle préparatoire de l’ESIMS à Cotonou : deux années de formation, le programme, les stages, les projets et les modalités de candidature.",
     "aliases": [
       "course-single.html"
     ],
@@ -469,378 +490,392 @@
   "cycle-ingenieur": {
     "file": "cycle-ingenieur.html",
     "source": "course-single.html",
-    "title": "CPMS — Cycle ingénieur",
+    "title": "ESIMS — Cycle ingénieur",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
+    "aliases": []
+  },
+  "licences-professionnelles": {
+    "file": "licences-professionnelles.html",
+    "source": "course-single.html",
+    "title": "Licences professionnelles au Togo — ESIMS",
+    "description": "Découvrez les licences professionnelles d’ESIMS-Togo à Lomé et les neuf spécialités mentionnées dans l’agrément fourni.",
+    "aliases": []
+  },
+  "cycle-preparatoire-togo": {
+    "file": "cycle-preparatoire-togo.html",
+    "source": "course-single.html",
+    "title": "Cycle préparatoire au Togo — ESIMS",
+    "description": "Découvrez le cycle préparatoire de niveau bac+2 d’ESIMS-Togo à Lomé et contactez l’école pour les modalités d’admission.",
     "aliases": []
   },
   "articles/2-page-d-exemple": {
     "file": "articles--2-page-d-exemple.html",
     "source": "blog-single.html",
-    "title": "Bienvenue au CPMS de Cotonou — CPMS",
+    "title": "Bienvenue à l’ESIMS de Cotonou — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/3-politique-de-confidentialite": {
     "file": "articles--3-politique-de-confidentialite.html",
     "source": "blog-single.html",
-    "title": "Politique de confidentialité — CPMS",
+    "title": "Politique de confidentialité — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/77-lenseignement-au-cp-marie-stella": {
     "file": "articles--77-lenseignement-au-cp-marie-stella.html",
     "source": "blog-post-left.html",
-    "title": "Marie-Noëlle DANDJINOU — CPMS",
+    "title": "Marie-Noëlle DANDJINOU — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/81-les-informations-cles-a-connaitre": {
     "file": "articles--81-les-informations-cles-a-connaitre.html",
     "source": "blog-post-left.html",
-    "title": "Cycle ingénieur — CPMS",
+    "title": "Cycle ingénieur — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/85-cycle-preparatoire": {
     "file": "articles--85-cycle-preparatoire.html",
     "source": "blog-post-left.html",
-    "title": "Cycle Préparatoire — CPMS",
+    "title": "Cycle Préparatoire — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/110-evenements": {
     "file": "articles--110-evenements.html",
     "source": "blog-post-left.html",
-    "title": "Remise de prix — CPMS",
+    "title": "Remise de prix — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/127-inscription": {
     "file": "articles--127-inscription.html",
     "source": "blog-single.html",
-    "title": "Inscription — CPMS",
+    "title": "Inscription — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/145-contactez-nous": {
     "file": "articles--145-contactez-nous.html",
     "source": "blog-single.html",
-    "title": "Contactez-nous — CPMS",
+    "title": "Contactez-nous — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/159-qui-sommes-nous": {
     "file": "articles--159-qui-sommes-nous.html",
     "source": "blog-post-left.html",
-    "title": "Qui sommes-nous ? — CPMS",
+    "title": "Qui sommes-nous ? — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/245-partenariat-cpms-et-junia": {
     "file": "articles--245-partenariat-cpms-et-junia.html",
     "source": "blog-post-left.html",
-    "title": "Partenariat CPMS et JUNIA — CPMS",
+    "title": "Partenariat ESIMS et JUNIA — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/287-inscrivez-vous": {
     "file": "articles--287-inscrivez-vous.html",
     "source": "blog-single.html",
-    "title": "Inscriptions ouvertes pour l’année académique 2026-2027 — CPMS",
+    "title": "Inscriptions ouvertes pour l’année académique 2026-2027 — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/295-quelques-domaines-de-profesionnalisation-en-cycle-ingenieur": {
     "file": "articles--295-quelques-domaines-de-profesionnalisation-en-cycle-ingenieur.html",
     "source": "blog-single.html",
-    "title": "Quelques domaines de professionnalisation en cycle ingénieur — CPMS",
+    "title": "Quelques domaines de professionnalisation en cycle ingénieur — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/371-inscriptions-fermees": {
     "file": "articles--371-inscriptions-fermees.html",
     "source": "blog-single.html",
-    "title": "Inscriptions fermées — CPMS",
+    "title": "Inscriptions fermées — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/462-rentree-universitaire": {
     "file": "articles--462-rentree-universitaire.html",
     "source": "blog-single.html",
-    "title": "Inscriptions ouvertes pour l’année académique 2026-2027 — CPMS",
+    "title": "Inscriptions ouvertes pour l’année académique 2026-2027 — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/251-tonon-ricardo-aout-2021": {
     "file": "articles--251-tonon-ricardo-aout-2021.html",
     "source": "blog-post-left.html",
-    "title": "TONON Ricardo — CPMS",
+    "title": "TONON Ricardo — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/255-china-josee-marie-aout-2022": {
     "file": "articles--255-china-josee-marie-aout-2022.html",
     "source": "blog-post-left.html",
-    "title": "CHINA Josée-Marie — CPMS",
+    "title": "CHINA Josée-Marie — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/408-delegation-lille-cpms": {
     "file": "articles--408-delegation-lille-cpms.html",
     "source": "blog-post-left.html",
-    "title": "UNE DÉLÉGATION DE JUNIA LILLE AU CPMS — CPMS",
+    "title": "UNE DÉLÉGATION DE JUNIA LILLE À l’ESIMS — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/416-salon-des-etudes-en-france-cas-de-junia-cpms": {
     "file": "articles--416-salon-des-etudes-en-france-cas-de-junia-cpms.html",
     "source": "blog-post-left.html",
-    "title": "Salon des études en France : cas de JUNIA-CPMS — CPMS",
+    "title": "Salon des études en France : cas de JUNIA-ESIMS — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/473-journees-recreatives-au-cpms": {
     "file": "articles--473-journees-recreatives-au-cpms.html",
     "source": "blog-post-left.html",
-    "title": "Journées récréatives au CPMS — CPMS",
+    "title": "Journées récréatives à l’ESIMS — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/483-insertion-et-adaptation-des-etudiants-apres-le-cycle-preparatoire-marie-stella-cpms": {
     "file": "articles--483-insertion-et-adaptation-des-etudiants-apres-le-cycle-preparatoire-marie-stella-cpms.html",
     "source": "blog-post-left.html",
-    "title": "Insertion et adaptation des étudiants après le Cycle Préparatoire Marie Stella (CPMS) — CPMS",
+    "title": "Insertion et adaptation des étudiants après le Cycle Préparatoire Marie Stella (ESIMS) — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/503-les-etudiants-du-cpms-cloturent-lannee-scolaire-2022-2023-en-beaute": {
     "file": "articles--503-les-etudiants-du-cpms-cloturent-lannee-scolaire-2022-2023-en-beaute.html",
     "source": "blog-post-left.html",
-    "title": "Les etudiants du CPMS clôturent l'année scolaire 2022-2023 en beauté — CPMS",
+    "title": "Les etudiants de l’ESIMS clôturent l'année scolaire 2022-2023 en beauté — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/544-da-matha-josue-ancien-etudiant-2e-promotion-a-dakar": {
     "file": "articles--544-da-matha-josue-ancien-etudiant-2e-promotion-a-dakar.html",
     "source": "blog-post-left.html",
-    "title": "Da Matha Josué (ancien étudiant 2è promotion à Dakar) — CPMS",
+    "title": "Da Matha Josué (ancien étudiant 2è promotion à Dakar) — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/546-donou-awadji-mahouna-serge-ancien-etudiant-2e-promotion-au-maroc": {
     "file": "articles--546-donou-awadji-mahouna-serge-ancien-etudiant-2e-promotion-au-maroc.html",
     "source": "blog-post-left.html",
-    "title": "DONOU Awadji Mahouna Serge (ancien étudiant 2è promotion au Maroc) — CPMS",
+    "title": "DONOU Awadji Mahouna Serge (ancien étudiant 2è promotion au Maroc) — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/583-rentree-academique-2023-2024-le-cpms-renforce-la-capacite-de-ses-enseignants": {
     "file": "articles--583-rentree-academique-2023-2024-le-cpms-renforce-la-capacite-de-ses-enseignants.html",
     "source": "blog-post-left.html",
-    "title": "RENTRÉE ACADÉMIQUE 2023-2024 : LE CPMS RENFORCE LA CAPACITÉ DE SES ENSEIGNANTS — CPMS",
+    "title": "RENTRÉE ACADÉMIQUE 2023-2024 : L’ESIMS RENFORCE LA CAPACITÉ DE SES ENSEIGNANTS — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/601-seance-dentretien-entre-directrice-generale-et-les-etudiants": {
     "file": "articles--601-seance-dentretien-entre-directrice-generale-et-les-etudiants.html",
     "source": "blog-post-left.html",
-    "title": "Séance d’entretien entre Directrice Générale et les étudiants — CPMS",
+    "title": "Séance d’entretien entre Directrice Générale et les étudiants — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/651-merci-au-cpms": {
     "file": "articles--651-merci-au-cpms.html",
     "source": "blog-post-left.html",
-    "title": "MERCI AU CPMS — CPMS",
+    "title": "MERCI À l’ESIMS — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/654-le-cpmps-represente-au-salon-des-etudes-en-france": {
     "file": "articles--654-le-cpmps-represente-au-salon-des-etudes-en-france.html",
     "source": "blog-post-left.html",
-    "title": "Le CPMPS représenté au Salon des Etudes en France — CPMS",
+    "title": "Le CPMPS représenté au Salon des Etudes en France — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/657-journees-recreatives-cpms-edition-2023-2024": {
     "file": "articles--657-journees-recreatives-cpms-edition-2023-2024.html",
     "source": "blog-post-left.html",
-    "title": "Journées récréatives CPMS Edition 2023-2024 — CPMS",
+    "title": "Journées récréatives ESIMS Edition 2023-2024 — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/659-visite-annuelle-dechanges-du-partenaire-junia": {
     "file": "articles--659-visite-annuelle-dechanges-du-partenaire-junia.html",
     "source": "blog-post-left.html",
-    "title": "VISITE ANNUELLE D'ÉCHANGES DU PARTENAIRE JUNIA — CPMS",
+    "title": "VISITE ANNUELLE D'ÉCHANGES DU PARTENAIRE JUNIA — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/667-da-matha-josue-temoigne-des-competences-du-cpms": {
     "file": "articles--667-da-matha-josue-temoigne-des-competences-du-cpms.html",
     "source": "blog-post-left.html",
-    "title": "da-Matha Josué témoigne des compétences du CPMS — CPMS",
+    "title": "da-Matha Josué témoigne des compétences de l’ESIMS — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/700-journees-recreatives-cpms-edition-2023-2024": {
     "file": "articles--700-journees-recreatives-cpms-edition-2023-2024.html",
     "source": "blog-post-left.html",
-    "title": "Journées récréatives CPMS Edition 2024 — CPMS",
+    "title": "Journées récréatives ESIMS Edition 2024 — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/762-une-surprise-oui-une-belle-surprise-pour-notre-professeur-de-mathematiques": {
     "file": "articles--762-une-surprise-oui-une-belle-surprise-pour-notre-professeur-de-mathematiques.html",
     "source": "blog-post-left.html",
-    "title": "Une Surprise, oui, une belle surprise pour notre Professeur de Mathématiques ! — CPMS",
+    "title": "Une Surprise, oui, une belle surprise pour notre Professeur de Mathématiques ! — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/774-le-cpms-encourage-les-etudiants-a-donner-le-meilleur-deux-memes": {
     "file": "articles--774-le-cpms-encourage-les-etudiants-a-donner-le-meilleur-deux-memes.html",
     "source": "blog-post-left.html",
-    "title": "Le CPMS encourage les étudiants à donner le meilleur d’eux-mêmes — CPMS",
+    "title": "L’ESIMS encourage les étudiants à donner le meilleur d’eux-mêmes — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/790-complexe-scolaire-sainte-marie-stella-journees-recreatives-au-profit-des-apprenants": {
     "file": "articles--790-complexe-scolaire-sainte-marie-stella-journees-recreatives-au-profit-des-apprenants.html",
     "source": "blog-post-left.html",
-    "title": "COMPLEXE SCOLAIRE SAINTE MARIE STELLA : JOURNÉES RÉCRÉATIVES AU PROFIT DES APPRENANTS — CPMS",
+    "title": "COMPLEXE SCOLAIRE SAINTE MARIE STELLA : JOURNÉES RÉCRÉATIVES AU PROFIT DES APPRENANTS — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/799-journee-porte-ouvertes-le-cpms-fete-ses-5-ans-danniversaire": {
     "file": "articles--799-journee-porte-ouvertes-le-cpms-fete-ses-5-ans-danniversaire.html",
     "source": "blog-post-left.html",
-    "title": "JOURNÉE PORTE OUVERTES : LE CPMS FÊTE SES 5 ANS D'ANNIVERSAIRE — CPMS",
+    "title": "JOURNÉE PORTE OUVERTES : L’ESIMS FÊTE SES 5 ANS D'ANNIVERSAIRE — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/819-suarez-adjava-ancien-etudiant-3e-promotion-en-france": {
     "file": "articles--819-suarez-adjava-ancien-etudiant-3e-promotion-en-france.html",
     "source": "blog-post-left.html",
-    "title": "Soares ADJAMA (ancien étudiant 3è promotion en France à HEI) — CPMS",
+    "title": "Soares ADJAMA (ancien étudiant 3è promotion en France à HEI) — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/865-visite-du-partenaire-junia-au-cpms-represente-par-la-directrice-du-developpement-international-junia-mme-cynthia-zoubir-le-26-janvier-2023": {
     "file": "articles--865-visite-du-partenaire-junia-au-cpms-represente-par-la-directrice-du-developpement-international-junia-mme-cynthia-zoubir-le-26-janvier-2023.html",
     "source": "blog-post-left.html",
-    "title": "Visite du partenaire JUNIA au CPMS représenté par la Directrice du développement international JUNIA Mme Cynthia ZOUBIR le 26 janvier 2023. — CPMS",
+    "title": "Visite du partenaire JUNIA à l’ESIMS représenté par la Directrice du développement international JUNIA Mme Cynthia ZOUBIR le 26 janvier 2023. — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/867-alliance-junia-lille-cpms": {
     "file": "articles--867-alliance-junia-lille-cpms.html",
     "source": "blog-post-left.html",
-    "title": "LE CPMS ET JUNIA LILLE UNE ALLIANCE POUR L’EXCELLENCE — CPMS",
+    "title": "L’ESIMS ET JUNIA LILLE UNE ALLIANCE POUR L’EXCELLENCE — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/868-visite-junia": {
     "file": "articles--868-visite-junia.html",
     "source": "blog-post-left.html",
-    "title": "VISITE DE JUNIA — CPMS",
+    "title": "VISITE DE JUNIA — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/869-journee-recreatives-2024-2025": {
     "file": "articles--869-journee-recreatives-2024-2025.html",
     "source": "blog-post-left.html",
-    "title": "Journées récréatives CPMS Edition 2024-2025 — CPMS",
+    "title": "Journées récréatives ESIMS Edition 2024-2025 — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/870-conference-campus-coeur-ouvert": {
     "file": "articles--870-conference-campus-coeur-ouvert.html",
     "source": "blog-post-left.html",
-    "title": "Conférence Campus à Cœur ouvert — CPMS",
+    "title": "Conférence Campus à Cœur ouvert — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40804-octobre-rose-cpms": {
     "file": "articles--40804-octobre-rose-cpms.html",
     "source": "blog-post-left.html",
-    "title": "Octobre Rose au CPMS — CPMS",
+    "title": "Octobre Rose à l’ESIMS — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40805-visite-campus-france": {
     "file": "articles--40805-visite-campus-france.html",
     "source": "blog-post-left.html",
-    "title": "Visite de la Directrice de Campus France — CPMS",
+    "title": "Visite de la Directrice de Campus France — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40808-merveille-togbe": {
     "file": "articles--40808-merveille-togbe.html",
     "source": "blog-post-left.html",
-    "title": "Merveille TOGBE — CPMS",
+    "title": "Merveille TOGBE — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40809-adjovi-axelle": {
     "file": "articles--40809-adjovi-axelle.html",
     "source": "blog-post-left.html",
-    "title": "ADJOVI Axelle – Promotion 2022 — CPMS",
+    "title": "ADJOVI Axelle – Promotion 2022 — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40810-adekpedjou-maessarath-abedje": {
     "file": "articles--40810-adekpedjou-maessarath-abedje.html",
     "source": "blog-post-left.html",
-    "title": "ADEKPEDJOU MAËSSARATH Abedje – 4ème promotion — CPMS",
+    "title": "ADEKPEDJOU MAËSSARATH Abedje – 4ème promotion — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40811-duval-ohounvide": {
     "file": "articles--40811-duval-ohounvide.html",
     "source": "blog-post-left.html",
-    "title": "Duval OHOUNVIDE – 3ème Promotion — CPMS",
+    "title": "Duval OHOUNVIDE – 3ème Promotion — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40814-evenements-roadmap": {
     "file": "articles--40814-evenements-roadmap.html",
     "source": "blog-post-left.html",
-    "title": "Visite de notre partenaire JUNIA — CPMS",
+    "title": "Visite de notre partenaire JUNIA — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40815-journee-recreatives-cpms": {
     "file": "articles--40815-journee-recreatives-cpms.html",
     "source": "blog-post-left.html",
-    "title": "Journées récréatives 2025–2026 — CPMS",
+    "title": "Journées récréatives 2025–2026 — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40816-match-basketball-cpms-2025-2026": {
     "file": "articles--40816-match-basketball-cpms-2025-2026.html",
     "source": "blog-post-left.html",
-    "title": "Basketball au CPMS — CPMS",
+    "title": "Basketball à l’ESIMS — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40817-immersion-culturelle-ouidah-cpms-2025-2026": {
     "file": "articles--40817-immersion-culturelle-ouidah-cpms-2025-2026.html",
     "source": "blog-post-left.html",
-    "title": "Immersion culturelle à Ouidah — CPMS",
+    "title": "Immersion culturelle à Ouidah — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40818-portes-ouvertes-soiree-royale-cpms-2025-2026": {
     "file": "articles--40818-portes-ouvertes-soiree-royale-cpms-2025-2026.html",
     "source": "blog-post-left.html",
-    "title": "Portes ouvertes et soirée royale — CPMS",
+    "title": "Portes ouvertes et soirée royale — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "articles/40819-journee-orientation-etudiants": {
     "file": "articles--40819-journee-orientation-etudiants.html",
     "source": "blog-post-left.html",
-    "title": "Journée d’orientation des étudiants — CPMS",
+    "title": "Journée d’orientation des étudiants — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "blog-post-left.html",
@@ -850,7 +885,7 @@
   "blog-post-left.html": {
     "file": "articles--40819-journee-orientation-etudiants.html",
     "source": "blog-post-left.html",
-    "title": "Journée d’orientation des étudiants — CPMS",
+    "title": "Journée d’orientation des étudiants — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "blog-post-left.html",
@@ -861,7 +896,7 @@
   "blog-single.html": {
     "file": "articles--40819-journee-orientation-etudiants.html",
     "source": "blog-post-left.html",
-    "title": "Journée d’orientation des étudiants — CPMS",
+    "title": "Journée d’orientation des étudiants — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "blog-post-left.html",
@@ -872,14 +907,14 @@
   "articles/40820-conference-amour-chantage-reseaux-sociaux": {
     "file": "articles--40820-conference-amour-chantage-reseaux-sociaux.html",
     "source": "blog-post-left.html",
-    "title": "Conférence sur les réseaux sociaux — CPMS",
+    "title": "Conférence sur les réseaux sociaux — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "admissions": {
     "file": "admissions.html",
     "source": "blog-single.html",
-    "title": "CPMS — Procédure d’inscription",
+    "title": "ESIMS — Procédure d’inscription",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "inscription",
@@ -889,7 +924,7 @@
   "inscription": {
     "file": "admissions.html",
     "source": "blog-single.html",
-    "title": "CPMS — Procédure d’inscription",
+    "title": "ESIMS — Procédure d’inscription",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "inscription",
@@ -900,7 +935,7 @@
   "inscription.html": {
     "file": "admissions.html",
     "source": "blog-single.html",
-    "title": "CPMS — Procédure d’inscription",
+    "title": "ESIMS — Procédure d’inscription",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": [
       "inscription",
@@ -911,14 +946,14 @@
   "confidentialite": {
     "file": "confidentialite.html",
     "source": "blog-single.html",
-    "title": "CPMS — Confidentialité : archive WordPress",
+    "title": "ESIMS — Confidentialité : archive WordPress",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   },
   "rentree-universitaire": {
     "file": "rentree-universitaire.html",
     "source": "blog-post-left.html",
-    "title": "Inscriptions ouvertes — Année 2026-2027 — CPMS",
+    "title": "Inscriptions ouvertes — Année 2026-2027 — ESIMS",
     "description": "Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     "aliases": []
   }

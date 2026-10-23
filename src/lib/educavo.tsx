@@ -52,7 +52,7 @@ function contentOptions(editorial: boolean): HTMLReactParserOptions { return {
     if (editorial && node.attribs.class?.split(/\s+/).includes('full-width-header')) {
       node.attribs.class += ' cpms-header';
     }
-    // Conserver les trois rubriques Cursus validées dans le sous-menu natif.
+    // Conserver les trois filières validées dans le sous-menu natif.
     if (editorial && node.name === 'li' && node.parent instanceof Element &&
         node.parent.attribs.class?.split(/\s+/).includes('nav-menu') &&
         node.parent.children.filter(child=>child instanceof Element && child.name==='li')[2] === node) {
@@ -62,38 +62,32 @@ function contentOptions(editorial: boolean): HTMLReactParserOptions { return {
       }
     }
     if (editorial && node.attribs.class?.split(/\s+/).includes('categories-btn')) return <></>;
-    // La boutique n'est pas reprise : garder son icône sans faux panier démo.
+    // La boutique de démonstration n’est pas reprise.
     if (editorial && node.attribs.class?.split(/\s+/).includes('woocommerce-mini-cart')) return <></>;
     if (editorial && node.attribs.class?.split(/\s+/).includes('logo-part')) {
       return <div className={node.attribs.class}>
-        <a href="/" className="cpms-brand" aria-label="CPMS — Cycle Préparatoire Marie Stella, accueil">
+        <a href="/" className="cpms-brand" aria-label="ESIMS — École supérieure d’ingénierie Sainte Marie Stella, accueil">
           <img src={editorialMedia.logo} alt="" width={80} height={80} />
-          <span className="cpms-brand-copy"><strong>CPMS</strong><span>Cycle Préparatoire Marie Stella</span></span>
+          <span className="cpms-brand-copy"><strong>ESIMS</strong><span>École supérieure d’ingénierie<br />Sainte Marie Stella</span></span>
         </a>
-        <div className="cpms-brand-phone">
-          <i className="fa fa-phone" aria-hidden="true" />
-          <div><span className="cpms-phone-label">TÉLÉPHONE</span>
-            <span className="cpms-phone-numbers"><a href="tel:+2290162721072">+229 01 62 72 10 72</a><span> / </span><a href="tel:+2290149141277">+229 01 49 14 12 77</a></span>
-          </div>
-        </div>
       </div>;
     }
     if (editorial && node.attribs.class?.split(/\s+/).includes('footer-logo')) {
       return <div className={node.attribs.class}>
-        <a href="/" className="cpms-footer-brand" aria-label="CPMS — Cycle Préparatoire Marie Stella, accueil">
+        <a href="/" className="cpms-footer-brand" aria-label="ESIMS — École supérieure d’ingénierie Sainte Marie Stella, accueil">
           <img src={editorialMedia.logo} alt="" width={60} height={60} />
-          <span><strong>CPMS</strong><span>Cycle Préparatoire Marie Stella</span></span>
+          <span><strong>ESIMS</strong><span>École supérieure d’ingénierie<br />Sainte Marie Stella</span></span>
         </a>
       </div>;
     }
     if (editorial && node.attribs.class?.split(/\s+/).includes('copyright')) {
-      return <div className={node.attribs.class}><p>© 2026 CPMS — Tous droits réservés.</p></div>;
+      return <div className={node.attribs.class}><p>© 2026 ESIMS — Tous droits réservés.</p></div>;
     }
     if (editorial && node.name === 'ul' && node.attribs.class?.split(/\s+/).some(c => ['footer-social', 'social'].includes(c))) {
       return <ul className={node.attribs.class}>
-        <li><a href="https://www.facebook.com/cpmscotonou" aria-label="Facebook du CPMS"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
-        <li><a href="https://www.linkedin.com/company/cpms/" aria-label="LinkedIn du CPMS"><i className="fa fa-linkedin" aria-hidden="true" /></a></li>
-        <li><a href="https://www.instagram.com/prepamariestella/" aria-label="Instagram du CPMS"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
+        <li><a href="https://www.facebook.com/cpmscotonou" aria-label="Facebook de l’ESIMS"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
+        <li><a href="https://www.linkedin.com/company/cpms/" aria-label="LinkedIn de l’ESIMS"><i className="fa fa-linkedin" aria-hidden="true" /></a></li>
+        <li><a href="https://www.instagram.com/prepamariestella/" aria-label="Instagram de l’ESIMS"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
       </ul>;
     }
     if (editorial && node.attribs.class?.split(/\s+/).includes('rs-partner')) node.attribs.class += ' cpms-partners';
@@ -155,8 +149,16 @@ export const loadTemplate = cache(async (name: string) => {
       }
     }
     styles.push('/cpms/brand.css');
+    styles.push('/cpms/esims.css');
+    if (bodyClass.split(/\s+/).includes('esims-article-page')) styles.push('/cpms/article.css');
+    if (bodyClass.split(/\s+/).includes('esims-contact-page')) styles.push('/cpms/contact.css');
+    if (bodyClass.split(/\s+/).includes('esims-news-hub')) styles.push('/cpms/news-hub.css');
+    if (bodyClass.split(/\s+/).includes('esims-implantations-page')) styles.push('/cpms/campuses.css');
+    if (bodyClass.split(/\s+/).some(name => ['esims-preparatory-page', 'esims-licence-page'].includes(name))) styles.push('/cpms/preparatory.css');
+    styles.push('/cpms/links.css');
+    styles.push('/cpms/mobile-menu.css');
   }
-  return { name, bodyClass, styles, scripts, favicon, title: entry?.title ?? `CPMS — Modèle ${name}`, description: entry?.description ?? "Modèle original Educavo conservé comme référence.", canonical: entry?.canonical, editorial: Boolean(entry), content: parse(body[2], contentOptions(Boolean(entry))) };
+  return { name, bodyClass, styles, scripts, favicon, title: entry?.title ?? `ESIMS — Modèle ${name}`, description: entry?.description ?? "Modèle original Educavo conservé comme référence.", canonical: entry?.canonical, editorial: Boolean(entry), content: parse(body[2], contentOptions(Boolean(entry))) };
 });
 
 export async function loadSearch(query: string) {

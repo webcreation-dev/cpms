@@ -11,7 +11,7 @@
   },
   {
     "source": "/2022/09/06/les-informations-cles-a-connaitre",
-    "destination": "/cycle-ingenieur",
+    "destination": "/#votre-parcours",
     "permanent": true
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "source": "/inscription",
-    "destination": "/admissions",
+    "destination": "/rentree-universitaire",
     "permanent": true
   },
   {
@@ -46,12 +46,12 @@
   },
   {
     "source": "/inscrivez-vous",
-    "destination": "/admissions",
+    "destination": "/rentree-universitaire",
     "permanent": true
   },
   {
     "source": "/quelques-domaines-de-profesionnalisation-en-cycle-ingenieur",
-    "destination": "/domaines",
+    "destination": "/formations",
     "permanent": true
   },
   {
@@ -267,6 +267,81 @@
   {
     "source": "/partenaires",
     "destination": "/qui-sommes-nous#ecoles-partenaires",
+    "permanent": true
+  },
+  {
+    "source": "/admissions",
+    "destination": "/rentree-universitaire",
+    "permanent": true
+  },
+  {
+    "source": "/cycle-ingenieur",
+    "destination": "/#votre-parcours",
+    "permanent": true
+  },
+  {
+    "source": "/domaines",
+    "destination": "/formations",
+    "permanent": true
+  },
+  {
+    "source": "/galerie",
+    "destination": "/evenements",
+    "permanent": true
+  },
+  {
+    "source": "/articles/2-page-d-exemple",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/articles/3-politique-de-confidentialite",
+    "destination": "/confidentialite",
+    "permanent": true
+  },
+  {
+    "source": "/articles/81-les-informations-cles-a-connaitre",
+    "destination": "/#votre-parcours",
+    "permanent": true
+  },
+  {
+    "source": "/articles/85-cycle-preparatoire",
+    "destination": "/cycle-preparatoire",
+    "permanent": true
+  },
+  {
+    "source": "/articles/127-inscription",
+    "destination": "/rentree-universitaire",
+    "permanent": true
+  },
+  {
+    "source": "/articles/145-contactez-nous",
+    "destination": "/contact",
+    "permanent": true
+  },
+  {
+    "source": "/articles/159-qui-sommes-nous",
+    "destination": "/qui-sommes-nous",
+    "permanent": true
+  },
+  {
+    "source": "/articles/245-partenariat-cpms-et-junia",
+    "destination": "/qui-sommes-nous",
+    "permanent": true
+  },
+  {
+    "source": "/articles/287-inscrivez-vous",
+    "destination": "/rentree-universitaire",
+    "permanent": true
+  },
+  {
+    "source": "/articles/295-quelques-domaines-de-profesionnalisation-en-cycle-ingenieur",
+    "destination": "/formations",
+    "permanent": true
+  },
+  {
+    "source": "/articles/462-rentree-universitaire",
+    "destination": "/rentree-universitaire",
     "permanent": true
   }
 ]

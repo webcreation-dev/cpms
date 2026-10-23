@@ -1,6 +1,11 @@
 "use client";
 
+import { initializeEsimsContact } from '@/lib/esims-contact';
+
 import { useEffect } from "react";
+import { initializeEsimsHome, initializeEsimsTestimonials } from '@/lib/esims-home';
+import { initializeEsimsCourse } from '@/lib/esims-course';
+import { initializeEsimsMobileMenu } from '@/lib/esims-mobile-menu';
 
 type JQueryBridge = {
   (target: Window): { triggerHandler: (event: string) => void };
@@ -44,6 +49,10 @@ async function initialize(scripts: string[]) {
   // rsmenu-main utilise document.ready. Attendre ses gestionnaires avant
   // de rejouer les callbacks load si le chargement de la page est déjà fini.
   await new Promise<void>((resolve) => $(resolve));
+  initializeEsimsHome();
+  initializeEsimsTestimonials();
+  initializeEsimsCourse();
+  initializeEsimsContact();
   // Le lecteur Educavo reste limité aux photos du billet, sans celles du menu.
   const articlePhotos=document.querySelector('.cpms-post-content');
   if(articlePhotos?.querySelector('.cpms-article-gallery')) $(articlePhotos).find('.cpms-article-gallery .image-popup').magnificPopup({
@@ -54,20 +63,32 @@ async function initialize(scripts: string[]) {
     for (const child of node.childNodes) if (child.nodeType === Node.TEXT_NODE && child.textContent?.includes('Close')) child.textContent = 'Fermer';
   });
   if (document.readyState === "complete") $(window).triggerHandler("load");
+  initializeEsimsMobileMenu();
+  if (document.body.classList.contains('esims-news-hub')) {
+    // Une catégorie peut s’ouvrir directement sur la liste avant que le
+    // gestionnaire Educavo ne rende l’en-tête fixe. Rejouer puis réaligner.
+    $(window).triggerHandler('scroll');
+    if (window.location.hash === '#news-list') requestAnimationFrame(() => {
+      document.getElementById('news-list')?.scrollIntoView({ block: 'start' });
+    });
+  }
   if (document.body.classList.contains('cpms-course-page')) {
+    $(window).triggerHandler('scroll');
     // Les liens Stages/Projets du site peuvent viser un onglet encore masqué.
     const revealSection = () => {
       let id: string;
       try { id = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
       const target = document.getElementById(id);
       const pane = target?.closest('.tab-pane');
-      if (!target || !pane) return;
+      if (!target) return;
       const scrollToTarget = () => {
         target.scrollIntoView({ block: 'start' });
         // L'en-tête Educavo devient fixe au premier défilement et libère
         // sa hauteur dans le document : réaligner ensuite la section.
         requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
       };
+      // Les nouvelles fiches utilisent des sections visibles, sans onglet.
+      if (!pane) { scrollToTarget(); return; }
       const tab = document.querySelector<HTMLAnchorElement>(`.intro-tabs a[aria-controls="${pane.id}"]`);
       if (tab && !pane.classList.contains('active')) {
         $(tab).one('shown.bs.tab', scrollToTarget);
@@ -95,7 +116,7 @@ export function TemplateRuntime({ scripts }: { scripts: string[] }) {
         if (event.target instanceof HTMLFormElement && event.target.classList.contains("newsletter-form")) {
           event.preventDefault();
           const input = event.target.querySelector<HTMLInputElement>('input[type="email"]');
-          input?.setCustomValidity('L’abonnement aux actualités n’est pas encore disponible. Vous pouvez contacter le CPMS par email.');
+          input?.setCustomValidity('L’abonnement aux actualités n’est pas encore disponible. Vous pouvez contacter l’ESIMS par email.');
           input?.reportValidity();
         }
       });

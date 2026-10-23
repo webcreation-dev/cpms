@@ -7,13 +7,20 @@ import sharp from 'sharp';
 import { Element, Text } from 'domhandler';
 import { documentFrom, serialize, text, all, one, contents, label, put, link, replaceText, shape } from './editorial-dom.mjs';
 import { values, recognition, campaignTitle, homeStatistics, documents, paperDeposit, tests, calendarNotice } from './cpms-home-content.mjs';
-import { subjectsTable } from './cpms-about-page.mjs';
+import { schoolPage } from './esims-school-page.mjs';
 import { cycleContent } from './cpms-cycle-content.mjs';
 import { newsPages } from './cpms-news-pages.mjs';
 import { resolveEditorialLinks } from './cpms-links.mjs';
+import { canonicalEditorialHref, legacyPageTargets } from './esims-link-targets.mjs';
 import { buildBrandStyles, uniformSiteShell } from './cpms-branding.mjs';
 import { campaignContent } from './cpms-campaign-page.mjs';
-import { schoolLocationHtml } from './cpms-contact-details.mjs';
+import { esimsHomepage } from './esims-home-page.mjs';
+import { nameSite } from './esims-naming.mjs';
+import { filieresPage } from './esims-navigation-pages.mjs';
+import { preparatoryBeninPage, preparatoryTogoPage } from './esims-preparatory-page.mjs';
+import { licenceTogoPage } from './esims-licence-page.mjs';
+import { implantationsPage } from './esims-campus-page.mjs';
+import { contactPage } from './esims-contact-page.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const legacy = '/Users/macbookpro/Documents/BACKEND APPS/MY LOCA/cpms';
@@ -28,6 +35,7 @@ const copiedMedia = new Map();
 const assetAudit = [];
 const cropCache = new Map();
 const issues = [];
+let equipmentPhoto;
 const excluded = new Set([154, 40921, 40979]);
 const allowedFiles = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.pdf', '.mp4']);
 await mkdir(generated, { recursive: true });
@@ -39,7 +47,7 @@ const cleanText = s => s.replace(/犀利士|\uFEFF/g, '').replace(/\s+/g, ' ').t
 const date = value => new Intl.DateTimeFormat('fr-FR', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(value.replace(' ', 'T') + 'Z'));
 const articleRoute = r => `/articles/${r.id}-${r.slug || 'cpms'}`;
 const canonicalRoutes = {2:'/',3:'/confidentialite',81:'/cycle-ingenieur',85:'/cycle-preparatoire',127:'/admissions',145:'/contact',154:'/formations',159:'/qui-sommes-nous',245:'/qui-sommes-nous',287:'/admissions',295:'/domaines',462:'/rentree-universitaire'};
-const oldPaths = new Map(inventory.records.filter(r=>r.status==='publish').map(r=>[new URL(r.old_url).pathname.replace(/\/$/, '')||'/',canonicalRoutes[r.id]??articleRoute(r)]));
+const oldPaths = new Map(inventory.records.filter(r=>r.status==='publish').map(r=>[new URL(r.old_url).pathname.replace(/\/$/, '')||'/',canonicalEditorialHref(canonicalRoutes[r.id]??articleRoute(r))]));
 const shortTitles = {
   40819: 'Journée d’orientation des étudiants', 40820: 'Conférence sur les réseaux sociaux',
   40818: 'Portes ouvertes et soirée royale', 40817: 'Immersion culturelle à Ouidah',
@@ -184,7 +192,7 @@ for (const r of records.values()) {
   if (excluded.has(r.id)) continue;
   preparedRecords.push({ id:r.id, title:cleanText(r.title), shortTitle:shortTitle(r), slug:r.slug, type:r.type,
     categories:r.categories, publishedAt:r.published_at, modifiedAt:r.modified_at, oldUrl:r.old_url,
-    route:articleRoute(r), contentHtml:r.cleanHtml, contentText:r.cleanText, image:r.photo, excerpt:brief({ ...r, content_text:r.cleanText }) });
+    route:canonicalEditorialHref(canonicalRoutes[r.id]??articleRoute(r)), contentHtml:r.cleanHtml, contentText:r.cleanText, image:r.photo, excerpt:brief({ ...r, content_text:r.cleanText }) });
 }
 const news = [40819,40820,40818,40817,40816,40815,40814].map(id => records.get(id));
 const events = [40820,40818,40815,40817,40816,40814,40819,40805,40804].map(id => records.get(id));
@@ -324,24 +332,10 @@ async function testimonialBlocks(doc) {
   }
 }
 
-async function partners(doc) {
+async function partnerLogos() {
   const junia=await copyOriginal(join(legacy,'jumia hei.png'),'branding/junia.png');
   const ecpi=await copyOriginal(join(legacy,'ecpi.webp'),'branding/ecpi.webp');
-  const labels=['JUNIA France','JUNIA Maroc','ECPI Dakar','HEI — JUNIA','ISA — JUNIA','ISEN — JUNIA'];
-  for(const [i,card] of all(doc,'.rs-partner .partner-item').entries()) {
-    const img=one(card,'img');if(!img)continue;
-    const labelText=labels[i%6];
-    if(i%6<3)await image(img,i%6===2?ecpi:junia,labelText,{contain:true});
-    else {
-      // Intitulé d'un programme documenté, pas création d'un logo officiel.
-      const dimensions=await sharp(join(publicRoot,img.attribs.src)).metadata();
-      const file=`programme-${i%6}.webp`;
-      const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${dimensions.width}" height="${dimensions.height}"><text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="${Math.min(17,dimensions.height*.45)}" font-weight="600" fill="#485066">${safe(labelText)}</text></svg>`;
-      await sharp(Buffer.from(svg)).webp({lossless:true}).toFile(join(publicRoot,'cpms/slots',file));
-      img.attribs.src='/cpms/slots/'+file;img.attribs.alt=labelText+' — programme du groupe JUNIA';
-    }
-    const a=one(card,'a');if(a){a.attribs.href='/partenaires';a.attribs.title=labelText;}
-  }
+  return {junia,ecpi};
 }
 
 async function homepage(doc) {
@@ -369,7 +363,7 @@ async function homepage(doc) {
   for(const [i,card] of all(doc,'.events-short').entries()){const [id,month,day]=eventInfo[i];const r=records.get(id);put(card,'.month',month);put(card,'.date',day);link(one(card,'.title a'),i===0?'Conférence : amour et chantage émotionnel sur les réseaux sociaux':r.title,articleRoute(r));all(card,'.categorie a').forEach((a,j)=>link(a,j?'Vie étudiante':'Événements','/evenements'));}
   await image(one(doc,'.rs-latest-events .single-img img'),homePhotos.ouidah??news[0].photo,'Vie au CPMS — Immersion à Ouidah');link(one(doc,'.rs-latest-events .btn-part a'),'Tous les événements','/evenements');
   await testimonialBlocks(doc);
-  await partners(doc);
+  const homePartnerLogos=await partnerLogos();
   put(doc,'#rs-blog .sub-title','Actualités');put(doc,'#rs-blog .sec-title .title','Les nouvelles du CPMS');
   for(const [i,card] of all(doc,'#rs-blog .blog-item').entries())await fillBlogCard(card,news[i%news.length]);
   // Réutiliser les deux blocs existants de l'accueil, sans changer leurs classes.
@@ -382,6 +376,25 @@ async function homepage(doc) {
   const actions=one(doc,'.donation-part .btn-part');
   actions.attribs.class += ' cpms-admissions-actions';
   contents(actions,serialize(one(actions,'a'))+`<a class="readon2 mod cpms-brochure" href="${brochure}">Télécharger la brochure</a>`);
+  const nativeCourses=documentFrom(await readFile(join(root,'src/templates/educavo/index.html'),'utf8'));
+  const lab=await legacyUrl('/wp-content/uploads/2026/03/Salle-de-TP-1.jpg');
+  const source=copiedMedia.get(lab).file,metadata=await sharp(source).metadata();
+  equipmentPhoto='/cpms/slots/materiel-scientifique.webp';
+  await sharp(source).rotate().extract({left:Math.round(metadata.width*.52),top:Math.round(metadata.height*.54),width:Math.floor(metadata.width*.48),height:Math.floor(metadata.height*.46)}).resize(900,560,{fit:'cover'}).webp({quality:85}).toFile(join(publicRoot,equipmentPhoto));
+  const heroPhotos=[];
+  for(const [src,alt]of [[lab,'Travaux pratiques au CPMS à Cotonou'],[homePhotos.banner,'La bibliothèque du CPMS à Cotonou'],[classroom,'Les étudiants du CPMS en salle de cours']])heroPhotos.push({src:await fitPhoto(src,'assets/images/slider/h2-1.jpg'),alt});
+  const homeTestimonials = [
+    { id: 40808, name: 'Merveille TOGBE', promotion: 'Promotion 2025', quote: 'Je me suis toujours sentie soutenue et jamais mise de côté. Ils nous poussaient à nous surpasser et restaient à l’écoute même quand ça n’allait pas.' },
+    { id: 77, name: 'Marie-Noëlle DANDJINOU', promotion: 'Promotion 2024', quote: "Après avoir validé mes deux ans de prépa, je suis allée à HEI JUNIA Lille, qui est l’une des écoles partenaires au CPMS. Là je peux vous dire que j’ai bénéficié d’un accueil très chaleureux de la part de ladite école." },
+    { id: 251, name: 'Ricardo TONON', quote: "J’ai beaucoup aimé mon enseignement au CPMS, des professeurs compétents sont mis à notre disposition pour nous aider et nous guider tout au long de l’année." },
+    { id: 255, name: 'Josée-Marie CHINA', quote: "C’était une expérience incroyable à cause de la qualité de l’enseignement qui s’appuie sur le programme français, la proximité des étudiants avec des professeurs compétents." },
+  ].map(item => {
+    const record = records.get(item.id);
+    const normalizeQuote = value => value.normalize('NFKD').replace(/[^\p{L}\p{N}]/gu, '').toLowerCase();
+    assert.ok(normalizeQuote(record.cleanText).includes(normalizeQuote(item.quote)), `Le témoignage ${item.id} doit provenir du texte WordPress.`);
+    return { ...item, photo: record.photo, href: articleRoute(record) };
+  });
+  await esimsHomepage(doc,{nativeCourses,heroPhotos,coursePhotos:[homePhotos.preparatory,lab,equipmentPhoto],testimonials:homeTestimonials,partnerLogos:homePartnerLogos,image,safe});
 }
 
 async function fillBlogCard(card,r) {
@@ -399,101 +412,19 @@ async function fillBlogCard(card,r) {
 }
 
 async function about(doc) {
-  // Réutiliser l'en-tête et le pied de page index3 de l'accueil : même bleu,
-  // coordonnées CPMS et liens, plutôt que ceux de la variante orange about2.
-  const home=documentFrom(await readFile(join(generated,'.html'),'utf8'));
-  for(const selector of ['.full-width-header','.rs-newsletter','footer']) {
-    const target=one(doc,selector),reference=one(home,selector);
-    target.attribs={...reference.attribs};
-    contents(target,reference.children.map(serialize).join(''));
-  }
-  all(doc,'.nav-menu > li').forEach((li,i)=>{
-    li.attribs.class=(li.attribs.class??'').replace(/current-menu-item/g,'').trim()+(i===1?' current-menu-item':'');
-  });
   const source=documentFrom(records.get(159).cleanHtml);
   const paragraphs=all(source,'p').map(p=>text(p).replace(/professionnel\s+le/g,'professionnelle'));
   const rows=all(one(source,'table'),'tr').slice(1).map(row=>all(row,'td').map(text));
-  const schools=[
-    { id:'junia-france',name:'JUNIA France',subtitle:'HEI • ISA • ISEN',location:'Lille • Bordeaux • Châteauroux',url:'https://www.junia.com/fr/',file:'junia_france.jpg' },
-    { id:'junia-maroc',name:'JUNIA Maroc',subtitle:'Un campus à Rabat',location:'Rabat, Maroc',url:'https://ecole-junia.ma/',file:'junia_maroc.jpg' },
-    { id:'ecpi-dakar',name:'ECPI Dakar',subtitle:'École Centrale Polytechnique d’Ingénieurs',location:'Dakar, Sénégal',url:'https://ecpi-edu.com/',file:'ecpi.jpg' },
-  ];
-  for(const school of schools)school.photo=await legacyUrl('/wp-content/uploads/2022/10/'+school.file);
-  const paragraph=i=>`<p>${safe(paragraphs[i])}</p>`;
-  const nativeBlock=selector=>documentFrom(serialize(one(doc,selector))).children[0];
-  const breadcrumbs=nativeBlock('.rs-breadcrumbs');
-  put(breadcrumbs,'h1','Qui sommes-nous');
-  label(all(breadcrumbs,'li').at(-1),'Qui sommes-nous');
-  await image(one(breadcrumbs,'img'),await legacyUrl('/wp-content/uploads/2026/03/Etdts-Escaliers-2.jpg'),'Les étudiants du CPMS');
-
-  // Première section : copie native About Educavo, sans nouvelle grille CSS.
-  const intro=nativeBlock('#rs-about');
-  put(intro,'.sub-title','Qui sommes-nous');
-  one(intro,'.sub-title').attribs.class='sub-title';
-  put(intro,'.title',paragraphs[0]);
-  put(intro,'.bold-text',paragraphs[1]);
-  put(intro,'.desc',paragraphs[2]);
-  // Conserver le montage photographique du modèle, en remplaçant ses trois
-  // photos par les photos CPMS dans les mêmes cadres et au même format.
-  const originalCollage=join(publicRoot,'assets/images/about/about2orange.png');
-  const collageSize=await sharp(originalCollage).metadata();
-  const collagePhotos=[
-    {url:garden,left:311,top:17,width:355,height:486},
-    {url:await legacyUrl('/wp-content/uploads/2026/03/Salle-de-cours-3-1024x731.jpg'),left:33,top:67,width:255,height:190},
-    {url:await legacyUrl('/wp-content/uploads/2026/03/Salle-de-TP-1-1024x732.jpg'),left:122,top:269,width:255,height:182},
-  ];
-  const overlays=[];
-  for(const photo of collagePhotos)overlays.push({input:await sharp(copiedMedia.get(photo.url).file).resize(photo.width,photo.height,{fit:'cover',position:'attention'}).png().toBuffer(),left:photo.left,top:photo.top});
-  const collageFile=join(publicRoot,'cpms/slots/about-educavo-cpms.webp');
-  await sharp(originalCollage).composite(overlays).webp({quality:90}).toFile(collageFile);
-  Object.assign(one(intro,'.img-part img').attribs,{src:'/cpms/slots/about-educavo-cpms.webp',alt:'Les étudiants du CPMS, en cours et en travaux pratiques',width:String(collageSize.width),height:String(collageSize.height)});
-
-  const counter=nativeBlock('#rs-counter');
-  counter.attribs.class=counter.attribs.class.replace('pt-100','pt-0').replace('md-pt-70','md-pt-0')+' pb-100 md-pb-70';
-  for(const [i,card] of all(counter,'.counter-item').entries()) {
-    const stat=homeStatistics[i],number=one(card,'.rs-count');
-    label(number,String(stat.value));number.attribs['data-cpms-stat']='confirmed';
-    number.attribs['aria-label']=`${stat.prefix?stat.prefix+' ':''}${stat.value} ${stat.label}`;
-    if(stat.prefix)number.attribs['data-cpms-prefix']=stat.prefix;
-    put(card,'.title',stat.label);
-  }
-
-  // Bloc vidéo d'index3 : vidéo à gauche, texte et bouton à droite.
-  const cta=documentFrom(serialize(one(home,'.rs-cta'))).children[0];
-  cta.attribs.id='parcours';
-  put(cta,'.sec-title .title','Deux années pour préparer le cycle ingénieur');
-  contents(one(cta,'.sec-title .desc'),paragraph(3)+`<p>${safe(recognition)}</p>`);
-  link(one(cta,'.readon2'),'Découvrir les parcours','/formations');
-  one(cta,'.popup-videos').attribs.href=video;
-  const videoPhoto=await legacyUrl('/wp-content/uploads/2026/03/Salle-de-cours-3-1024x731.jpg');
-  one(cta,'.partition-bg-wrap').attribs.style=`--cpms-video-photo:url("${videoPhoto}")`;
-
-  // Second bloc About d'about2 : trois onglets, un pour chaque partenaire.
-  const tabBlock=one(doc,'#myTab').parent.parent.parent.parent;
-  const partnersBlock=documentFrom(serialize(tabBlock)).children[0];
-  partnersBlock.attribs.id='ecoles-partenaires';
-  const tabs=all(partnersBlock,'#myTab a');
-  const paneIds=['about-history','about-mission','about-admin'];
-  for(const [i,school] of schools.entries()) {
-    const tab=tabs[i],pane=one(partnersBlock,'#'+paneIds[i]);
-    label(tab,school.name);tab.attribs.href='#'+paneIds[i];
-    tab.attribs['data-target']='#'+paneIds[i];
-    put(pane,'.title',school.name);
-    const body=i===0?paragraph(6)+paragraph(7)+`<details class="cpms-partner-history"><summary>Chiffres présentés sur l’ancien site</summary>${paragraph(8)}</details>`:i===1?paragraph(9)+paragraph(10):paragraph(11)+paragraph(12);
-    contents(one(pane,'.desc'),body+`<p><a class="readon2" href="${school.url}" target="_blank" rel="noopener noreferrer">Visiter ${safe(school.name)}</a></p>`);
-    // Garder les proportions propres à chaque photo, sans couper le logo ECPI.
-    Object.assign(one(pane,'.tab-img img').attribs,{src:school.photo,alt:school.name+' — photographie de l’ancien site CPMS'});
-  }
-  await image(one(partnersBlock,'.img-part img'),garden,'La vie au CPMS');
-  const partnerHeading='<div class="container"><div class="sec-title mb-50 md-mb-30"><div class="sub-title">Un parcours international</div><h2 class="title mb-0">Nos écoles partenaires</h2></div></div>';
-  contents(partnersBlock,partnerHeading+partnersBlock.children.map(serialize).join(''));
-
-  contents(one(doc,'.main-content'),[breadcrumbs,intro,counter,cta].map(serialize).join('')+subjectsTable({paragraphs,rows,safe})+serialize(partnersBlock)+serialize(one(home,'.rs-newsletter')));
-  one(doc,'body').attribs.class+=' cpms-about-page';
-  const finalText=text(doc);
-  paragraphs.forEach(p=>assert(finalText.includes(p),`Paragraphe Qui sommes-nous manquant : ${p}`));
-  assert.equal(rows.length,10,'Les dix matières doivent être reprises.');
-  assert.deepEqual(all(one(doc,'.cpms-about-table'),'tbody tr').map(row=>all(row,'th, td').map(text)),rows);
+  await schoolPage(doc, {
+    homeHtml: await readFile(join(generated,'.html'),'utf8'),
+    faqHtml: await readFile(join(root,'src/templates/educavo/faq.html'),'utf8'),
+    rows, paragraphs, safe, image,
+    photos: {
+      banner: await legacyUrl('/wp-content/uploads/2026/03/Etdts-Escaliers-2.jpg'),
+      intro: homePhotos.aboutFirst,
+      lab: await legacyUrl('/wp-content/uploads/2026/03/Salle-de-TP-1-1024x732.jpg'),
+    },
+  });
 }
 
 async function courseGrid(doc,domains=false) {
@@ -513,6 +444,8 @@ async function courseGrid(doc,domains=false) {
     const arrow=one(card,'.btn-part a');if(arrow)arrow.attribs.href=item[1];
   }
   all(doc,'.gridFilter button').forEach((button,i)=>label(button,['Tous','Sciences','Ingénierie','Technologies','Parcours'][i%5]));
+  // Les six domaines tiennent sur une page ; aucune pagination de démonstration.
+  for(const pagination of all(doc,'.pagination-area'))pagination.parent.children=pagination.parent.children.filter(child=>child!==pagination);
 }
 
 async function courseDetail(doc,engineer=false) {
@@ -550,6 +483,15 @@ async function courseDetail(doc,engineer=false) {
     link(a,i?'Candidater':'Télécharger la brochure',i?'/admissions':brochure);
     a.attribs.class=i?'btn readon2':'btn readon2 transparent';
   });
+  if (!engineer) {
+    const aboutSource=documentFrom(records.get(159).cleanHtml);
+    preparatoryBeninPage(doc, {
+      panels,homeHtml:serialize(home),brochure,candidature,video,safe,
+      photos:{classroom:classroomPhoto,lab:await legacyUrl('/wp-content/uploads/2026/03/Salle-de-TP-1-1024x732.jpg'),library:homePhotos.aboutSecond},
+      subjectParagraphs:all(aboutSource,'p').map(text),
+      subjectRows:all(one(aboutSource,'table'),'tr').slice(1).map(row=>all(row,'td').map(text)),
+    });
+  }
   const finalText=text(doc);
   paragraphs.forEach(p=>assert(finalText.includes(text(p)),`Paragraphe du cycle manquant : ${text(p)}`));
   for(const item of all(source,'li, figcaption'))assert(finalText.includes(text(item)),`Liste ou légende manquante : ${text(item)}`);
@@ -608,25 +550,7 @@ async function article(doc,r,titleOverride) {
 
 async function contact(doc) {
   await siteShell(doc,5);
-  one(doc,'body').attribs.class+=' cpms-contact-page';
-  put(doc,'.rs-breadcrumbs h1','Contactez le CPMS');
-  label(all(doc,'.rs-breadcrumbs li').at(-1),'Contact');
-  const info=[['.contact-address','Adresse','Vèdoko, Cotonou, Bénin'],['.contact-mail','Email','<a href="mailto:contact@cpms.education">contact@cpms.education</a>'],['.contact-phone','Téléphone','<a href="tel:+2290162721072">+229 01 62 72 10 72</a><a href="tel:+2290149141277">+229 01 49 14 12 77</a>']];
-  for(const [selector,title,html]of info){const card=one(doc,selector);put(card,'.info-subtitle',title);contents(one(card,'.info-title'),html);}
-  one(doc,'.contact-phone .icon-part i').attribs.class='fa fa-phone';
-  put(doc,'.rs-quick-contact .inner-part h2','Contactez le CPMS');
-  contents(one(doc,'.rs-quick-contact .inner-part p'),'Pour les admissions ou les renseignements pratiques, contactez le secrétariat. L’envoi du formulaire n’est pas encore disponible ; vous pouvez écrire à <a href="mailto:contact@cpms.education">contact@cpms.education</a> ou appeler les numéros ci-dessus.');
-  for(const input of all(doc,'#contact-form input, #contact-form textarea')){
-    if(input.attribs.type==='submit')continue;
-    input.attribs['aria-label']=input.attribs.placeholder.trim();
-    if(input.attribs.name==='email')input.attribs.type='email';
-    if(input.attribs.name==='phone')input.attribs.type='tel';
-  }
-  const feedback=one(doc,'#form-messages');feedback.attribs.role='status';feedback.attribs['aria-live']='polite';
-  const frame=one(doc,'.contact-map2 iframe');frame.attribs.src='https://maps.google.com/maps?q=Vedoko%2C%20Cotonou%2C%20Benin&z=13&output=embed';frame.attribs.title='Quartier Vèdoko à Cotonou — localisation indicative';frame.attribs.loading='lazy';
-  const addressRow=one(doc,'.contact-address-section'),parent=addressRow.parent;
-  const notice=documentFrom(`<div class="inner-part"><p class="mb-30 cpms-contact-location">${schoolLocationHtml}</p></div>`).children[0];notice.parent=parent;
-  parent.children.splice(parent.children.indexOf(addressRow)+1,0,notice);
+  contactPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8')});
 }
 
 async function siteShell(doc,active=-1) {
@@ -654,18 +578,6 @@ async function gallery(doc) {
   for(const [i,card] of all(doc,'.gallery-img').entries()){const img=one(card,'img');await image(img,choices[i%choices.length],'Photo de la vie au CPMS');const a=one(card,'a');if(a&&img)a.attribs.href=img.attribs.src;}
 }
 
-async function eventListing(doc) {
-  put(doc,'.rs-breadcrumbs h1','Événements du CPMS');
-  for(const [i,card] of all(doc,'.events-short, .event-item').entries()){
-    const r=events[i%events.length];link(one(card,'.title a'),shortTitle(r),articleRoute(r));
-    for(const a of all(card,'a'))if(!a.attribs.href?.startsWith('mailto:'))a.attribs.href=articleRoute(r);
-    for(const img of all(card,'img'))await image(img,r.photo,shortTitle(r));
-    put(card,'.desc, .text',brief({...r,content_text:r.cleanText}));
-    put(card,'.date',r.id===40820?'20 février 2026':r.id===40818?'30 janvier 2026':r.id===40815?'28 janvier 2026':date(r.published_at));
-    put(card,'.address','Archive CPMS');link(one(card,'.categorie a'),'Événements','/evenements');link(one(card,'.btn-part a'),'Lire l’article',articleRoute(r));
-  }
-}
-
 async function faq(doc) {
   await siteShell(doc);
   one(doc,'body').attribs.class+=' cpms-faq-page';
@@ -677,10 +589,10 @@ async function faq(doc) {
     ['Comment les étudiants sont-ils accompagnés ?','La formation associe cours, travaux dirigés, travaux pratiques et khôls. Les modalités sont présentées dans la rubrique Pédagogie du <a href="/cycle-preparatoire">cycle préparatoire</a>.'],
     ['Où consulter les matières et les coefficients ?','Le tableau des matières et coefficients figure sur la page <a href="/qui-sommes-nous#matieres">Qui sommes-nous</a>.'],
     ['Comment poursuivre en cycle ingénieur ?','La présentation du <a href="/cycle-ingenieur">cycle ingénieur</a> décrit la poursuite d’études après la prépa. Le secrétariat confirme les modalités d’accès actuelles.'],
-    ['Quelles sont les écoles partenaires ?','Retrouvez JUNIA France, JUNIA Maroc et ECPI Dakar dans les trois onglets de la section <a href="/qui-sommes-nous#ecoles-partenaires">Écoles partenaires</a>.'],
+    ['Quelles sont les écoles partenaires ?','Retrouvez HEI, ISA et ISEN (groupe JUNIA), ainsi qu’ECPI Dakar, dans la section <a href="/qui-sommes-nous#ecoles-partenaires">Écoles partenaires</a>.'],
     ['Des stages et des projets sont-ils prévus ?','Le programme décrit un stage académique de quatre semaines et des projets en groupe. Consultez la rubrique <a href="/cycle-preparatoire#stages">Stages et projets</a>.'],
     ['Où se trouve le CPMS ?','Le CPMS se trouve à Vèdoko, à Cotonou, au Bénin. Consultez la page <a href="/contact">Contact</a> et appelez le secrétariat pour les indications de trajet.'],
-    ['Où suivre la vie de l’établissement ?','Les <a href="/actualites">actualités</a>, les <a href="/evenements">événements</a> et la <a href="/galerie">galerie</a> présentent la vie au CPMS.'],
+    ['Où suivre la vie de l’établissement ?','Les <a href="/actualites">actualités</a> et les <a href="/evenements">événements</a> présentent la vie au CPMS. Retrouvez les photos dans les articles.'],
     ['Comment contacter le secrétariat ?','Écrivez à <a href="mailto:contact@cpms.education">contact@cpms.education</a> ou appelez le <a href="tel:+2290162721072">+229 01 62 72 10 72</a> / <a href="tel:+2290149141277">+229 01 49 14 12 77</a>.'],
     ['À qui s’adresse la candidature ?','Les informations d’inscription concernent les élèves de Terminales C, D et E. Retrouvez les étapes sur la page <a href="/admissions">Procédure d’inscription</a> ; le secrétariat confirme le calendrier en cours.'],
     ['Quelles sont les pièces à fournir ?','Les six pièces demandées sont détaillées dans la <a href="/admissions">procédure d’inscription</a>. Le <a href="'+candidature+'">formulaire de candidature</a> est disponible au téléchargement.'],
@@ -697,27 +609,29 @@ async function faq(doc) {
 
 async function make(name,source,title,adapt,aliases=[]) {
   const original=documentFrom(await readFile(join(root,'src/templates/educavo',source),'utf8'));
-  const before=shape(original);
+  const preservedHomeSections=['.rs-cta','.rs-latest-events','.rs-donation','#rs-blog'];
+  const homeShapes=source==='index3.html'?preservedHomeSections.map(selector=>[selector,one(original,selector)]).filter(([,node])=>node).map(([selector,node])=>[selector,shape(node)]):[];
   await common(original);await adapt(original);
   for(const a of all(original,'a')) {
     if(a.attribs.href?.startsWith('/presentation'))a.attribs.href=a.attribs.href.replace('/presentation','/qui-sommes-nous');
     if(a.attribs.href==='/partenaires')a.attribs.href='/qui-sommes-nous#ecoles-partenaires';
   }
-  // L'accueil doit conserver tous ses éléments, classes et styles inline.
+  // Les formations et le carrousel de témoignages sont recomposés sur demande.
   if(source==='index3.html') {
-    // L'email et le second bouton PDF sont les ajouts demandés ; tous les
-    // autres éléments graphiques et classes du modèle sont conservés.
-    const after=all(original,'*').filter(el=>!el.attribs['data-cpms-faq-link']&&!el.parent?.attribs?.['data-cpms-faq-link']&&!(el.name==='a' && (el.parent===one(original,'.donation-part .desc') || el.attribs.class?.split(/\s+/).includes('cpms-brochure'))))
-      .map(el=>`${el.name}|${(el.attribs.class??'').replace(/ cpms-admissions-actions\b/,'')}|${el.attribs.style??''}`);
-    assert.deepEqual(after,before,'La structure graphique de l’accueil a changé.');
+    for(const [selector,expected]of homeShapes){
+      const actual=all(one(original,selector),'*').filter(el=>!(el.name==='a'&&(el.parent===one(original,'.donation-part .desc')||el.attribs.class?.split(/\s+/).includes('cpms-brochure')))).map(el=>`${el.name}|${(el.attribs.class??'').replace(/ cpms-admissions-actions\b/,'')}|${el.attribs.style??''}`);
+      assert.deepEqual(actual,expected,`Le bloc Educavo ${selector} doit conserver son dessin.`);
+    }
   }
   const file=name.replaceAll('/','--')+'.html';await writeFile(join(generated,file),serialize(original));
   const entry={file,source,title,description:'Découvrez le Cycle Préparatoire Sainte Marie Stella à Cotonou.',aliases};
   registry[name]=entry;for(const alias of aliases)registry[alias]={...entry,canonical:'/'+name};
 }
 
-await make('','index3.html','CPMS — Cycle Préparatoire Sainte Marie Stella',homepage,['index3.html','index.html']);
-await make('qui-sommes-nous','about2.html','Qui sommes-nous — CPMS',about,['about2.html','presentation','partenaires']);
+await make('','index3.html','ESIMS — École supérieure d’ingénierie Sainte Marie Stella',homepage,['index3.html','index.html']);
+for(const key of ['', 'index3.html', 'index.html'])registry[key].description='Découvrez l’École supérieure d’ingénierie Sainte Marie Stella : cycle préparatoire au Bénin et au Togo, licences professionnelles au Togo.';
+await make('qui-sommes-nous','about2.html','L’École — ESIMS',about,['about2.html','presentation','partenaires']);
+for (const key of ['qui-sommes-nous', 'about2.html', 'presentation', 'partenaires']) registry[key].description='Découvrez l’ESIMS, ses implantations au Bénin et au Togo, ses parcours scientifiques et ses écoles partenaires.';
 const blogOriginal=documentFrom(await readFile(join(root,'src/templates/educavo/blog.html'),'utf8'));
 const pageSize=all(blogOriginal,'.rs-inner-blog .blog-item').length;
 const publicNews=preparedRecords.filter(r=>r.type==='post'&&!r.categories.includes('Témoignages')&&![81,85,159,245].includes(r.id)).sort((a,b)=>b.publishedAt.localeCompare(a.publishedAt)).map(r=>records.get(r.id));
@@ -725,8 +639,11 @@ const newsLayout=newsPages({publicNews,homeHtml:await readFile(join(generated,'.
 const newsPageSize=all(documentFrom(await readFile(join(root,'src/templates/educavo/blog-left.html'),'utf8')),'.rs-inner-blog .blog-item').length;
 for(const group of newsLayout.groups) {
   for(let page=1;page<=Math.ceil(group.records.length/newsPageSize);page++) {
-    await make(page===1?group.base:`${group.base}/page/${page}`,'blog-left.html',`CPMS — ${group.title}${page>1?' — page '+page:''}`,doc=>newsLayout.listing(doc,group,page,newsPageSize),group.base==='actualites'&&page===1?['blog-left.html','blog.html']:[]);
+    await make(page===1?group.base:`${group.base}/page/${page}`,'blog-left.html',`CPMS — ${group.title}${page>1?' — page '+page:''}`,doc=>newsLayout.listing(doc,group,page,newsPageSize),page===1?(group.base==='actualites'?['blog-left.html','blog.html']:group.base==='evenements'?['events-style1.html']:[]):[]);
   }
+}
+for(const [key,entry] of Object.entries(registry)) {
+  if(entry.source==='blog-left.html') entry.description=key.startsWith('evenements')?'Conférences, rencontres et vie étudiante : retrouvez les événements de l’ESIMS.':'Retrouvez les actualités, événements, projets et archives de l’École supérieure d’ingénierie Sainte Marie Stella.';
 }
 await make('recherche','blog.html','CPMS — Recherche',doc=>listing(doc,publicNews.slice(0,pageSize),'Recherche'));
 for(const [base,title,list] of [['temoignages','Témoignages',testimonies]]){
@@ -737,15 +654,30 @@ for(const [base,title,list] of [['temoignages','Témoignages',testimonies]]){
     await make(page===1?base:`${base}/page/${page}`,'blog.html',`CPMS — ${title}${page>1?' — page '+page:''}`,doc=>listing(doc,selected,title,page,pages,base),page===1&&base==='actualites'?['blog.html']:[]);
   }
 }
-await make('evenements','events-style1.html','CPMS — Événements',eventListing,['events-style1.html']);
 await make('galerie','gallery-style1.html','CPMS — Galerie',gallery,['gallery-style1.html']);
 await make('contact','contact4.html','Contactez le CPMS',contact,['contact4.html','contact.html']);
+for(const key of ['contact','contact4.html','contact.html']) {
+  registry[key].title='Contact — ESIMS';
+  registry[key].description='Contactez l’ESIMS pour les admissions, le choix de filière et les renseignements pratiques au Bénin et au Togo.';
+}
 await make('faq','faq.html','CPMS — Questions fréquentes',faq,['faq.html']);
 await make('erreur','error.html','CPMS — Page introuvable',errorPage,['error.html']);
-await make('formations','course2.html','CPMS — Formations',doc=>courseGrid(doc));
+await make('formations','course2.html','Nos filières — ESIMS',async doc=>filieresPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),photo:garden,image}));
+registry.formations.description='Les filières de l’ESIMS : cycle préparatoire au Bénin et au Togo, licences professionnelles au Togo.';
+const togoPermit=await copyOriginal('/Users/macbookpro/Downloads/Agrément ESIMS Togo.pdf','institution/agrement-esims-togo.pdf');
+await make('nos-implantations','about2.html','Nos implantations — ESIMS',async doc=>implantationsPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),photos:{cotonou:garden,library:homePhotos.aboutSecond},permit:togoPermit,safe}));
+registry['nos-implantations'].description='Découvrez les implantations de l’ESIMS à Cotonou au Bénin et à Lomé au Togo, ainsi que les parcours proposés sur chaque site.';
 await make('domaines','course2.html','CPMS — Domaines de professionnalisation',doc=>courseGrid(doc,true),['course2.html']);
 await make('cycle-preparatoire','course-single.html','CPMS — Cycle préparatoire',doc=>courseDetail(doc),['course-single.html']);
+for(const key of ['cycle-preparatoire','course-single.html']) {
+  registry[key].title='Cycle préparatoire au Bénin — ESIMS';
+  registry[key].description='Découvrez le cycle préparatoire de l’ESIMS à Cotonou : deux années de formation, le programme, les stages, les projets et les modalités de candidature.';
+}
 await make('cycle-ingenieur','course-single.html','CPMS — Cycle ingénieur',doc=>courseDetail(doc,true));
+await make('licences-professionnelles','course-single.html','Licences professionnelles au Togo — ESIMS',async doc=>licenceTogoPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),photo:await legacyUrl('/wp-content/uploads/2026/03/Salle-de-TP-1-1024x732.jpg'),permit:togoPermit,safe}));
+await make('cycle-preparatoire-togo','course-single.html','Cycle préparatoire au Togo — ESIMS',async doc=>preparatoryTogoPage(doc,{homeHtml:await readFile(join(generated,'.html'),'utf8'),equipmentPhoto,permit:togoPermit,safe}));
+registry['cycle-preparatoire-togo'].description='Découvrez le cycle préparatoire de niveau bac+2 d’ESIMS-Togo à Lomé et contactez l’école pour les modalités d’admission.';
+registry['licences-professionnelles'].description='Découvrez les licences professionnelles d’ESIMS-Togo à Lomé et les neuf spécialités mentionnées dans l’agrément fourni.';
 
 // Les billets utilisent le modèle demandé ; les anciennes pages restent distinctes.
 for(const prepared of preparedRecords){
@@ -774,7 +706,7 @@ await make('confidentialite','blog-single.html','CPMS — Confidentialité : arc
 
 // La campagne de rentrée est distincte de la procédure d'inscription.
 await make('rentree-universitaire','blog-post-left.html','Inscriptions ouvertes — Année 2026-2027 — CPMS',async doc=>{
-  await newsLayout.article(doc,{...records.get(462),photo:homePhotos.aboutFirst??garden});
+  await newsLayout.article(doc,{...records.get(462),photo:homePhotos.aboutFirst??garden},{redesign:false});
   put(doc,'.rs-breadcrumbs h1','Inscriptions 2026-2027');
   label(all(doc,'.rs-breadcrumbs li').at(-1),'Inscriptions 2026-2027');
   const metadata=all(doc,'.single-post-meta .p-date');label(metadata[0],'Année 2026-2027');
@@ -795,17 +727,21 @@ await make('rentree-universitaire','blog-post-left.html','Inscriptions ouvertes 
 
 await buildBrandStyles(publicRoot);
 const uniformPages=await uniformSiteShell(registry,generated,logo,brochure,preparedRecords);
+await nameSite(registry,generated,preparedRecords);
 console.log(`${uniformPages} pages avec le même en-tête, footer et chargement CPMS.`);
-const unavailableLinks=await resolveEditorialLinks(registry,generated);
+const recordTargets=Object.fromEntries(preparedRecords.filter(record=>canonicalRoutes[record.id]).map(record=>[articleRoute(record),record.route]));
+const unavailableLinks=await resolveEditorialLinks(registry,generated,recordTargets);
 console.log(`${unavailableLinks} liens sans destination orientés vers le modèle error.html.`);
 for(const r of preparedRecords)r.cardImage=await fitPhoto(r.image,'assets/images/blog/inner/1.jpg');
 await writeFile(join(root,'src/data/cpms-content.json'),JSON.stringify({sourceExport:'16 août 2026',records:preparedRecords},null,2)+'\n');
 await writeFile(join(root,'src/generated/cpms-registry.json'),JSON.stringify(registry,null,2)+'\n');
 await writeFile(join(root,'src/generated/cpms-media.json'),JSON.stringify({brochure,candidature,video,logo,garden,classroom},null,2)+'\n');
 const redirects=Array.from(oldPaths,([source,destination])=>({source,destination,permanent:true})).filter(r=>r.source!==r.destination&&!excluded.has(inventory.records.find(p=>(new URL(p.old_url).pathname.replace(/\/$/,'')||'/')===r.source)?.id));
-redirects.push({source:'/presentation',destination:'/qui-sommes-nous',permanent:true},{source:'/partenaires',destination:'/qui-sommes-nous#ecoles-partenaires',permanent:true});
-await writeFile(join(root,'src/generated/cpms-redirects.json'),JSON.stringify(redirects,null,2)+'\n');
+for(const [source,destination] of Object.entries(legacyPageTargets))redirects.push({source,destination,permanent:true});
+for(const record of preparedRecords)if(canonicalRoutes[record.id])redirects.push({source:articleRoute(record),destination:record.route,permanent:true});
+const uniqueRedirects=[...new Map(redirects.map(redirect=>[redirect.source,{...redirect,destination:canonicalEditorialHref(redirect.destination,registry)}])).values()];
+await writeFile(join(root,'src/generated/cpms-redirects.json'),JSON.stringify(uniqueRedirects,null,2)+'\n');
 const generatedPages=await Promise.all([...new Set(Object.values(registry).map(entry=>entry.file))].map(file=>readFile(join(generated,file),'utf8')));
 const unconfirmedStatistics=generatedPages.some(html=>html.includes('data-cpms-stat="unconfirmed"'));
 await writeFile(join(root,'editorial-manifest.json'),JSON.stringify({source:'Export WordPress CPMS du 16 août 2026',records:preparedRecords.length,generatedRoutes:Object.keys(registry).length,copiedMedia:copiedMedia.size,removedSpamLinks:removedSpam,excludedIds:[...excluded],missing:issues,assets:assetAudit,unconfirmedStatistics,homeStatistics},null,2)+'\n');
-console.log(`${preparedRecords.length} contenus publics repris ; ${Object.keys(registry).length} routes éditoriales ; ${copiedMedia.size} médias/documents ; structure de l’accueil conservée.`);
+console.log(`${preparedRecords.length} contenus publics repris ; ${Object.keys(registry).length} routes éditoriales ; ${copiedMedia.size} médias/documents ; blocs Educavo conservés hors des zones de l’accueil validées.`);

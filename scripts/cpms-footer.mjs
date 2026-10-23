@@ -6,7 +6,7 @@ export function cpmsFooter(footer,records,safe,logo){
   const columns=all(footer,'.footer-top .footer-widget');
   one(columns[0],'.footer-logo img').attribs.src=logo;
   one(columns[0],'.footer-logo img').attribs.alt='CPMS';
-  contents(one(columns[0],'.textwidget p'),'Le Cycle Préparatoire Marie Stella accompagne les étudiants dans leur formation scientifique et leur parcours vers les métiers de l’ingénieur.');
+  contents(one(columns[0],'.textwidget p'),'L’École supérieure d’ingénierie Sainte Marie Stella accompagne les étudiants dans leur formation scientifique et technique, au Bénin et au Togo.');
   contents(one(columns[0],'.footer_social'),[
     ['facebook','Facebook','https://www.facebook.com/cpmscotonou'],
     ['linkedin','LinkedIn','https://www.linkedin.com/company/cpms/'],
@@ -18,7 +18,7 @@ export function cpmsFooter(footer,records,safe,logo){
   contents(details[1],'<a href="tel:+2290149141277">01 49 14 12 77</a><small>Appel uniquement</small><a href="tel:+2290162721072">01 62 72 10 72</a><a href="https://wa.me/2290162721072" target="_blank" rel="noopener noreferrer">Appel ou WhatsApp</a>');
   contents(details[2],'<a href="mailto:contact@cpms.education">contact@cpms.education</a>');
   label(one(columns[2],'.widget-title'),'Nos pages');
-  const pages=[['Qui sommes-nous','/qui-sommes-nous'],['Cursus','/formations'],['Événements','/evenements'],['Témoignages','/temoignages'],['Actualités','/actualites'],['Contact','/contact'],['Questions fréquentes','/faq'],['Inscriptions 2026-2027','/rentree-universitaire']];
+  const pages=[['L’École','/qui-sommes-nous'],['Nos filières','/formations'],['Nos implantations','/nos-implantations'],['Licences professionnelles','/licences-professionnelles'],['Événements','/evenements'],['Témoignages','/temoignages'],['Actualités','/actualites'],['Contact','/contact'],['Questions fréquentes','/faq'],['Inscriptions 2026-2027','/rentree-universitaire']];
   contents(one(columns[2],'.site-map'),pages.map(([title,href])=>`<li><a href="${href}">${safe(title)}</a></li>`).join(''));
   label(one(columns[3],'.widget-title'),'Actualités récentes');
   const posts=records.filter(record=>record.type==='post'&&!record.categories.includes('Témoignages')).sort((a,b)=>b.publishedAt.localeCompare(a.publishedAt));

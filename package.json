@@ -10,6 +10,7 @@
     "sync:template": "node scripts/sync-template.mjs",
     "verify:template": "node scripts/verify-template.mjs",
     "verify:media": "node scripts/verify-media.mjs",
+    "verify:links": "node scripts/verify-links.mjs",
     "content:import": "node scripts/integrate-cpms.mjs"
   },
   "dependencies": {

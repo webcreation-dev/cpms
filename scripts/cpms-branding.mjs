@@ -33,9 +33,9 @@ export async function uniformSiteShell(registry, generated, logo, brochure, reco
   for(const cart of all(home,'.cart-inner'))cart.parent.children=cart.parent.children.filter(child=>child!==cart);
   const phone=all(home,'.topbar-contact li')[1];
   contents(phone,'<i class="flaticon-call" aria-hidden="true"></i><a href="tel:+2290162721072">01 62 72 10 72</a><span> / </span><a href="tel:+2290149141277">01 49 14 12 77</a>');
-  // Garder les éléments Educavo, avec les sept rubriques demandées.
+  // Six entrées, avec un sous-menu uniquement pour les filières.
   const prototypes=all(home,'.nav-menu > li');
-  const navigation=[['Accueil','/',0],['Qui sommes-nous','/qui-sommes-nous',1],['Cursus','/formations',2],['Événements','/evenements',3],['Témoignages','/temoignages',3],['Actualités','/actualites',4],['Contact','/contact',5]];
+  const navigation=[['Accueil','/',0],['L’École','/qui-sommes-nous',1],['Nos filières','/formations',2],['Nos implantations','/nos-implantations',3],['Actualités','/actualites',4],['Contact','/contact',5]];
   contents(one(home,'.nav-menu'),navigation.map(([title,href,index])=>{
     const item=documentFrom(serialize(prototypes[index])).children[0];
     const anchor=one(item,'a');link(anchor,title,href);
@@ -46,10 +46,14 @@ export async function uniformSiteShell(registry, generated, logo, brochure, reco
       delete anchor.attribs['aria-haspopup'];delete anchor.attribs['aria-expanded'];
     }else{
       const submenu=one(item,'ul');submenu.children=submenu.children.filter(child=>child.name==='li').slice(0,3);
+      all(submenu,'a').forEach((anchor,index)=>link(anchor,...[['Cycle préparatoire — Bénin','/cycle-preparatoire'],['Cycle préparatoire — Togo','/cycle-preparatoire-togo'],['Licences professionnelles — Togo','/licences-professionnelles']][index]));
     }
     return serialize(item);
   }).join(''));
-  contents(one(home,'.topbar-right'),`<li class="btn-part"><a class="cpms-top-button cpms-brochure-button" href="${brochure}" download="brochure-cpms.pdf">Notre brochure</a></li><li class="btn-part"><a class="apply-btn cpms-top-button" href="/rentree-universitaire">Inscriptions ouvertes - Année 2026-2027</a></li>`);
+  const topbarButtons=one(home,'.topbar-right');
+  contents(topbarButtons,`<li class="btn-part"><a class="cpms-top-button cpms-brochure-button" href="${brochure}" download="brochure-cpms.pdf">Notre brochure</a></li><li class="btn-part"><a class="apply-btn cpms-top-button" href="/rentree-universitaire">S’inscrire</a></li>`);
+  topbarButtons.parent.attribs.class='esims-topbar-actions';
+  one(home,'.topbar-contact').parent.attribs.class='esims-topbar-contact';
   // Bloc exact d'index.html : icône à côté du titre et formulaire à droite.
   const reference=documentFrom(await readFile(join(generated,'../../templates/educavo/index.html'),'utf8'));
   const newsletter=one(reference,'.rs-newsletter');
@@ -61,8 +65,8 @@ export async function uniformSiteShell(registry, generated, logo, brochure, reco
   const footer=cpmsFooter(one(reference,'footer'),records,safe,logo);
   const homeFooter=one(home,'footer');homeFooter.attribs={...footer.attribs};contents(homeFooter,footer.children.map(serialize).join(''));
   const loader=one(home,'#loader');loader.attribs.class='loader';
-  const seal=one(loader,'img');seal.attribs.src=logo;seal.attribs.alt='CPMS';seal.attribs.width='80';seal.attribs.height='80';
-  loader.attribs['aria-label']='Chargement du site CPMS';
+  const seal=one(loader,'img');seal.attribs.src=logo;seal.attribs.alt='ESIMS';seal.attribs.width='80';seal.attribs.height='80';
+  loader.attribs['aria-label']='Chargement du site ESIMS';
   const files=new Map(Object.entries(registry).map(([route,entry])=>[entry.file,route]));
   const references=['.full-width-header','footer','#loader','.rs-newsletter'].map(selector=>[selector,one(home,selector)]);
   const footerHtml=serialize(one(home,'footer'));
@@ -75,11 +79,15 @@ export async function uniformSiteShell(registry, generated, logo, brochure, reco
     const canonical=Object.entries(registry).find(([key,entry])=>entry.file===file&&!entry.canonical)?.[0]??route;
     const articleId=Number(canonical.match(/^articles\/(\d+)-/)?.[1]);
     const testimony=records.some(record=>record.id===articleId&&record.categories.includes('Témoignages'));
-    const active=file===registry[''].file?0:file===registry['qui-sommes-nous'].file?1:/^(formations|domaines|cycle-)/.test(canonical)?2:/^(evenements|galerie)/.test(canonical)?3:/^temoignages/.test(canonical)||testimony?4:/^(actualites|articles)/.test(canonical)?5:canonical==='contact'?6:-1;
+    const active=file===registry[''].file?0:file===registry['qui-sommes-nous'].file||/^temoignages/.test(canonical)||testimony?1:/^(formations|domaines|cycle-|licences-)/.test(canonical)?2:canonical==='nos-implantations'?3:/^(actualites|articles|evenements|galerie)/.test(canonical)?4:canonical==='contact'?5:-1;
     all(doc,'.nav-menu > li').forEach((li,index)=>{
       li.attribs.class=(li.attribs.class??'').replace(/current-menu-item/g,'').trim()+(index===active?' current-menu-item':'');
       for(const descendant of all(li,'.current-menu-item'))if(descendant!==li)descendant.attribs.class=descendant.attribs.class.replace(/current-menu-item/g,'').trim();
-      const anchor=one(li,'a');if(index===active)anchor.attribs['aria-current']='page';else delete anchor.attribs['aria-current'];
+      const anchor=one(li,'a');if(index===active&&anchor.attribs.href==='/'+canonical)anchor.attribs['aria-current']='page';else delete anchor.attribs['aria-current'];
+      for(const sublink of all(li,'.sub-menu a')){
+        if(sublink.attribs.href==='/'+canonical){sublink.attribs['aria-current']='page';sublink.parent.attribs.class=(sublink.parent.attribs.class??'')+' current-menu-item';}
+        else delete sublink.attribs['aria-current'];
+      }
     });
     for(const anchor of all(doc,'a'))if(/^candidater$/i.test(text(anchor)))anchor.attribs.href='/rentree-universitaire';
     const body=one(doc,'body');body.attribs.class=[...new Set((body.attribs.class+' cpms-site').split(/\s+/))].join(' ');
