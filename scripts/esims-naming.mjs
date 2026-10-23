@@ -9,12 +9,12 @@ const addresses = /((?:https?:\/\/|www\.)[^\s<>"']+|(?:mailto:)?[\w.%+-]+@[\w.-]
 export function esimsName(value) {
   return String(value).split(addresses).map((part, index) => {
     if (index % 2) return part;
-    return part.replace(/\b(le|du|au)\s+(?:CPMS|ESIMS)\b/gi, (_, article) => {
-      const forms = { le: 'l’EIMS', du: 'de l’EIMS', au: 'à l’EIMS' };
+    return part.replace(/\b(le|du|au)\s+CPMS\b/gi, (_, article) => {
+      const forms = { le: 'l’ESIMS', du: 'de l’ESIMS', au: 'à l’ESIMS' };
       const result = forms[article.toLowerCase()];
       return article[0] === article[0].toUpperCase() ? result[0].toUpperCase() + result.slice(1) : result;
-    }).replace(/\b(?:CPMS|ESIMS)\b/gi, 'EIMS')
-      .replace(/\bEIMS est reconnu et autorisé\b/g, 'EIMS est reconnue et autorisée');
+    }).replace(/\bCPMS\b/gi, 'ESIMS')
+      .replace(/\bESIMS est reconnu et autorisé\b/g, 'ESIMS est reconnue et autorisée');
   }).join('');
 }
 
@@ -28,7 +28,7 @@ export function nameDocument(doc) {
         if (node.attribs[key]) node.attribs[key] = esimsName(node.attribs[key]);
       }
       if (node.name === 'meta' && node.attribs.content && ['description', 'og:title', 'og:description', 'twitter:title', 'twitter:description'].includes(node.attribs.name || node.attribs.property)) node.attribs.content = esimsName(node.attribs.content);
-      if (node.attribs.download) node.attribs.download = node.attribs.download.replace(/cpms|esims/gi, 'eims');
+      if (node.attribs.download) node.attribs.download = node.attribs.download.replace(/cpms/gi, 'esims');
     }
     for (const child of node.children || []) visit(child);
   }
@@ -42,7 +42,7 @@ export function nameDocument(doc) {
   };
   for (let index = 1; index < texts.length; index++) {
     const previous = texts[index - 1], current = texts[index];
-    if (!/^\s*EIMS\b/.test(current.data) || block(previous) !== block(current)) continue;
+    if (!/^\s*ESIMS\b/.test(current.data) || block(previous) !== block(current)) continue;
     if (/\b(le|du|au)\s+$/i.test(previous.data)) {
       previous.data = previous.data.replace(/\b(le|du|au)\s+$/i, (_, article) => {
         const forms = { le: 'l’', du: 'de l’', au: 'à l’' };

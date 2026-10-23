@@ -71,28 +71,28 @@ function contentOptions(editorial: boolean): HTMLReactParserOptions { return {
     if (editorial && node.attribs.class?.split(/\s+/).includes('woocommerce-mini-cart')) return <></>;
     if (editorial && node.attribs.class?.split(/\s+/).includes('logo-part')) {
       return <div className={node.attribs.class}>
-        <a href="/" className="cpms-brand" aria-label="EIMS — École supérieure d’ingénierie Sainte Marie Stella, accueil">
+        <a href="/" className="cpms-brand" aria-label="ESIMS — École supérieure d’ingénierie Sainte Marie Stella, accueil">
           <img src={editorialMedia.logo} alt="" width={80} height={80} />
-          <span className="cpms-brand-copy"><strong>EIMS</strong><span>École supérieure d’ingénierie<br />Sainte Marie Stella</span></span>
+          <span className="cpms-brand-copy"><strong>ESIMS</strong><span>École supérieure d’ingénierie<br />Sainte Marie Stella</span></span>
         </a>
       </div>;
     }
     if (editorial && node.attribs.class?.split(/\s+/).includes('footer-logo')) {
       return <div className={node.attribs.class}>
-        <a href="/" className="cpms-footer-brand" aria-label="EIMS — École supérieure d’ingénierie Sainte Marie Stella, accueil">
+        <a href="/" className="cpms-footer-brand" aria-label="ESIMS — École supérieure d’ingénierie Sainte Marie Stella, accueil">
           <img src={editorialMedia.logo} alt="" width={60} height={60} />
-          <span><strong>EIMS</strong><span>École supérieure d’ingénierie<br />Sainte Marie Stella</span></span>
+          <span><strong>ESIMS</strong><span>École supérieure d’ingénierie<br />Sainte Marie Stella</span></span>
         </a>
       </div>;
     }
     if (editorial && node.attribs.class?.split(/\s+/).includes('copyright')) {
-      return <div className={node.attribs.class}><p>© 2026 EIMS — Tous droits réservés.</p></div>;
+      return <div className={node.attribs.class}><p>© 2026 ESIMS — Tous droits réservés.</p></div>;
     }
     if (editorial && node.name === 'ul' && node.attribs.class?.split(/\s+/).some(c => ['footer-social', 'social'].includes(c))) {
       return <ul className={node.attribs.class}>
-        <li><a href="https://www.facebook.com/cpmscotonou" aria-label="Facebook de l’EIMS"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
-        <li><a href="https://www.linkedin.com/company/cpms/" aria-label="LinkedIn de l’EIMS"><i className="fa fa-linkedin" aria-hidden="true" /></a></li>
-        <li><a href="https://www.instagram.com/prepamariestella/" aria-label="Instagram de l’EIMS"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
+        <li><a href="https://www.facebook.com/cpmscotonou" aria-label="Facebook de l’ESIMS"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
+        <li><a href="https://www.linkedin.com/company/cpms/" aria-label="LinkedIn de l’ESIMS"><i className="fa fa-linkedin" aria-hidden="true" /></a></li>
+        <li><a href="https://www.instagram.com/prepamariestella/" aria-label="Instagram de l’ESIMS"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
       </ul>;
     }
     if (editorial && node.attribs.class?.split(/\s+/).includes('rs-partner')) node.attribs.class += ' cpms-partners';
@@ -163,7 +163,7 @@ export const loadTemplate = cache(async (name: string) => {
     styles.push('/cpms/links.css');
     styles.push('/cpms/mobile-menu.css');
   }
-  return { name, bodyClass, styles, scripts, favicon, title: entry?.title ?? `EIMS — Modèle ${name}`, description: entry?.description ?? "Modèle original Educavo conservé comme référence.", canonical: entry?.canonical, editorial: Boolean(entry), content: parse(body[2], contentOptions(Boolean(entry))) };
+  return { name, bodyClass, styles, scripts, favicon, title: entry?.title ?? `ESIMS — Modèle ${name}`, description: entry?.description ?? "Modèle original Educavo conservé comme référence.", canonical: entry?.canonical, editorial: Boolean(entry), content: parse(body[2], contentOptions(Boolean(entry))) };
 });
 
 export async function loadSearch(query: string) {

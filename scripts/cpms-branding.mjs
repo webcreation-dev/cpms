@@ -65,8 +65,8 @@ export async function uniformSiteShell(registry, generated, logo, brochure, reco
   const footer=cpmsFooter(one(reference,'footer'),records,safe,logo);
   const homeFooter=one(home,'footer');homeFooter.attribs={...footer.attribs};contents(homeFooter,footer.children.map(serialize).join(''));
   const loader=one(home,'#loader');loader.attribs.class='loader';
-  const seal=one(loader,'img');seal.attribs.src=logo;seal.attribs.alt='EIMS';seal.attribs.width='80';seal.attribs.height='80';
-  loader.attribs['aria-label']='Chargement du site EIMS';
+  const seal=one(loader,'img');seal.attribs.src=logo;seal.attribs.alt='ESIMS';seal.attribs.width='80';seal.attribs.height='80';
+  loader.attribs['aria-label']='Chargement du site ESIMS';
   const files=new Map(Object.entries(registry).map(([route,entry])=>[entry.file,route]));
   const references=['.full-width-header','footer','#loader','.rs-newsletter'].map(selector=>[selector,one(home,selector)]);
   const footerHtml=serialize(one(home,'footer'));

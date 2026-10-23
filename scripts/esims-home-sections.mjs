@@ -20,7 +20,7 @@ const journeys = [
     id: 'licence', label: 'Licence professionnelle',
     intro: 'Au Togo, un parcours en trois ans pour développer des compétences scientifiques et professionnelles.',
     steps: [
-      ['Bac', 'Choisir sa spécialité', 'S’orienter vers une licence professionnelle proposée par EIMS-Togo à Lomé.'],
+      ['Bac', 'Choisir sa spécialité', 'S’orienter vers une licence professionnelle proposée par ESIMS-Togo à Lomé.'],
       ['3 ans', 'Se former au Togo', 'Acquérir progressivement les connaissances et les compétences de sa spécialité.'],
       ['Bac+3', 'Obtenir sa licence', 'Valider son cursus de licence professionnelle en sciences et technologies.'],
       ['Après', 'Entrer dans la vie professionnelle', 'Mettre ses compétences au service des entreprises et construire son projet professionnel.'],

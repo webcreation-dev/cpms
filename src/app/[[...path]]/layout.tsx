@@ -7,7 +7,7 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1 };
 export async function generateMetadata({ params }: TemplatePageProps): Promise<Metadata> {
   const template = await resolveTemplate(await params);
   return {
-    title: template?.title ?? "EIMS",
+    title: template?.title ?? "ESIMS",
     description: template?.description ?? "Cycle Préparatoire Sainte Marie Stella à Cotonou.",
     icons: { icon: template?.favicon ?? "/assets/images/fav.png" },
   };
