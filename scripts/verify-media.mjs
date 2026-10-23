@@ -13,7 +13,7 @@ for (const directory of ['src/generated', 'src/data', 'public/cpms']) {
   for (const entry of entries) {
     if (!entry.isFile() || !/\.(html|json|css)$/.test(entry.name)) continue;
     const source = await readFile(join(entry.parentPath, entry.name), 'utf8');
-    for (const match of source.matchAll(/\/cpms\/(?:originals|slots|illustrations)\/[^"'<>]+?\.(?:jpe?g|png|webp|gif|svg|pdf|mp4)/gi)) {
+    for (const match of source.matchAll(/\/cpms\/(?:originals|slots|illustrations|logos)\/[^"'<>]+?\.(?:jpe?g|png|webp|gif|svg|pdf|mp4)/gi)) {
       references.add('public' + decodeURIComponent(match[0]).replaceAll('&amp;', '&'));
     }
   }

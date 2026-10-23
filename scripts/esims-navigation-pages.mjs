@@ -1,4 +1,5 @@
 import { documentFrom, serialize, one, all, put, label, contents } from './editorial-dom.mjs';
+import { campusLogo } from './esims-campus-identity.mjs';
 
 function pageLayout(doc, title, html) {
   const breadcrumbs = one(doc, '.rs-breadcrumbs');
@@ -14,5 +15,10 @@ export async function filieresPage(doc, { homeHtml, photo, image }) {
   const courses = one(documentFrom(homeHtml), '#nos-formations');
   const feedback = one(courses, '.esims-campus-feedback');
   if (feedback) feedback.parent.children = feedback.parent.children.filter(child => child !== feedback);
+  for (const card of all(courses, '[data-esims-campuses]')) {
+    const meta = one(card, '.info-meta');
+    contents(meta, meta.children.map(serialize).join('') + campusLogo(card.attribs['data-esims-campuses']));
+  }
+  one(doc, 'body').attribs.class += ' esims-filieres-page';
   pageLayout(doc, 'Nos filières', serialize(courses));
 }

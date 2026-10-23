@@ -160,6 +160,7 @@ export const loadTemplate = cache(async (name: string) => {
     if (bodyClass.split(/\s+/).includes('esims-news-hub')) styles.push('/cpms/news-hub.css');
     if (bodyClass.split(/\s+/).includes('esims-implantations-page')) styles.push('/cpms/campuses.css');
     if (bodyClass.split(/\s+/).some(name => ['esims-preparatory-page', 'esims-licence-page'].includes(name))) styles.push('/cpms/preparatory.css');
+    if (bodyClass.split(/\s+/).some(name => ['esims-school-page', 'esims-implantations-page', 'esims-filieres-page', 'esims-preparatory-page', 'esims-licence-page'].includes(name))) styles.push('/cpms/campus-identity.css');
     styles.push('/cpms/links.css');
     styles.push('/cpms/mobile-menu.css');
   }

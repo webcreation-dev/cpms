@@ -1,0 +1,18 @@
+/* Identités par pays sur L’École, les implantations et les filières. */
+.esims-campus-logo { position: relative; display: block; width: 96px; height: 96px; flex-shrink: 0; }
+.esims-campus-logo > img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.esims-campus-logo--benin > img { transform: scale(1.085); }
+/* Conserver le logo Togo fourni ; masquer uniquement le cadre noir extérieur. */
+.esims-campus-logo--togo { overflow: hidden; border-radius: 50%; }
+.esims-campus-logo--togo > img { position: absolute; max-width: none; width: 107.76%; height: 107.76%; left: -3.66%; top: -2.58%; }
+.esims-location-heading .esims-campus-logo { width: 112px; height: 112px; }
+.esims-campus-heading .esims-campus-logo { width: 100px; height: 100px; }
+.esims-course-location { gap: 18px; }
+.esims-course-location .esims-campus-logo { width: 88px; height: 88px; }
+.esims-course-country { display: inline-flex; align-items: center; gap: 10px; }
+.esims-filieres-page .esims-formations .info-meta { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.esims-filieres-page .info-meta .esims-campus-logo { width: 76px; height: 76px; }
+@media (max-width: 575px) {
+  .esims-campus-heading .esims-campus-logo { width: 88px; height: 88px; }
+  .esims-course-location .esims-campus-logo { width: 72px; height: 72px; }
+}
